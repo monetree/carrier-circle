@@ -10,6 +10,7 @@ from scrap.views import (
                 PoliceDefenceJobs
             )
 
+
 urlpatterns = [
     #All India Govt Jobs
     path('admin/', admin.site.urls),
@@ -138,5 +139,5 @@ urlpatterns = [
     #Police and Defence Jobs
     path('police_defence_jobs/', PoliceDefenceJobs.police_defence_jobs),
     path('statewise_police_jobs/', PoliceDefenceJobs.statewise_police_jobs),
-    
+
 ]

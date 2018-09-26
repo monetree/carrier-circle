@@ -1,11 +1,21 @@
+
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
+from .models import (
+                        UpscJobs,SscJobs,OtherAllIndiaJobs,
+                        OdishGovtJobs,AndamanNicoborGovtJobs,AndhraPradeshGovtJobs,
+                        ArunachalPradeshGovernmentjobs,AssamGovtJobs,
+                        BiharGovtJobs,ChandigarhGovtJobs,ChhattisgarhGovtJobs
+                      )
+
 
 """
 Scrapping imports
 """
+import re
 import requests
 from bs4 import BeautifulSoup
+from random import randint
 """
 ++++++++++++++++
 """
@@ -17,6 +27,8 @@ class AllIndiaGovtJobs:
     """
 
     def get_upsc(request):
+        #empty model
+        UpscJobs.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -32,6 +44,42 @@ class AllIndiaGovtJobs:
             dict["post_name"] = d[1].text
             dict["education"] = d[2].text
             dict["last_date"] = d[4].text
+            l=d[5].text
+            if l != "":
+                link = d[5].find("strong").find("a")['href']
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        print("Error on job id-- FIX IT ..")
+
+                else:
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 1
+                join_id = randint(99999, 999999)
+                #check the existing of join_id
+                count_join_id = UpscJobs.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                #insert into mysql database
+                obj=UpscJobs.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["education"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    job_id=dict["job_id"],join_id=randint(99999, 999999)
+                )
             lst.append(dict.copy())
         dict2["upsc"] = lst
         lst2.append(dict2)
@@ -41,6 +89,8 @@ class AllIndiaGovtJobs:
     @ Api for SSC data...
     """
     def get_ssc(request):
+        #empty model
+        SscJobs.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -56,6 +106,42 @@ class AllIndiaGovtJobs:
             dict["post_name"] = d[1].text
             dict["qualification"] = d[2].text
             dict["last_date"] = d[4].text
+            l=d[5].text
+            if l != "":
+                link = d[5].find("strong").find("a")['href']
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        print("Error on job id-- FIX IT ..")
+                else:
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 1
+                    dict["job_id"] = None
+                join_id = randint(99999, 999999)
+                #check the existing of join_id
+                count_join_id = SscJobs.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                #insert into mysql database
+                obj=SscJobs.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["qualification"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    job_id=dict["job_id"],join_id=join_id
+                )
             lst.append(dict.copy())
         dict2["ssc"] = lst
         lst2.append(dict2)
@@ -65,6 +151,8 @@ class AllIndiaGovtJobs:
         @ Api for other All india jobs...
         """
     def get_other_all_india(request):
+        #empty model
+        OtherAllIndiaJobs.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -81,6 +169,43 @@ class AllIndiaGovtJobs:
             dict["post_name"] = d[2].text
             dict["qualification"] = d[3].text
             dict["last_date"] = d[5].text
+            l=d[6].text
+            if l != "":
+                link = d[6].find("strong").find("a")['href']
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        dict["job_id"] = None
+                else:
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 1
+                    dict["job_id"] = None
+                join_id = randint(99999, 999999)
+                # check the existing of join_id
+                count_join_id = OtherAllIndiaJobs.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                # insert into mysql database
+                obj=OtherAllIndiaJobs.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["qualification"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    requirement_board=dict["requirement_board"],
+                    job_id=dict["job_id"],join_id=join_id
+                )
             lst.append(dict.copy())
         dict2["other_all_india"] = lst
         lst2.append(dict2)
@@ -90,7 +215,10 @@ class AllIndiaGovtJobs:
     @ Api for STATE GOVT. data...
     """
 class StateGovtJobs:
-    def get_all_state(url,keyword):
+    def get_all_state(url,keyword,model_name):
+        #empty model
+        model = eval(model_name)
+        model.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -107,77 +235,117 @@ class StateGovtJobs:
             dict["post_name"] = d[2].text
             dict["qualification"] = d[3].text
             dict["last_date"] = d[5].text
+            l=d[6].text
+            if l != "":
+                link = d[6].find("strong").find("a")['href']
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        print("Error on job id-- FIX IT ..")
+                else:
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 1
+                    dict["job_id"] = None
+                lst.append(dict.copy())
+                join_id = randint(99999, 999999)
+                #check the existing of join_id
+                count_join_id = model.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                #insert into mysql database
+                obj = model.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["qualification"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    requirement_board=dict["requirement_board"],
+                    job_id=dict["job_id"],join_id=join_id
+                )
+
             lst.append(dict.copy())
         dict2[keyword] = lst
         lst2.append(dict2)
         return lst2
 
     def odisha_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/odisha-government-jobs/","odisha_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/odisha-government-jobs/","odisha_govt_jobs","OdishGovtJobs")
+        request.session["job_id"] = 5
         return JsonResponse(api,safe=False)
 
     def andaman_nicobor_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/an-government-jobs/","andaman_nicobor_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/an-government-jobs/","andaman_nicobor_govt_jobs","AndamanNicoborGovtJobs")
         return JsonResponse(api,safe=False)
 
     def andhra_prtadesh_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/ap-government-jobs/","andhra_prtadesh_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/ap-government-jobs/","andhra_prtadesh_govt_jobs","AndhraPradeshGovtJobs")
         return JsonResponse(api,safe=False)
 
     def arunachal_pradesh_government_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/arunachal-pradesh-government-jobs/","arunachal_pradesh_government_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/arunachal-pradesh-government-jobs/","arunachal_pradesh_government_jobs","ArunachalPradeshGovernmentjobs")
         return JsonResponse(api,safe=False)
 
     def assam_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/assam-government-jobs/","assam_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/assam-government-jobs/","assam_govt_jobs","AssamGovtJobs")
         return JsonResponse(api,safe=False)
 
     def bihar_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/bihar-government-jobs/","bihar_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/bihar-government-jobs/","bihar_govt_jobs","BiharGovtJobs")
         return JsonResponse(api,safe=False)
 
     def chandigarh_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/chandigarh-government-jobs/","chandigarh_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/chandigarh-government-jobs/","chandigarh_govt_jobs","ChandigarhGovtJobs")
         return JsonResponse(api,safe=False)
 
     def chhattisgarh_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/chhattisgarh-government-jobs/","chhattisgarh_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/chhattisgarh-government-jobs/","chhattisgarh_govt_jobs","ChhattisgarhGovtJobs")
         return JsonResponse(api,safe=False)
 
     def dadra_nagar_haveli_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/dadra-nagar-haveli-government-jobs/","dadra_nagar_haveli_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/dadra-nagar-haveli-government-jobs/","dadra_nagar_haveli_govt_jobs","DadraNagarHaveliGovtJobs")
         return JsonResponse(api,safe=False)
 
     def daman_diu_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/daman-diu-government-jobs/","daman_diu_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/daman-diu-government-jobs/","daman_diu_govt_jobs","DamanDiuGovtJobs")
         return JsonResponse(api,safe=False)
 
     def delhi_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/delhi-government-jobs/","delhi_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/delhi-government-jobs/","delhi_govt_jobs","DelhiGovtJobs")
         return JsonResponse(api,safe=False)
 
     def goa_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/goa-government-jobs/","goa_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/goa-government-jobs/","goa_govt_jobs","GoaGovtJobs")
         return JsonResponse(api,safe=False)
 
     def gujurat_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/gujarat-government-jobs/","gujurat_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/gujarat-government-jobs/","gujurat_govt_jobs","GujuratGovtJobs")
         return JsonResponse(api,safe=False)
 
     def haryana_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/haryana-government-jobs/","haryana_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/haryana-government-jobs/","haryana_govt_jobs","HaryanaGovtJobs")
         return JsonResponse(api,safe=False)
 
     def himachal_pradesh_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/hp-government-jobs/","himachal_pradesh_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/hp-government-jobs/","himachal_pradesh_govt_jobs","HimachalPradeshGovtJobs")
         return JsonResponse(api,safe=False)
 
     def jammu_kashmir_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/jk-government-jobs/","jammu_kashmir_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/jk-government-jobs/","jammu_kashmir_govt_jobs","JammuKashmirGovtJobs")
         return JsonResponse(api,safe=False)
 
     def jharkhand_govt_jobs(request):
-        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/jharkhand-government-jobs/","jharkhand_govt_jobs")
+        api = StateGovtJobs.get_all_state("http://www.freejobalert.com/jharkhand-government-jobs/","jharkhand_govt_jobs","JharkhandGovtJobs")
         return JsonResponse(api,safe=False)
 
     def karnataka_govt_jobs(request):
@@ -717,7 +885,6 @@ class PoliceDefenceJobs:
         dict2["police_defence_jobs"] = lst
         lst2.append(dict2)
         return JsonResponse(lst2,safe=False)
-
 
     def statewise_police_jobs(request):
         lst=[]
