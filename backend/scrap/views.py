@@ -58,7 +58,7 @@ class AllIndiaGovtJobs:
                     elif len(job_id) == 7:
                         dict["job_id"] = int(job_id[2::])
                     else:
-                        print("Error on job id-- FIX IT ..")
+                        dict["job_id"] = None
 
                 else:
                     dict["more_info"] = d[5].find("strong").find("a")['href']
@@ -120,7 +120,7 @@ class AllIndiaGovtJobs:
                     elif len(job_id) == 7:
                         dict["job_id"] = int(job_id[2::])
                     else:
-                        print("Error on job id-- FIX IT ..")
+                        dict["job_id"] = None
                 else:
                     dict["more_info"] = d[5].find("strong").find("a")['href']
                     dict["type"] = 1
@@ -427,8 +427,11 @@ class StateGovtJobs:
     """
     @ Api for BANK GOVT. data...
     """
+
 class BankJobs:
     def all_bank_jobs(request):
+        #empty model
+        AllBankJobs.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -445,6 +448,41 @@ class BankJobs:
             dict["post_name"] = d[2].text
             dict["qualification"] = d[3].text
             dict["last_date"] = d[5].text
+            l=d[6].text
+            link = d[6].find("strong").find("a")['href']
+            if l != "":
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        dict["job_id"] = None
+                else:
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 1
+                join_id = randint(99999, 999999)
+                #check the existing of join_id
+                count_join_id = AllBankJobs.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                #insert into mysql database
+                obj=AllBankJobs.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["education"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    job_id=dict["job_id"],join_id=randint(99999, 999999)
+                )
             lst.append(dict.copy())
         dict2["all_bank_jobs"] = lst
         lst2.append(dict2)
@@ -452,6 +490,8 @@ class BankJobs:
 
 
     def other_financial_jobs(request):
+        #empty model
+        OtherFinancialJobs.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -468,6 +508,41 @@ class BankJobs:
             dict["post_name"] = d[2].text
             dict["qualification"] = d[3].text
             dict["last_date"] = d[5].text
+            l=d[6].text
+            link = d[6].find("strong").find("a")['href']
+            if l != "":
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        dict["job_id"] = None
+                else:
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 1
+                join_id = randint(99999, 999999)
+                #check the existing of join_id
+                count_join_id = OtherFinancialJobs.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                #insert into mysql database
+                obj=OtherFinancialJobs.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["education"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    job_id=dict["job_id"],join_id=randint(99999, 999999)
+                )
             lst.append(dict.copy())
         dict2["other_financial_jobs"] = lst
         lst2.append(dict2)
@@ -477,7 +552,10 @@ class BankJobs:
     @ Api for TEACHING jobs...
     """
 class TeachingJobs:
-    def common_teaching_jobs(index,keyword):
+    def common_teaching_jobs(index,keyword,model_name):
+        model = eval(model_name)
+        #empty model
+        model.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
@@ -494,157 +572,192 @@ class TeachingJobs:
             dict["post_name"] = d[2].text
             dict["qualification"] = d[3].text
             dict["last_date"] = d[5].text
+            l=d[6].text
+            link = d[6].find("strong").find("a")['href']
+            if l != "":
+                if link.split(".")[1] == "freejobalert":
+                    dict["more_info"] = d[6].find("strong").find("a")['href']
+                    dict["type"] = 2
+                    link_remove_slash = link.split("/")
+                    link_to_string = (''.join(link_remove_slash))
+                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                    if len(job_id) == 5:
+                        dict["job_id"] = int(job_id)
+                    elif len(job_id) == 7:
+                        dict["job_id"] = int(job_id[2::])
+                    else:
+                        dict["job_id"] = None
+                else:
+                    dict["more_info"] = d[5].find("strong").find("a")['href']
+                    dict["type"] = 1
+                join_id = randint(99999, 999999)
+                #check the existing of join_id
+                count_join_id = model.objects.filter(join_id=join_id).count()
+                if count_join_id is not 0:
+                    join_id = join_id + 1
+                pdf_link = re.search(r'.pdf$',link)
+                if pdf_link:
+                    pdf_link_lst=link.split(".")
+                    if "freejobalert" in pdf_link_lst:
+                        dict["type"] = 3
+                #insert into mysql database
+                obj=model.objects.create(
+                    start_date=dict["start_date"],last_date=dict["last_date"],
+                    post_name=dict["post_name"],education=dict["education"],
+                    more_info=dict["more_info"],type=dict["type"],
+                    job_id=dict["job_id"],join_id=randint(99999, 999999)
+                )
             lst.append(dict.copy())
         dict2[keyword] = lst
         lst2.append(dict2)
         return lst2
 
     def all_india_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(0, "all_india_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(0, "all_india_teaching_jobs","AllIndiaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def andaman_nicobar_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(1, "andaman_nicobar_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(1, "andaman_nicobar_teaching_jobs","AndamanNicoborTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def andhra_pradesh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(2, "andhra_pradesh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(2, "andhra_pradesh_teaching_jobs","AndhraPradeshTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def arunachal_pradesh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(3, "arunachal_pradesh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(3, "arunachal_pradesh_teaching_jobs","ArunachalPradeshTeachingjobs")
         return JsonResponse(api,safe=False)
 
     def assam_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(4, "assam_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(4, "assam_teaching_jobs","AssamTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def bihar_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(5, "bihar_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(5, "bihar_teaching_jobs","BiharTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def chandigarh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(6, "chandigarh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(6, "chandigarh_teaching_jobs","ChandigarhTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def chhattisgarh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(7, "chhattisgarh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(7, "chhattisgarh_teaching_jobs","ChhattisgarhTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def dadra_nagar_haveli_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(8, "dadra_nagar_haveli_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(8, "dadra_nagar_haveli_teaching_jobs","DadraNagarHaveliTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def daman_diu_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(9, "daman_diu_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(9, "daman_diu_teaching_jobs","DamanDiuTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def delhi_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(10, "delhi_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(10, "delhi_teaching_jobs","DelhiTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def goa_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(11, "goa_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(11, "goa_teaching_jobs","GoaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def gujurat_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(12, "gujurat_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(12, "gujurat_teaching_jobs","GujuratTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def haryana_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(13, "haryana_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(13, "haryana_teaching_jobs","HaryanaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def himachal_pradesh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(14, "himachal_pradesh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(14, "himachal_pradesh_teaching_jobs","HimachalPradeshTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def jammu_kashmir_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(15, "jammu_kashmir_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(15, "jammu_kashmir_teaching_jobs","JammuKashmirTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def jharkhand_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(16, "jharkhand_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(16, "jharkhand_teaching_jobs","JharkhandTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def karnataka_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(17, "karnataka_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(17, "karnataka_teaching_jobs","KarntakaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def kerala_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(18, "kerala_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(18, "kerala_teaching_jobs","KeralaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def lakshadweep_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(19, "lakshadweep_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(19, "lakshadweep_teaching_jobs","LakshadweepTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def madhya_pradesh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(20, "madhya_pradesh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(20, "madhya_pradesh_teaching_jobs","MadhyaPradeshTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def maharashtra_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(21, "maharashtra_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(21, "maharashtra_teaching_jobs","MaharashtraTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def manipur_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(22, "manipur_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(22, "manipur_teaching_jobs","ManipurTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def meghalaya_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(23, "meghalaya_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(23, "meghalaya_teaching_jobs","MeghalayaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def mizoram_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(24, "mizoram_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(24, "mizoram_teaching_jobs","MizoramTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def nagaland_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(25, "nagaland_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(25, "nagaland_teaching_jobs","NagalandTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def odisha_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(26, "odisha_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(26, "odisha_teaching_jobs","OdishaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def puduchhery_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(27, "puduchhery_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(27, "puduchhery_teaching_jobs","PuduchheryTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def punjab_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(28, "punjab_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(28, "punjab_teaching_jobs","PunjabTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def rajasthan_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(29, "rajasthan_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(29, "rajasthan_teaching_jobs","RajasthanTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def sikkim_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(30, "sikkim_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(30, "sikkim_teaching_jobs","SikkimTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def tamil_nadu_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(31, "tamil_nadu_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(31, "tamil_nadu_teaching_jobs","TamilNaduTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def telangana_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(32, "telangana_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(32, "telangana_teaching_jobs","TelanganaTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def tripura_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(33, "tripura_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(33, "tripura_teaching_jobs","TripuraTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def uttarakhand_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(34, "uttarakhand_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(34, "uttarakhand_teaching_jobs","UttarakhandTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def uttar_pradesh_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(35, "uttar_pradesh_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(35, "uttar_pradesh_teaching_jobs","UttarPradeshTeachingJobs")
         return JsonResponse(api,safe=False)
 
     def west_bengal_teaching_jobs(request):
-        api = TeachingJobs.common_teaching_jobs(36, "west_bengal_teaching_jobs")
+        api = TeachingJobs.common_teaching_jobs(36, "west_bengal_teaching_jobs","WestBengalTeachingJobs")
         return JsonResponse(api,safe=False)
 
     """
