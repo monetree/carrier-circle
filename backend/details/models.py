@@ -2,11 +2,11 @@
 from django.db import models
 """
 -------------------------------------------------
-        @@ MODELS FOR ALL INDIA GOVT JOBS @@    ||
+        @@ MODELS FOR ALL INDIA GOVT JobDetails @@    ||
 -------------------------------------------------
 """
 
-class UpscJobs(models.Model):
+class UpscJobDetails(models.Model):
     upsc_id    = models.AutoField(primary_key=True)
     start_date = models.CharField(max_length=60)
     last_date  = models.CharField(max_length=60)
@@ -18,9 +18,9 @@ class UpscJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Upsc Jobs"
+        return "Upsc JobDetails"
 
-class SscJobs(models.Model):
+class SscJobDetails(models.Model):
     ssc_id     = models.AutoField(primary_key=True)
     start_date = models.CharField(max_length=60)
     last_date  = models.CharField(max_length=60)
@@ -32,9 +32,9 @@ class SscJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Ssc Jobs"
+        return "Ssc JobDetails"
 
-class OtherAllIndiaJobs(models.Model):
+class OtherAllIndiaJobDetails(models.Model):
     other_all_india_id= models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -47,17 +47,17 @@ class OtherAllIndiaJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Other All India Jobs"
+        return "Other All India JobDetails"
 
 
 """
 -------------------------------------------------
-        @@ MODELS FOR SATE WISE GOVT JOBS @@    ||
+        @@ MODELS FOR SATE WISE GOVT JobDetails @@    ||
 -------------------------------------------------
 """
 
 
-class OdishaGovtJobs(models.Model):
+class OdishaGovtJobDetails(models.Model):
     odisha_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -70,9 +70,9 @@ class OdishaGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Odisha Govt Jobs"
+        return "Odisha Govt JobDetails"
 
-class AndamanNicoborGovtJobs(models.Model):
+class AndamanNicoborGovtJobDetails(models.Model):
     andaman_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -85,9 +85,9 @@ class AndamanNicoborGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AndamanNicobor Govt Jobs"
+        return "AndamanNicobor Govt JobDetails"
 
-class AndhraPradeshGovtJobs(models.Model):
+class AndhraPradeshGovtJobDetails(models.Model):
     andhra_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -100,9 +100,9 @@ class AndhraPradeshGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AndhraPradesh Govt Jobs"
+        return "AndhraPradesh Govt JobDetails"
 
-class ArunachalPradeshGovernmentjobs(models.Model):
+class ArunachalPradeshGovernmentJobDetails(models.Model):
     arunachal_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -115,9 +115,9 @@ class ArunachalPradeshGovernmentjobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "ArunachalPradesh Govt Jobs"
+        return "ArunachalPradesh Govt JobDetails"
 
-class AssamGovtJobs(models.Model):
+class AssamGovtJobDetails(models.Model):
     assam_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -130,9 +130,9 @@ class AssamGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Assam Govt Jobs"
+        return "Assam Govt JobDetails"
 
-class BiharGovtJobs(models.Model):
+class BiharGovtJobDetails(models.Model):
     bihar_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -145,9 +145,9 @@ class BiharGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Bihar Govt Jobs"
+        return "Bihar Govt JobDetails"
 
-class ChandigarhGovtJobs(models.Model):
+class ChandigarhGovtJobDetails(models.Model):
     chandigarh_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -160,9 +160,9 @@ class ChandigarhGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Chandigarh Govt Jobs"
+        return "Chandigarh Govt JobDetails"
 
-class ChhattisgarhGovtJobs(models.Model):
+class ChhattisgarhGovtJobDetails(models.Model):
     chhattisgarh_id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -175,9 +175,9 @@ class ChhattisgarhGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Chhattisgarh Govt Jobs"
+        return "Chhattisgarh Govt JobDetails"
 
-class DadraNagarHaveliGovtJobs(models.Model):
+class DadraNagarHaveliGovtJobDetails(models.Model):
     dadra_nagar_haveli_id = models.AutoField(primary_key=True)
     start_date            = models.CharField(max_length=60)
     last_date             = models.CharField(max_length=60)
@@ -190,9 +190,9 @@ class DadraNagarHaveliGovtJobs(models.Model):
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "DadraNagarHavelis Govt Jobs"
+        return "DadraNagarHavelis Govt JobDetails"
 
-class DamanDiuGovtJobs(models.Model):
+class DamanDiuGovtJobDetails(models.Model):
     daman_diu_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -205,9 +205,9 @@ class DamanDiuGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "DamanDiu Govt Jobs"
+        return "DamanDiu Govt JobDetails"
 
-class DelhiGovtJobs(models.Model):
+class DelhiGovtJobDetails(models.Model):
     delhi_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -220,9 +220,9 @@ class DelhiGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Delhi Govt Jobs"
+        return "Delhi Govt JobDetails"
 
-class GoaGovernmentjobs(models.Model):
+class GoaGovernmentJobDetails(models.Model):
     goa_id            = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -235,9 +235,9 @@ class GoaGovernmentjobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Goa Govt Jobs"
+        return "Goa Govt JobDetails"
 
-class GujuratGovtJobs(models.Model):
+class GujuratGovtJobDetails(models.Model):
     gujurat_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -250,9 +250,9 @@ class GujuratGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Gujurat Govt Jobs"
+        return "Gujurat Govt JobDetails"
 
-class HaryanaGovtJobs(models.Model):
+class HaryanaGovtJobDetails(models.Model):
     haryana_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -261,13 +261,13 @@ class HaryanaGovtJobs(models.Model):
     more_info         = models.TextField()
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
-    join_id    = models.IntegerField(default=None,blank=True,null=True)
+    job_id            = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Haryana Govt Jobs"
+        return "Haryana Govt JobDetails"
 
-class HimachalPradeshGovtJobs(models.Model):
+class HimachalPradeshGovtJobDetails(models.Model):
     himachal_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -280,9 +280,9 @@ class HimachalPradeshGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "HimachalPradesh Govt Jobs"
+        return "HimachalPradesh Govt JobDetails"
 
-class JammuKashmirGovtJobs(models.Model):
+class JammuKashmirGovtJobDetails(models.Model):
     jammu_kashmir_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -295,9 +295,9 @@ class JammuKashmirGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "JammuKashmir Govt Jobs"
+        return "JammuKashmir Govt JobDetails"
 
-class JharkhandGovtJobs(models.Model):
+class JharkhandGovtJobDetails(models.Model):
     jharkhand_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -310,9 +310,9 @@ class JharkhandGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Jharkhand Govt Jobs"
+        return "Jharkhand Govt JobDetails"
 
-class KarnatakaGovtJobs(models.Model):
+class KarnatakaGovtJobDetails(models.Model):
     karnataka_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -325,9 +325,9 @@ class KarnatakaGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "karnataka Govt Jobs"
+        return "karnataka Govt JobDetails"
 
-class KeralaGovtJobs(models.Model):
+class KeralaGovtJobDetails(models.Model):
     kerala_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -340,9 +340,9 @@ class KeralaGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Kerala Govt Jobs"
+        return "Kerala Govt JobDetails"
 
-class LakshadweepGovernmentjobs(models.Model):
+class LakshadweepGovernmentJobDetails(models.Model):
     lakshadweep_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -355,9 +355,9 @@ class LakshadweepGovernmentjobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Lakshadweep Govt Jobs"
+        return "Lakshadweep Govt JobDetails"
 
-class MadhyaPradeshGovtJobs(models.Model):
+class MadhyaPradeshGovtJobDetails(models.Model):
     madhya_pradesh_id = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -370,9 +370,9 @@ class MadhyaPradeshGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "MadhyaPradesh Govt Jobs"
+        return "MadhyaPradesh Govt JobDetails"
 
-class MaharashtraGovtJobs(models.Model):
+class MaharashtraGovtJobDetails(models.Model):
     maharashtra_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -385,9 +385,9 @@ class MaharashtraGovtJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Maharashtra Govt Jobs"
+        return "Maharashtra Govt JobDetails"
 
-class ManipurGovtJobs(models.Model):
+class ManipurGovtJobDetails(models.Model):
     manipur_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -400,9 +400,9 @@ class ManipurGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Manipur Govt Jobs"
+        return "Manipur Govt JobDetails"
 
-class MeghalayaGovtJobs(models.Model):
+class MeghalayaGovtJobDetails(models.Model):
     meghalaya_id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -415,9 +415,9 @@ class MeghalayaGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Meghalaya Govt Jobs"
+        return "Meghalaya Govt JobDetails"
 
-class MizoramGovtJobs(models.Model):
+class MizoramGovtJobDetails(models.Model):
     mizoram_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -430,9 +430,9 @@ class MizoramGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Mizoram Govt Jobs"
+        return "Mizoram Govt JobDetails"
 
-class NagalandGovtJobs(models.Model):
+class NagalandGovtJobDetails(models.Model):
     nagaland_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -445,9 +445,9 @@ class NagalandGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Nagaland Govt Jobs"
+        return "Nagaland Govt JobDetails"
 
-class PuduchheryGovtJobs(models.Model):
+class PuduchheryGovtJobDetails(models.Model):
     puduchhery_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -460,9 +460,9 @@ class PuduchheryGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Puduchhery Govt Jobs"
+        return "Puduchhery Govt JobDetails"
 
-class PunjabGovernmentjobs(models.Model):
+class PunjabGovernmentJobDetails(models.Model):
     punjab_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -475,9 +475,9 @@ class PunjabGovernmentjobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Punjab Govt Jobs"
+        return "Punjab Govt JobDetails"
 
-class RajasthanGovtJobs(models.Model):
+class RajasthanGovtJobDetails(models.Model):
     rajasthan_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -490,9 +490,9 @@ class RajasthanGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Rajasthan Govt Jobs"
+        return "Rajasthan Govt JobDetails"
 
-class SikkimGovtJobs(models.Model):
+class SikkimGovtJobDetails(models.Model):
     sikkim_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -505,9 +505,9 @@ class SikkimGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Sikkim Govt Jobs"
+        return "Sikkim Govt JobDetails"
 
-class TamilGovtJobs(models.Model):
+class TamilGovtJobDetails(models.Model):
     tamil_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -520,9 +520,9 @@ class TamilGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Tamil Govt Jobs"
+        return "Tamil Govt JobDetails"
 
-class TelanganaGovtJobs(models.Model):
+class TelanganaGovtJobDetails(models.Model):
     telangana_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -535,9 +535,9 @@ class TelanganaGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Telangana Govt Jobs"
+        return "Telangana Govt JobDetails"
 
-class TripuraGovtJobs(models.Model):
+class TripuraGovtJobDetails(models.Model):
     tripura_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -550,9 +550,9 @@ class TripuraGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Tripura Govt Jobs"
+        return "Tripura Govt JobDetails"
 
-class UttarakhandGovtJobs(models.Model):
+class UttarakhandGovtJobDetails(models.Model):
     uttarakhand_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -565,9 +565,9 @@ class UttarakhandGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Uttarakhand Govt Jobs"
+        return "Uttarakhand Govt JobDetails"
 
-class UttarPradeshGovtJobs(models.Model):
+class UttarPradeshGovtJobDetails(models.Model):
     uttar_pradesh_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -580,9 +580,9 @@ class UttarPradeshGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "UttarPradesh Govt Jobs"
+        return "UttarPradesh Govt JobDetails"
 
-class WestBengalGovtJobs(models.Model):
+class WestBengalGovtJobDetails(models.Model):
     west_bengal_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -595,17 +595,17 @@ class WestBengalGovtJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "WestBengal Govt Jobs"
+        return "WestBengal Govt JobDetails"
 
 
 """
 -------------------------------------------------
-        @@ MODELS FOR BANK AND OTHER FINANCIAL JOBS @@    ||
+        @@ MODELS FOR BANK AND OTHER FINANCIAL JobDetails @@    ||
 -------------------------------------------------
 """
 
-class AllBankJobs(models.Model):
-    bankjobs_id       = models.AutoField(primary_key=True)
+class AllBankJobDetails(models.Model):
+    bankJobDetails_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -617,11 +617,11 @@ class AllBankJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "All Bank Jobs"
+        return "All Bank JobDetails"
 
 
-class OtherFinancialJobs(models.Model):
-    financialjobs_id  = models.AutoField(primary_key=True)
+class OtherFinancialJobDetails(models.Model):
+    financialJobDetails_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -633,17 +633,17 @@ class OtherFinancialJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Other Financial Jobs"
+        return "Other Financial JobDetails"
 
 
 """
 -------------------------------------------------
-        @@ MODELS FOR SATE WISE TEACHING JOBS @@    ||
+        @@ MODELS FOR SATE WISE TEACHING JobDetails @@    ||
 -------------------------------------------------
 """
 
 
-class AllIndiaTeachingJobs(models.Model):
+class AllIndiaTeachingJobDetails(models.Model):
     all_india_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -656,9 +656,9 @@ class AllIndiaTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AllIndia Teaching Jobs"
+        return "AllIndia Teaching JobDetails"
 
-class AndamanNicoborTeachingJobs(models.Model):
+class AndamanNicoborTeachingJobDetails(models.Model):
     andaman_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -671,9 +671,9 @@ class AndamanNicoborTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AndamanNicobor Teaching Jobs"
+        return "AndamanNicobor Teaching JobDetails"
 
-class AndhraPradeshTeachingJobs(models.Model):
+class AndhraPradeshTeachingJobDetails(models.Model):
     andhra_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -686,9 +686,9 @@ class AndhraPradeshTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AndhraPradesh Teaching Jobs"
+        return "AndhraPradesh Teaching JobDetails"
 
-class ArunachalPradeshTeachingJobs(models.Model):
+class ArunachalPradeshTeachingJobDetails(models.Model):
     arunachal_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -701,9 +701,9 @@ class ArunachalPradeshTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "ArunachalPradesh Teaching Jobs"
+        return "ArunachalPradesh Teaching JobDetails"
 
-class AssamTeachingJobs(models.Model):
+class AssamTeachingJobDetails(models.Model):
     assam_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -716,9 +716,9 @@ class AssamTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Assam Teaching Jobs"
+        return "Assam Teaching JobDetails"
 
-class BiharTeachingJobs(models.Model):
+class BiharTeachingJobDetails(models.Model):
     bihar_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -731,9 +731,9 @@ class BiharTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Bihar Teaching Jobs"
+        return "Bihar Teaching JobDetails"
 
-class ChandigarhTeachingJobs(models.Model):
+class ChandigarhTeachingJobDetails(models.Model):
     chandigarh_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -746,9 +746,9 @@ class ChandigarhTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Chandigarh Teaching Jobs"
+        return "Chandigarh Teaching JobDetails"
 
-class ChhattisgarhTeachingJobs(models.Model):
+class ChhattisgarhTeachingJobDetails(models.Model):
     chhattisgarh_id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -761,9 +761,9 @@ class ChhattisgarhTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Chhattisgarh Teaching Jobs"
+        return "Chhattisgarh Teaching JobDetails"
 
-class DadraNagarHaveliTeachingJobs(models.Model):
+class DadraNagarHaveliTeachingJobDetails(models.Model):
     dadra_nagar_haveli_id = models.AutoField(primary_key=True)
     start_date            = models.CharField(max_length=60)
     last_date             = models.CharField(max_length=60)
@@ -776,10 +776,10 @@ class DadraNagarHaveliTeachingJobs(models.Model):
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "DadraNagarHavelis Teaching Jobs"
+        return "DadraNagarHavelis Teaching JobDetails"
 
-class DamanDiuTeachingJobs(models.Model):
-    DamanDiuTeachingJobs      = models.AutoField(primary_key=True)
+class DamanDiuTeachingJobDetails(models.Model):
+    DamanDiuTeachingJobDetails      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -791,9 +791,9 @@ class DamanDiuTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "DamanDiu Teaching Jobs"
+        return "DamanDiu Teaching JobDetails"
 
-class DelhiTeachingJobs(models.Model):
+class DelhiTeachingJobDetails(models.Model):
     delhi_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -806,9 +806,9 @@ class DelhiTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Delhi Teaching Jobs"
+        return "Delhi Teaching JobDetails"
 
-class GoaTeachingJobs(models.Model):
+class GoaTeachingJobDetails(models.Model):
     goa_id            = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -821,9 +821,9 @@ class GoaTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Goa Teaching Jobs"
+        return "Goa Teaching JobDetails"
 
-class GujuratTeachingJobs(models.Model):
+class GujuratTeachingJobDetails(models.Model):
     gujurat_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -836,9 +836,9 @@ class GujuratTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Gujurat Teaching Jobs"
+        return "Gujurat Teaching JobDetails"
 
-class HaryanaTeachingJobs(models.Model):
+class HaryanaTeachingJobDetails(models.Model):
     haryana_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -851,9 +851,9 @@ class HaryanaTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Haryana Teaching Jobs"
+        return "Haryana Teaching JobDetails"
 
-class HimachalPradeshTeachingJobs(models.Model):
+class HimachalPradeshTeachingJobDetails(models.Model):
     himachal_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -866,9 +866,9 @@ class HimachalPradeshTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "HimachalPradesh Teaching Jobs"
+        return "HimachalPradesh Teaching JobDetails"
 
-class JammuKashmirTeachingJobs(models.Model):
+class JammuKashmirTeachingJobDetails(models.Model):
     jammu_kashmir_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -881,9 +881,9 @@ class JammuKashmirTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "JammuKashmir Teaching Jobs"
+        return "JammuKashmir Teaching JobDetails"
 
-class JharkhandTeachingJobs(models.Model):
+class JharkhandTeachingJobDetails(models.Model):
     jharkhand_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -896,9 +896,9 @@ class JharkhandTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Jharkhand Teaching Jobs"
+        return "Jharkhand Teaching JobDetails"
 
-class KarnatakaTeachingJobs(models.Model):
+class KarnatakaTeachingJobDetails(models.Model):
     karnataka_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -911,9 +911,9 @@ class KarnatakaTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "karnataka Teaching Jobs"
+        return "karnataka Teaching JobDetails"
 
-class KeralaTeachingJobs(models.Model):
+class KeralaTeachingJobDetails(models.Model):
     kerala_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -926,9 +926,9 @@ class KeralaTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Kerala Teaching Jobs"
+        return "Kerala Teaching JobDetails"
 
-class LakshadweepTeachingJobs(models.Model):
+class LakshadweepTeachingJobDetails(models.Model):
     lakshadweep_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -941,9 +941,9 @@ class LakshadweepTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Lakshadweep Teaching Jobs"
+        return "Lakshadweep Teaching JobDetails"
 
-class MadhyaPradeshTeachingJobs(models.Model):
+class MadhyaPradeshTeachingJobDetails(models.Model):
     madhya_pradesh_id = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -956,9 +956,9 @@ class MadhyaPradeshTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "MadhyaPradesh Teaching Jobs"
+        return "MadhyaPradesh Teaching JobDetails"
 
-class MaharashtraTeachingJobs(models.Model):
+class MaharashtraTeachingJobDetails(models.Model):
     maharashtra_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -971,9 +971,9 @@ class MaharashtraTeachingJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Maharashtra Teaching Jobs"
+        return "Maharashtra Teaching JobDetails"
 
-class ManipurTeachingJobs(models.Model):
+class ManipurTeachingJobDetails(models.Model):
     manipur_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -986,9 +986,9 @@ class ManipurTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Manipur Teaching Jobs"
+        return "Manipur Teaching JobDetails"
 
-class MeghalayaTeachingJobs(models.Model):
+class MeghalayaTeachingJobDetails(models.Model):
     meghalaya_id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1001,9 +1001,9 @@ class MeghalayaTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Meghalaya Teaching Jobs"
+        return "Meghalaya Teaching JobDetails"
 
-class MizoramTeachingJobs(models.Model):
+class MizoramTeachingJobDetails(models.Model):
     mizoram_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1016,9 +1016,9 @@ class MizoramTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Mizoram Teaching Jobs"
+        return "Mizoram Teaching JobDetails"
 
-class NagalandTeachingJobs(models.Model):
+class NagalandTeachingJobDetails(models.Model):
     nagaland_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1031,9 +1031,9 @@ class NagalandTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Nagaland Teaching Jobs"
+        return "Nagaland Teaching JobDetails"
 
-class OdishaTeachingJobs(models.Model):
+class OdishaTeachingJobDetails(models.Model):
     puduchhery_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1046,9 +1046,9 @@ class OdishaTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Puduchhery Teaching Jobs"
+        return "Puduchhery Teaching JobDetails"
 
-class PuduchheryTeachingJobs(models.Model):
+class PuduchheryTeachingJobDetails(models.Model):
     punjab_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1061,9 +1061,9 @@ class PuduchheryTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Punjab Teaching Jobs"
+        return "Punjab Teaching JobDetails"
 
-class PunjabTeachingJobs(models.Model):
+class PunjabTeachingJobDetails(models.Model):
     punjab_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1076,9 +1076,9 @@ class PunjabTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Punjab Teaching Jobs"
+        return "Punjab Teaching JobDetails"
 
-class RajasthanTeachingJobs(models.Model):
+class RajasthanTeachingJobDetails(models.Model):
     rajasthan_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1091,9 +1091,9 @@ class RajasthanTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Rajasthan Teaching Jobs"
+        return "Rajasthan Teaching JobDetails"
 
-class SikkimTeachingJobs(models.Model):
+class SikkimTeachingJobDetails(models.Model):
     sikkim_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1106,9 +1106,9 @@ class SikkimTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Sikkim Teaching Jobs"
+        return "Sikkim Teaching JobDetails"
 
-class TamilNaduTeachingJobs(models.Model):
+class TamilNaduTeachingJobDetails(models.Model):
     tamil_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1121,9 +1121,9 @@ class TamilNaduTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Tamil Teaching Jobs"
+        return "Tamil Teaching JobDetails"
 
-class TelanganaTeachingJobs(models.Model):
+class TelanganaTeachingJobDetails(models.Model):
     telangana_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1136,9 +1136,9 @@ class TelanganaTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Telangana Teaching Jobs"
+        return "Telangana Teaching JobDetails"
 
-class TripuraTeachingJobs(models.Model):
+class TripuraTeachingJobDetails(models.Model):
     tripura_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1151,9 +1151,9 @@ class TripuraTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Tripura Teaching Jobs"
+        return "Tripura Teaching JobDetails"
 
-class UttarakhandTeachingJobs(models.Model):
+class UttarakhandTeachingJobDetails(models.Model):
     uttarakhand_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1166,9 +1166,9 @@ class UttarakhandTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Uttarakhand Teaching Jobs"
+        return "Uttarakhand Teaching JobDetails"
 
-class UttarPradeshTeachingJobs(models.Model):
+class UttarPradeshTeachingJobDetails(models.Model):
     uttar_pradesh_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1181,9 +1181,9 @@ class UttarPradeshTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "UttarPradesh Teaching Jobs"
+        return "UttarPradesh Teaching JobDetails"
 
-class WestBengalTeachingJobs(models.Model):
+class WestBengalTeachingJobDetails(models.Model):
     west_bengal_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1196,17 +1196,17 @@ class WestBengalTeachingJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "WestBengal Teaching Jobs"
+        return "WestBengal Teaching JobDetails"
 
 
 """
 -------------------------------------------------
-        @@ MODELS FOR SATE WISE ENGINEERING JOBS @@    ||
+        @@ MODELS FOR SATE WISE ENGINEERING JobDetails @@    ||
 -------------------------------------------------
 """
 
 
-class AllIndiaEnggJobs(models.Model):
+class AllIndiaEnggJobDetails(models.Model):
     all_india_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1219,10 +1219,10 @@ class AllIndiaEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AllIndia Engg Jobs"
+        return "AllIndia Engg JobDetails"
 
 
-class AllIndiaFellowEnggJobs(models.Model):
+class AllIndiaFellowEnggJobDetails(models.Model):
     all_india_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1235,9 +1235,9 @@ class AllIndiaFellowEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AllIndia Fellow Engg Jobs"
+        return "AllIndia Fellow Engg JobDetails"
 
-class AndamanNicoborEnggJobs(models.Model):
+class AndamanNicoborEnggJobDetails(models.Model):
     andaman_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1250,9 +1250,9 @@ class AndamanNicoborEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AndamanNicobor Engg Jobs"
+        return "AndamanNicobor Engg JobDetails"
 
-class AndhraPradeshEnggJobs(models.Model):
+class AndhraPradeshEnggJobDetails(models.Model):
     andhra_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1265,9 +1265,9 @@ class AndhraPradeshEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "AndhraPradesh Engg Jobs"
+        return "AndhraPradesh Engg JobDetails"
 
-class ArunachalPradeshEnggJobs(models.Model):
+class ArunachalPradeshEnggJobDetails(models.Model):
     arunachal_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1280,9 +1280,9 @@ class ArunachalPradeshEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "ArunachalPradesh Engg Jobs"
+        return "ArunachalPradesh Engg JobDetails"
 
-class AssamEnggJobs(models.Model):
+class AssamEnggJobDetails(models.Model):
     assam_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1295,9 +1295,9 @@ class AssamEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Assam Engg Jobs"
+        return "Assam Engg JobDetails"
 
-class BiharEnggJobs(models.Model):
+class BiharEnggJobDetails(models.Model):
     bihar_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1310,9 +1310,9 @@ class BiharEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Bihar Engg Jobs"
+        return "Bihar Engg JobDetails"
 
-class ChandigarhEnggJobs(models.Model):
+class ChandigarhEnggJobDetails(models.Model):
     chandigarh_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1325,9 +1325,9 @@ class ChandigarhEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Chandigarh Engg Jobs"
+        return "Chandigarh Engg JobDetails"
 
-class ChhattisgarhEnggJobs(models.Model):
+class ChhattisgarhEnggJobDetails(models.Model):
     chhattisgarh_id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1340,9 +1340,9 @@ class ChhattisgarhEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Chhattisgarh Engg Jobs"
+        return "Chhattisgarh Engg JobDetails"
 
-class DadraNagarHaveliEnggJobs(models.Model):
+class DadraNagarHaveliEnggJobDetails(models.Model):
     dadra_nagar_haveli_id = models.AutoField(primary_key=True)
     start_date            = models.CharField(max_length=60)
     last_date             = models.CharField(max_length=60)
@@ -1355,10 +1355,10 @@ class DadraNagarHaveliEnggJobs(models.Model):
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "DadraNagarHavelis Engg Jobs"
+        return "DadraNagarHavelis Engg JobDetails"
 
-class DamanDiuEnggJobs(models.Model):
-    DamanDiuEnggJobs      = models.AutoField(primary_key=True)
+class DamanDiuEnggJobDetails(models.Model):
+    DamanDiuEnggJobDetails      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1370,9 +1370,9 @@ class DamanDiuEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "DamanDiu Engg Jobs"
+        return "DamanDiu Engg JobDetails"
 
-class DelhiEnggJobs(models.Model):
+class DelhiEnggJobDetails(models.Model):
     delhi_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1385,9 +1385,9 @@ class DelhiEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Delhi Engg Jobs"
+        return "Delhi Engg JobDetails"
 
-class GoaEnggJobs(models.Model):
+class GoaEnggJobDetails(models.Model):
     goa_id            = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1400,9 +1400,9 @@ class GoaEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Goa Engg Jobs"
+        return "Goa Engg JobDetails"
 
-class GujuratEnggJobs(models.Model):
+class GujuratEnggJobDetails(models.Model):
     gujurat_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1415,9 +1415,9 @@ class GujuratEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Gujurat Engg Jobs"
+        return "Gujurat Engg JobDetails"
 
-class HaryanaEnggJobs(models.Model):
+class HaryanaEnggJobDetails(models.Model):
     haryana_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1430,9 +1430,9 @@ class HaryanaEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Haryana Engg Jobs"
+        return "Haryana Engg JobDetails"
 
-class HimachalPradeshEnggJobs(models.Model):
+class HimachalPradeshEnggJobDetails(models.Model):
     himachal_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1445,9 +1445,9 @@ class HimachalPradeshEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "HimachalPradesh Engg Jobs"
+        return "HimachalPradesh Engg JobDetails"
 
-class JammuKashmirEnggJobs(models.Model):
+class JammuKashmirEnggJobDetails(models.Model):
     jammu_kashmir_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1460,9 +1460,9 @@ class JammuKashmirEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "JammuKashmir Engg Jobs"
+        return "JammuKashmir Engg JobDetails"
 
-class JharkhandEnggJobs(models.Model):
+class JharkhandEnggJobDetails(models.Model):
     jharkhand_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1475,9 +1475,9 @@ class JharkhandEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Jharkhand Engg Jobs"
+        return "Jharkhand Engg JobDetails"
 
-class KarnatakaEnggJobs(models.Model):
+class KarnatakaEnggJobDetails(models.Model):
     karnataka_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1490,9 +1490,9 @@ class KarnatakaEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "karnataka Engg Jobs"
+        return "karnataka Engg JobDetails"
 
-class KeralaEnggJobs(models.Model):
+class KeralaEnggJobDetails(models.Model):
     kerala_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1505,9 +1505,9 @@ class KeralaEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Kerala Engg Jobs"
+        return "Kerala Engg JobDetails"
 
-class LakshadweepEnggJobs(models.Model):
+class LakshadweepEnggJobDetails(models.Model):
     lakshadweep_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1520,9 +1520,9 @@ class LakshadweepEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Lakshadweep Engg Jobs"
+        return "Lakshadweep Engg JobDetails"
 
-class MadhyaPradeshEnggJobs(models.Model):
+class MadhyaPradeshEnggJobDetails(models.Model):
     madhya_pradesh_id = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1535,9 +1535,9 @@ class MadhyaPradeshEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "MadhyaPradesh Engg Jobs"
+        return "MadhyaPradesh Engg JobDetails"
 
-class MaharashtraEnggJobs(models.Model):
+class MaharashtraEnggJobDetails(models.Model):
     maharashtra_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1550,9 +1550,9 @@ class MaharashtraEnggJobs(models.Model):
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Maharashtra Engg Jobs"
+        return "Maharashtra Engg JobDetails"
 
-class ManipurEnggJobs(models.Model):
+class ManipurEnggJobDetails(models.Model):
     manipur_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1565,9 +1565,9 @@ class ManipurEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Manipur Engg Jobs"
+        return "Manipur Engg JobDetails"
 
-class MeghalayaEnggJobs(models.Model):
+class MeghalayaEnggJobDetails(models.Model):
     meghalaya_id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1580,9 +1580,9 @@ class MeghalayaEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Meghalaya Engg Jobs"
+        return "Meghalaya Engg JobDetails"
 
-class MizoramEnggJobs(models.Model):
+class MizoramEnggJobDetails(models.Model):
     mizoram_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1595,9 +1595,9 @@ class MizoramEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Mizoram Engg Jobs"
+        return "Mizoram Engg JobDetails"
 
-class NagalandEnggJobs(models.Model):
+class NagalandEnggJobDetails(models.Model):
     nagaland_id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1610,9 +1610,9 @@ class NagalandEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Nagaland Engg Jobs"
+        return "Nagaland Engg JobDetails"
 
-class OdishaEnggJobs(models.Model):
+class OdishaEnggJobDetails(models.Model):
     puduchhery_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1625,9 +1625,9 @@ class OdishaEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Puduchhery Engg Jobs"
+        return "Puduchhery Engg JobDetails"
 
-class PuduchheryEnggJobs(models.Model):
+class PuduchheryEnggJobDetails(models.Model):
     punjab_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1640,9 +1640,9 @@ class PuduchheryEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Punjab Engg Jobs"
+        return "Punjab Engg JobDetails"
 
-class PunjabEnggJobs(models.Model):
+class PunjabEnggJobDetails(models.Model):
     punjab_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1655,9 +1655,9 @@ class PunjabEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Punjab Engg Jobs"
+        return "Punjab Engg JobDetails"
 
-class RajasthanEnggJobs(models.Model):
+class RajasthanEnggJobDetails(models.Model):
     rajasthan_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1670,9 +1670,9 @@ class RajasthanEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Rajasthan Engg Jobs"
+        return "Rajasthan Engg JobDetails"
 
-class SikkimEnggJobs(models.Model):
+class SikkimEnggJobDetails(models.Model):
     sikkim_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1685,9 +1685,9 @@ class SikkimEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Sikkim Engg Jobs"
+        return "Sikkim Engg JobDetails"
 
-class TamilNaduEnggJobs(models.Model):
+class TamilNaduEnggJobDetails(models.Model):
     tamil_id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1700,9 +1700,9 @@ class TamilNaduEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Tamil Engg Jobs"
+        return "Tamil Engg JobDetails"
 
-class TelanganaEnggJobs(models.Model):
+class TelanganaEnggJobDetails(models.Model):
     telangana_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1715,9 +1715,9 @@ class TelanganaEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Telangana Engg Jobs"
+        return "Telangana Engg JobDetails"
 
-class TripuraEnggJobs(models.Model):
+class TripuraEnggJobDetails(models.Model):
     tripura_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1730,9 +1730,9 @@ class TripuraEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Tripura Engg Jobs"
+        return "Tripura Engg JobDetails"
 
-class UttarakhandEnggJobs(models.Model):
+class UttarakhandEnggJobDetails(models.Model):
     uttarakhand_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1745,9 +1745,9 @@ class UttarakhandEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Uttarakhand Engg Jobs"
+        return "Uttarakhand Engg JobDetails"
 
-class UttarPradeshEnggJobs(models.Model):
+class UttarPradeshEnggJobDetails(models.Model):
     uttar_pradesh_id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1760,9 +1760,9 @@ class UttarPradeshEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "UttarPradesh Engg Jobs"
+        return "UttarPradesh Engg JobDetails"
 
-class WestBengalEnggJobs(models.Model):
+class WestBengalEnggJobDetails(models.Model):
     west_bengal_id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1775,12 +1775,12 @@ class WestBengalEnggJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "WestBengal Engg Jobs"
+        return "WestBengal Engg JobDetails"
 
 
 """
 -------------------------------------------------
-        @@ MODELS FOR RAILWAY JOBS @@    ||
+        @@ MODELS FOR RAILWAY JobDetails @@    ||
 -------------------------------------------------
 """
 
@@ -1798,16 +1798,16 @@ class RailwayJob(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Railway Jobs Jobs"
+        return "Railway JobDetails JobDetails"
 
 
 """
 -------------------------------------------------
-        @@ MODELS FOR POLICE AND DEFENCE JOBS @@    ||
+        @@ MODELS FOR POLICE AND DEFENCE JobDetails @@    ||
 -------------------------------------------------
 """
 
-class StatewisePoliceJobs(models.Model):
+class StatewisePoliceJobDetails(models.Model):
     statewise_police_id = models.AutoField(primary_key=True)
     start_date          = models.CharField(max_length=60)
     last_date           = models.CharField(max_length=60)
@@ -1820,9 +1820,9 @@ class StatewisePoliceJobs(models.Model):
     join_id             = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Statewise Police Jobs"
+        return "Statewise Police JobDetails"
 
-class PoliceAndDefenceJobs(models.Model):
+class PoliceAndDefenceJobDetails(models.Model):
     police_defence_id = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
@@ -1835,4 +1835,4 @@ class PoliceAndDefenceJobs(models.Model):
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
-        return "Police Defence Jobs"
+        return "Police Defence JobDetails"
