@@ -2,12 +2,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from .models import (
-                        UpscJobs,SscJobs,OtherAllIndiaJobs,
-                        OdishGovtJobs,AndamanNicoborGovtJobs,AndhraPradeshGovtJobs,
-                        ArunachalPradeshGovernmentjobs,AssamGovtJobs,
-                        BiharGovtJobs,ChandigarhGovtJobs,ChhattisgarhGovtJobs
-                      )
-
+            UpscJobs,SscJobs,OtherAllIndiaJobs,
+            OdishGovtJobs,AndamanNicoborGovtJobs,AndhraPradeshGovtJobs,
+            ArunachalPradeshGovernmentjobs,AssamGovtJobs,
+            BiharGovtJobs,ChandigarhGovtJobs,ChhattisgarhGovtJobs
+                    )
 
 """
 Scrapping imports
@@ -78,7 +77,7 @@ class AllIndiaGovtJobs:
                     start_date=dict["start_date"],last_date=dict["last_date"],
                     post_name=dict["post_name"],education=dict["education"],
                     more_info=dict["more_info"],type=dict["type"],
-                    job_id=dict["job_id"],join_id=randint(99999, 999999)
+                    job_id=dict["job_id"],join_id=join_id
                 )
             lst.append(dict.copy())
         dict2["upsc"] = lst
