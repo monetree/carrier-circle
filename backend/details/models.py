@@ -26,10 +26,10 @@ class SscJobDetails(models.Model):
         return "Ssc JobDetails"
 
 class OtherAllIndiaJobDetails(models.Model):
-    other_all_india_id = models.AutoField(primary_key=True)
-    other_all_india    = models.OneToOneField(scrap_models.OtherAllIndiaJobs,on_delete=models.CASCADE,related_name='all_india_details')
-    more_info          = models.TextField()
-    join_id            = models.IntegerField(default=None,blank=True,null=True)
+    other_all_india_details_id = models.AutoField(primary_key=True)
+    other_all_india            = models.OneToOneField(scrap_models.OtherAllIndiaJobs,on_delete=models.CASCADE,related_name='all_india_details')
+    more_info                  = models.TextField()
+    join_id                    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Other All India JobDetails"
