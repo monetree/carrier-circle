@@ -1,5 +1,6 @@
 
 from django.db import models
+from scrap import models as scrap_models
 """
 -------------------------------------------------
         @@ MODELS FOR ALL INDIA GOVT JobDetails @@    ||
