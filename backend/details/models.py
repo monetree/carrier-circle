@@ -62,14 +62,7 @@ class AndamanNicoborGovtJobDetails(models.Model):
 
 class AndhraPradeshGovtJobDetails(models.Model):
     andhra_id         = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -77,14 +70,7 @@ class AndhraPradeshGovtJobDetails(models.Model):
 
 class ArunachalPradeshGovernmentJobDetails(models.Model):
     arunachal_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -92,14 +78,7 @@ class ArunachalPradeshGovernmentJobDetails(models.Model):
 
 class AssamGovtJobDetails(models.Model):
     assam_id          = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -107,14 +86,7 @@ class AssamGovtJobDetails(models.Model):
 
 class BiharGovtJobDetails(models.Model):
     bihar_id          = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -122,14 +94,7 @@ class BiharGovtJobDetails(models.Model):
 
 class ChandigarhGovtJobDetails(models.Model):
     chandigarh_id     = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -137,14 +102,7 @@ class ChandigarhGovtJobDetails(models.Model):
 
 class ChhattisgarhGovtJobDetails(models.Model):
     chhattisgarh_id   = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -152,14 +110,7 @@ class ChhattisgarhGovtJobDetails(models.Model):
 
 class DadraNagarHaveliGovtJobDetails(models.Model):
     dadra_nagar_haveli_id = models.AutoField(primary_key=True)
-    start_date            = models.CharField(max_length=60)
-    last_date             = models.CharField(max_length=60)
-    post_name             = models.CharField(max_length=255)
-    education             = models.CharField(max_length=255)
     more_info             = models.TextField()
-    requirement_board     = models.CharField(max_length=255)
-    type                  = models.IntegerField()
-    job_id                = models.IntegerField(default=None,blank=True,null=True)
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -167,14 +118,7 @@ class DadraNagarHaveliGovtJobDetails(models.Model):
 
 class DamanDiuGovtJobDetails(models.Model):
     daman_diu_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -182,14 +126,7 @@ class DamanDiuGovtJobDetails(models.Model):
 
 class DelhiGovtJobDetails(models.Model):
     delhi_id         = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -197,14 +134,7 @@ class DelhiGovtJobDetails(models.Model):
 
 class GoaGovernmentJobDetails(models.Model):
     goa_id            = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -212,14 +142,7 @@ class GoaGovernmentJobDetails(models.Model):
 
 class GujuratGovtJobDetails(models.Model):
     gujurat_id        = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -227,14 +150,7 @@ class GujuratGovtJobDetails(models.Model):
 
 class HaryanaGovtJobDetails(models.Model):
     haryana_id          = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -242,14 +158,7 @@ class HaryanaGovtJobDetails(models.Model):
 
 class HimachalPradeshGovtJobDetails(models.Model):
     himachal_id       = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -257,14 +166,7 @@ class HimachalPradeshGovtJobDetails(models.Model):
 
 class JammuKashmirGovtJobDetails(models.Model):
     jammu_kashmir_id  = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -272,14 +174,7 @@ class JammuKashmirGovtJobDetails(models.Model):
 
 class JharkhandGovtJobDetails(models.Model):
     jharkhand_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -287,14 +182,7 @@ class JharkhandGovtJobDetails(models.Model):
 
 class KarnatakaGovtJobDetails(models.Model):
     karnataka_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -302,14 +190,7 @@ class KarnatakaGovtJobDetails(models.Model):
 
 class KeralaGovtJobDetails(models.Model):
     kerala_id         = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -317,14 +198,7 @@ class KeralaGovtJobDetails(models.Model):
 
 class LakshadweepGovernmentJobDetails(models.Model):
     lakshadweep_id    = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -332,14 +206,7 @@ class LakshadweepGovernmentJobDetails(models.Model):
 
 class MadhyaPradeshGovtJobDetails(models.Model):
     madhya_pradesh_id = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -347,14 +214,7 @@ class MadhyaPradeshGovtJobDetails(models.Model):
 
 class MaharashtraGovtJobDetails(models.Model):
     maharashtra_id    = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id     = models.IntegerField(default=None,blank=True,null=True)
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -362,14 +222,7 @@ class MaharashtraGovtJobDetails(models.Model):
 
 class ManipurGovtJobDetails(models.Model):
     manipur_id        = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -377,14 +230,7 @@ class ManipurGovtJobDetails(models.Model):
 
 class MeghalayaGovtJobDetails(models.Model):
     meghalaya_id   = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -392,14 +238,7 @@ class MeghalayaGovtJobDetails(models.Model):
 
 class MizoramGovtJobDetails(models.Model):
     mizoram_id        = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -407,14 +246,7 @@ class MizoramGovtJobDetails(models.Model):
 
 class NagalandGovtJobDetails(models.Model):
     nagaland_id       = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -422,14 +254,7 @@ class NagalandGovtJobDetails(models.Model):
 
 class PuduchheryGovtJobDetails(models.Model):
     puduchhery_id     = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -437,14 +262,7 @@ class PuduchheryGovtJobDetails(models.Model):
 
 class PunjabGovernmentJobDetails(models.Model):
     punjab_id         = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -452,14 +270,7 @@ class PunjabGovernmentJobDetails(models.Model):
 
 class RajasthanGovtJobDetails(models.Model):
     rajasthan_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -467,14 +278,7 @@ class RajasthanGovtJobDetails(models.Model):
 
 class SikkimGovtJobDetails(models.Model):
     sikkim_id          = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -482,14 +286,7 @@ class SikkimGovtJobDetails(models.Model):
 
 class TamilGovtJobDetails(models.Model):
     tamil_id          = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -497,14 +294,7 @@ class TamilGovtJobDetails(models.Model):
 
 class TelanganaGovtJobDetails(models.Model):
     telangana_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -512,14 +302,7 @@ class TelanganaGovtJobDetails(models.Model):
 
 class TripuraGovtJobDetails(models.Model):
     tripura_id        = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -527,14 +310,7 @@ class TripuraGovtJobDetails(models.Model):
 
 class UttarakhandGovtJobDetails(models.Model):
     uttarakhand_id    = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -542,14 +318,7 @@ class UttarakhandGovtJobDetails(models.Model):
 
 class UttarPradeshGovtJobDetails(models.Model):
     uttar_pradesh_id  = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -557,14 +326,7 @@ class UttarPradeshGovtJobDetails(models.Model):
 
 class WestBengalGovtJobDetails(models.Model):
     west_bengal_id    = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
-    requirement_board = models.CharField(max_length=255)
-    type              = models.IntegerField()
-    job_id            = models.IntegerField(default=None,blank=True,null=True)
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
