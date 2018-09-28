@@ -10,13 +10,7 @@ from scrap import models as scrap_models
 class UpscJobDetails(models.Model):
     upsc_details_id = models.AutoField(primary_key=True)
     upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
-    start_date      = models.CharField(max_length=60)
-    last_date       = models.CharField(max_length=60)
-    post_name       = models.CharField(max_length=255)
-    education       = models.CharField(max_length=255)
     more_info       = models.TextField()
-    type            = models.IntegerField()
-    job_id          = models.IntegerField(default=None,blank=True,null=True)
     join_id         = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
@@ -25,13 +19,7 @@ class UpscJobDetails(models.Model):
 class SscJobDetails(models.Model):
     ssc_details_id = models.AutoField(primary_key=True)
     ssc            = models.OneToOneField(scrap_models.SscJobs,on_delete=models.CASCADE,related_name='ssc_details')
-    start_date     = models.CharField(max_length=60)
-    last_date      = models.CharField(max_length=60)
-    post_name      = models.CharField(max_length=255)
-    education      = models.CharField(max_length=255)
     more_info      = models.TextField()
-    type           = models.IntegerField()
-    job_id         = models.IntegerField(default=None,blank=True,null=True)
     join_id        = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
