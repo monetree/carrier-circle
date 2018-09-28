@@ -62,6 +62,7 @@ class AndamanNicoborGovtJobDetails(models.Model):
 
 class AndhraPradeshGovtJobDetails(models.Model):
     andhra_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -70,6 +71,7 @@ class AndhraPradeshGovtJobDetails(models.Model):
 
 class ArunachalPradeshGovernmentJobDetails(models.Model):
     arunachal_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -78,6 +80,7 @@ class ArunachalPradeshGovernmentJobDetails(models.Model):
 
 class AssamGovtJobDetails(models.Model):
     assam_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -86,6 +89,7 @@ class AssamGovtJobDetails(models.Model):
 
 class BiharGovtJobDetails(models.Model):
     bihar_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -94,6 +98,7 @@ class BiharGovtJobDetails(models.Model):
 
 class ChandigarhGovtJobDetails(models.Model):
     chandigarh_details_id    = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -102,6 +107,7 @@ class ChandigarhGovtJobDetails(models.Model):
 
 class ChhattisgarhGovtJobDetails(models.Model):
     chhattisgarh_details_id  = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -110,6 +116,7 @@ class ChhattisgarhGovtJobDetails(models.Model):
 
 class DadraNagarHaveliGovtJobDetails(models.Model):
     dadra_nagar_haveli_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info             = models.TextField()
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
@@ -118,6 +125,7 @@ class DadraNagarHaveliGovtJobDetails(models.Model):
 
 class DamanDiuGovtJobDetails(models.Model):
     daman_diu_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -126,6 +134,7 @@ class DamanDiuGovtJobDetails(models.Model):
 
 class DelhiGovtJobDetails(models.Model):
     delhi_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -134,6 +143,7 @@ class DelhiGovtJobDetails(models.Model):
 
 class GoaGovernmentJobDetails(models.Model):
     goa_details_id           = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -142,6 +152,7 @@ class GoaGovernmentJobDetails(models.Model):
 
 class GujuratGovtJobDetails(models.Model):
     gujurat_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -150,6 +161,7 @@ class GujuratGovtJobDetails(models.Model):
 
 class HaryanaGovtJobDetails(models.Model):
     haryana_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -158,6 +170,7 @@ class HaryanaGovtJobDetails(models.Model):
 
 class HimachalPradeshGovtJobDetails(models.Model):
     himachal_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -166,6 +179,7 @@ class HimachalPradeshGovtJobDetails(models.Model):
 
 class JammuKashmirGovtJobDetails(models.Model):
     jammu_kashmir_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -174,6 +188,7 @@ class JammuKashmirGovtJobDetails(models.Model):
 
 class JharkhandGovtJobDetails(models.Model):
     jharkhand_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -182,6 +197,7 @@ class JharkhandGovtJobDetails(models.Model):
 
 class KarnatakaGovtJobDetails(models.Model):
     karnataka_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -190,6 +206,7 @@ class KarnatakaGovtJobDetails(models.Model):
 
 class KeralaGovtJobDetails(models.Model):
     kerala_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -198,6 +215,7 @@ class KeralaGovtJobDetails(models.Model):
 
 class LakshadweepGovernmentJobDetails(models.Model):
     lakshadweep_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -206,6 +224,7 @@ class LakshadweepGovernmentJobDetails(models.Model):
 
 class MadhyaPradeshGovtJobDetails(models.Model):
     madhya_pradesh_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -214,6 +233,7 @@ class MadhyaPradeshGovtJobDetails(models.Model):
 
 class MaharashtraGovtJobDetails(models.Model):
     maharashtra_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -222,6 +242,7 @@ class MaharashtraGovtJobDetails(models.Model):
 
 class ManipurGovtJobDetails(models.Model):
     manipur_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -230,6 +251,7 @@ class ManipurGovtJobDetails(models.Model):
 
 class MeghalayaGovtJobDetails(models.Model):
     meghalaya_details_id  = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -238,6 +260,7 @@ class MeghalayaGovtJobDetails(models.Model):
 
 class MizoramGovtJobDetails(models.Model):
     mizoram_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -246,6 +269,7 @@ class MizoramGovtJobDetails(models.Model):
 
 class NagalandGovtJobDetails(models.Model):
     nagaland_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -254,6 +278,7 @@ class NagalandGovtJobDetails(models.Model):
 
 class PuduchheryGovtJobDetails(models.Model):
     puduchhery_details_id    = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -262,6 +287,7 @@ class PuduchheryGovtJobDetails(models.Model):
 
 class PunjabGovernmentJobDetails(models.Model):
     punjab_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -270,6 +296,7 @@ class PunjabGovernmentJobDetails(models.Model):
 
 class RajasthanGovtJobDetails(models.Model):
     rajasthan_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -278,6 +305,7 @@ class RajasthanGovtJobDetails(models.Model):
 
 class SikkimGovtJobDetails(models.Model):
     sikkim_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -286,6 +314,7 @@ class SikkimGovtJobDetails(models.Model):
 
 class TamilGovtJobDetails(models.Model):
     tamil_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -294,6 +323,7 @@ class TamilGovtJobDetails(models.Model):
 
 class TelanganaGovtJobDetails(models.Model):
     telangana_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -302,6 +332,7 @@ class TelanganaGovtJobDetails(models.Model):
 
 class TripuraGovtJobDetails(models.Model):
     tripura_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -310,6 +341,7 @@ class TripuraGovtJobDetails(models.Model):
 
 class UttarakhandGovtJobDetails(models.Model):
     uttarakhand_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -318,6 +350,7 @@ class UttarakhandGovtJobDetails(models.Model):
 
 class UttarPradeshGovtJobDetails(models.Model):
     uttar_pradesh_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -326,6 +359,7 @@ class UttarPradeshGovtJobDetails(models.Model):
 
 class WestBengalGovtJobDetails(models.Model):
     west_bengal_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -341,6 +375,7 @@ class WestBengalGovtJobDetails(models.Model):
 
 class AllBankJobDetails(models.Model):
     bankJobDetails_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -350,6 +385,7 @@ class AllBankJobDetails(models.Model):
 
 class OtherFinancialJobDetails(models.Model):
     financialJobDetails_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -366,6 +402,7 @@ class OtherFinancialJobDetails(models.Model):
 
 class AllIndiaTeachingJobDetails(models.Model):
     all_india_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -374,6 +411,7 @@ class AllIndiaTeachingJobDetails(models.Model):
 
 class AndamanNicoborTeachingJobDetails(models.Model):
     andaman_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -382,6 +420,7 @@ class AndamanNicoborTeachingJobDetails(models.Model):
 
 class AndhraPradeshTeachingJobDetails(models.Model):
     andhra_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -390,6 +429,7 @@ class AndhraPradeshTeachingJobDetails(models.Model):
 
 class ArunachalPradeshTeachingJobDetails(models.Model):
     arunachal_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -398,6 +438,7 @@ class ArunachalPradeshTeachingJobDetails(models.Model):
 
 class AssamTeachingJobDetails(models.Model):
     assam_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -406,6 +447,7 @@ class AssamTeachingJobDetails(models.Model):
 
 class BiharTeachingJobDetails(models.Model):
     bihar_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -414,6 +456,7 @@ class BiharTeachingJobDetails(models.Model):
 
 class ChandigarhTeachingJobDetails(models.Model):
     chandigarh_details_id    = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -422,6 +465,7 @@ class ChandigarhTeachingJobDetails(models.Model):
 
 class ChhattisgarhTeachingJobDetails(models.Model):
     chhattisgarh_details_id  = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -430,6 +474,7 @@ class ChhattisgarhTeachingJobDetails(models.Model):
 
 class DadraNagarHaveliTeachingJobDetails(models.Model):
     dadra_nagar_haveli_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info             = models.TextField()
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
@@ -438,6 +483,7 @@ class DadraNagarHaveliTeachingJobDetails(models.Model):
 
 class DamanDiuTeachingJobDetails(models.Model):
     DamanDiuTeachingJobDetails      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -446,6 +492,7 @@ class DamanDiuTeachingJobDetails(models.Model):
 
 class DelhiTeachingJobDetails(models.Model):
     delhi_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -454,6 +501,7 @@ class DelhiTeachingJobDetails(models.Model):
 
 class GoaTeachingJobDetails(models.Model):
     goa_details_id           = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -462,6 +510,7 @@ class GoaTeachingJobDetails(models.Model):
 
 class GujuratTeachingJobDetails(models.Model):
     gujurat_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -470,6 +519,7 @@ class GujuratTeachingJobDetails(models.Model):
 
 class HaryanaTeachingJobDetails(models.Model):
     haryana_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -478,6 +528,7 @@ class HaryanaTeachingJobDetails(models.Model):
 
 class HimachalPradeshTeachingJobDetails(models.Model):
     himachal_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -486,6 +537,7 @@ class HimachalPradeshTeachingJobDetails(models.Model):
 
 class JammuKashmirTeachingJobDetails(models.Model):
     jammu_kashmir_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -494,6 +546,7 @@ class JammuKashmirTeachingJobDetails(models.Model):
 
 class JharkhandTeachingJobDetails(models.Model):
     jharkhand_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -502,6 +555,7 @@ class JharkhandTeachingJobDetails(models.Model):
 
 class KarnatakaTeachingJobDetails(models.Model):
     karnataka_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -510,6 +564,7 @@ class KarnatakaTeachingJobDetails(models.Model):
 
 class KeralaTeachingJobDetails(models.Model):
     kerala_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -518,6 +573,7 @@ class KeralaTeachingJobDetails(models.Model):
 
 class LakshadweepTeachingJobDetails(models.Model):
     lakshadweep_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -526,6 +582,7 @@ class LakshadweepTeachingJobDetails(models.Model):
 
 class MadhyaPradeshTeachingJobDetails(models.Model):
     madhya_pradesh_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -534,6 +591,7 @@ class MadhyaPradeshTeachingJobDetails(models.Model):
 
 class MaharashtraTeachingJobDetails(models.Model):
     maharashtra_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -542,6 +600,7 @@ class MaharashtraTeachingJobDetails(models.Model):
 
 class ManipurTeachingJobDetails(models.Model):
     manipur_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -550,6 +609,7 @@ class ManipurTeachingJobDetails(models.Model):
 
 class MeghalayaTeachingJobDetails(models.Model):
     meghalaya_details_id  = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -558,6 +618,7 @@ class MeghalayaTeachingJobDetails(models.Model):
 
 class MizoramTeachingJobDetails(models.Model):
     mizoram_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -566,6 +627,7 @@ class MizoramTeachingJobDetails(models.Model):
 
 class NagalandTeachingJobDetails(models.Model):
     nagaland_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -574,6 +636,7 @@ class NagalandTeachingJobDetails(models.Model):
 
 class OdishaTeachingJobDetails(models.Model):
     puduchhery_details_id    = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -582,6 +645,7 @@ class OdishaTeachingJobDetails(models.Model):
 
 class PuduchheryTeachingJobDetails(models.Model):
     punjab_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -590,6 +654,7 @@ class PuduchheryTeachingJobDetails(models.Model):
 
 class PunjabTeachingJobDetails(models.Model):
     punjab_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -598,6 +663,7 @@ class PunjabTeachingJobDetails(models.Model):
 
 class RajasthanTeachingJobDetails(models.Model):
     rajasthan_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -606,6 +672,7 @@ class RajasthanTeachingJobDetails(models.Model):
 
 class SikkimTeachingJobDetails(models.Model):
     sikkim_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -614,6 +681,7 @@ class SikkimTeachingJobDetails(models.Model):
 
 class TamilNaduTeachingJobDetails(models.Model):
     tamil_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -622,6 +690,7 @@ class TamilNaduTeachingJobDetails(models.Model):
 
 class TelanganaTeachingJobDetails(models.Model):
     telangana_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -630,6 +699,7 @@ class TelanganaTeachingJobDetails(models.Model):
 
 class TripuraTeachingJobDetails(models.Model):
     tripura_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -638,6 +708,7 @@ class TripuraTeachingJobDetails(models.Model):
 
 class UttarakhandTeachingJobDetails(models.Model):
     uttarakhand_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -646,6 +717,7 @@ class UttarakhandTeachingJobDetails(models.Model):
 
 class UttarPradeshTeachingJobDetails(models.Model):
     uttar_pradesh_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -654,6 +726,7 @@ class UttarPradeshTeachingJobDetails(models.Model):
 
 class WestBengalTeachingJobDetails(models.Model):
     west_bengal_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -670,6 +743,7 @@ class WestBengalTeachingJobDetails(models.Model):
 
 class AllIndiaEnggJobDetails(models.Model):
     all_india_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -679,6 +753,7 @@ class AllIndiaEnggJobDetails(models.Model):
 
 class AllIndiaFellowEnggJobDetails(models.Model):
     all_india_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -687,6 +762,7 @@ class AllIndiaFellowEnggJobDetails(models.Model):
 
 class AndamanNicoborEnggJobDetails(models.Model):
     andaman_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -695,6 +771,7 @@ class AndamanNicoborEnggJobDetails(models.Model):
 
 class AndhraPradeshEnggJobDetails(models.Model):
     andhra_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -703,6 +780,7 @@ class AndhraPradeshEnggJobDetails(models.Model):
 
 class ArunachalPradeshEnggJobDetails(models.Model):
     arunachal_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -711,6 +789,7 @@ class ArunachalPradeshEnggJobDetails(models.Model):
 
 class AssamEnggJobDetails(models.Model):
     assam_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -719,6 +798,7 @@ class AssamEnggJobDetails(models.Model):
 
 class BiharEnggJobDetails(models.Model):
     bihar_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -727,6 +807,7 @@ class BiharEnggJobDetails(models.Model):
 
 class ChandigarhEnggJobDetails(models.Model):
     chandigarh_details_id    = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -735,6 +816,7 @@ class ChandigarhEnggJobDetails(models.Model):
 
 class ChhattisgarhEnggJobDetails(models.Model):
     chhattisgarh_details_id  = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -743,6 +825,7 @@ class ChhattisgarhEnggJobDetails(models.Model):
 
 class DadraNagarHaveliEnggJobDetails(models.Model):
     dadra_nagar_haveli_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info             = models.TextField()
     join_id               = models.IntegerField(default=None,blank=True,null=True)
 
@@ -751,6 +834,7 @@ class DadraNagarHaveliEnggJobDetails(models.Model):
 
 class DamanDiuEnggJobDetails(models.Model):
     DamanDiuEnggJobDetails      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -759,6 +843,7 @@ class DamanDiuEnggJobDetails(models.Model):
 
 class DelhiEnggJobDetails(models.Model):
     delhi_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -767,6 +852,7 @@ class DelhiEnggJobDetails(models.Model):
 
 class GoaEnggJobDetails(models.Model):
     goa_details_id           = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -775,6 +861,7 @@ class GoaEnggJobDetails(models.Model):
 
 class GujuratEnggJobDetails(models.Model):
     gujurat_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -783,6 +870,7 @@ class GujuratEnggJobDetails(models.Model):
 
 class HaryanaEnggJobDetails(models.Model):
     haryana_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -791,6 +879,7 @@ class HaryanaEnggJobDetails(models.Model):
 
 class HimachalPradeshEnggJobDetails(models.Model):
     himachal_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -799,6 +888,7 @@ class HimachalPradeshEnggJobDetails(models.Model):
 
 class JammuKashmirEnggJobDetails(models.Model):
     jammu_kashmir_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -807,6 +897,7 @@ class JammuKashmirEnggJobDetails(models.Model):
 
 class JharkhandEnggJobDetails(models.Model):
     jharkhand_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -815,6 +906,7 @@ class JharkhandEnggJobDetails(models.Model):
 
 class KarnatakaEnggJobDetails(models.Model):
     karnataka_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -823,6 +915,7 @@ class KarnatakaEnggJobDetails(models.Model):
 
 class KeralaEnggJobDetails(models.Model):
     kerala_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -831,6 +924,7 @@ class KeralaEnggJobDetails(models.Model):
 
 class LakshadweepEnggJobDetails(models.Model):
     lakshadweep_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -839,6 +933,7 @@ class LakshadweepEnggJobDetails(models.Model):
 
 class MadhyaPradeshEnggJobDetails(models.Model):
     madhya_pradesh_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -847,6 +942,7 @@ class MadhyaPradeshEnggJobDetails(models.Model):
 
 class MaharashtraEnggJobDetails(models.Model):
     maharashtra_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
 
@@ -855,6 +951,7 @@ class MaharashtraEnggJobDetails(models.Model):
 
 class ManipurEnggJobDetails(models.Model):
     manipur_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -863,6 +960,7 @@ class ManipurEnggJobDetails(models.Model):
 
 class MeghalayaEnggJobDetails(models.Model):
     meghalaya_details_id  = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -871,6 +969,7 @@ class MeghalayaEnggJobDetails(models.Model):
 
 class MizoramEnggJobDetails(models.Model):
     mizoram_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -879,6 +978,7 @@ class MizoramEnggJobDetails(models.Model):
 
 class NagalandEnggJobDetails(models.Model):
     nagaland_details_id      = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -887,6 +987,7 @@ class NagalandEnggJobDetails(models.Model):
 
 class OdishaEnggJobDetails(models.Model):
     puduchhery_details_id    = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -895,6 +996,7 @@ class OdishaEnggJobDetails(models.Model):
 
 class PuduchheryEnggJobDetails(models.Model):
     punjab_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -903,6 +1005,7 @@ class PuduchheryEnggJobDetails(models.Model):
 
 class PunjabEnggJobDetails(models.Model):
     punjab_details_id        = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -911,6 +1014,7 @@ class PunjabEnggJobDetails(models.Model):
 
 class RajasthanEnggJobDetails(models.Model):
     rajasthan_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -919,6 +1023,7 @@ class RajasthanEnggJobDetails(models.Model):
 
 class SikkimEnggJobDetails(models.Model):
     sikkim_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -927,6 +1032,7 @@ class SikkimEnggJobDetails(models.Model):
 
 class TamilNaduEnggJobDetails(models.Model):
     tamil_details_id         = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -935,6 +1041,7 @@ class TamilNaduEnggJobDetails(models.Model):
 
 class TelanganaEnggJobDetails(models.Model):
     telangana_details_id     = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -943,6 +1050,7 @@ class TelanganaEnggJobDetails(models.Model):
 
 class TripuraEnggJobDetails(models.Model):
     tripura_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -951,6 +1059,7 @@ class TripuraEnggJobDetails(models.Model):
 
 class UttarakhandEnggJobDetails(models.Model):
     uttarakhand_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -959,6 +1068,7 @@ class UttarakhandEnggJobDetails(models.Model):
 
 class UttarPradeshEnggJobDetails(models.Model):
     uttar_pradesh_details_id = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -967,6 +1077,7 @@ class UttarPradeshEnggJobDetails(models.Model):
 
 class WestBengalEnggJobDetails(models.Model):
     west_bengal_details_id   = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -983,6 +1094,7 @@ class WestBengalEnggJobDetails(models.Model):
 
 class RailwayJob(models.Model):
     railway_details_id       = models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
@@ -998,6 +1110,7 @@ class RailwayJob(models.Model):
 
 class StatewisePoliceJobDetails(models.Model):
     statewise_police_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info           = models.TextField()
     join_id             = models.IntegerField(default=None,blank=True,null=True)
 
@@ -1006,6 +1119,7 @@ class StatewisePoliceJobDetails(models.Model):
 
 class PoliceAndDefenceJobDetails(models.Model):
     police_defence_details_id= models.AutoField(primary_key=True)
+    upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
 
