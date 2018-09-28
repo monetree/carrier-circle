@@ -11,7 +11,7 @@ class UpscJobDetails(models.Model):
     upsc_details_id= models.AutoField(primary_key=True)
     upsc            = models.OneToOneField(scrap_models.UpscJobs,on_delete=models.CASCADE,related_name='upsc_details')
     more_info       = models.TextField()
-    join_ids         = models.IntegerField(default=None,blank=True,null=True)
+    join_id         = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Upsc JobDetails"
@@ -20,7 +20,7 @@ class SscJobDetails(models.Model):
     ssc_details_id= models.AutoField(primary_key=True)
     ssc            = models.OneToOneField(scrap_models.SscJobs,on_delete=models.CASCADE,related_name='ssc_details')
     more_info      = models.TextField()
-    join_ids        = models.IntegerField(default=None,blank=True,null=True)
+    join_id        = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Ssc JobDetails"
@@ -29,7 +29,7 @@ class OtherAllIndiaJobDetails(models.Model):
     other_all_india_details_id= models.AutoField(primary_key=True)
     other_all_india            = models.OneToOneField(scrap_models.OtherAllIndiaJobs,on_delete=models.CASCADE,related_name='all_india_details')
     more_info                  = models.TextField()
-    join_ids                    = models.IntegerField(default=None,blank=True,null=True)
+    join_id                    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Other All India JobDetails"
@@ -46,7 +46,7 @@ class OdishaGovtJobDetails(models.Model):
     odisha_details_id= models.AutoField(primary_key=True)
     odisha            = models.OneToOneField(scrap_models.OdishaGovtJobs,on_delete=models.CASCADE,related_name='odisha_details')
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Odisha Govt JobDetails"
@@ -55,7 +55,7 @@ class AndamanNicoborGovtJobDetails(models.Model):
     andaman_details_id= models.AutoField(primary_key=True)
     andaman            = models.OneToOneField(scrap_models.AndamanNicoborGovtJobs,on_delete=models.CASCADE,related_name='andaman_details')
     more_info          = models.TextField()
-    join_ids            = models.IntegerField(default=None,blank=True,null=True)
+    join_id            = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AndamanNicobor Govt JobDetails"
@@ -63,7 +63,7 @@ class AndamanNicoborGovtJobDetails(models.Model):
 class AndhraPradeshGovtJobDetails(models.Model):
     andhra_details_id        = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AndhraPradesh Govt JobDetails"
@@ -71,7 +71,7 @@ class AndhraPradeshGovtJobDetails(models.Model):
 class ArunachalPradeshGovernmentJobDetails(models.Model):
     arunachal_details_id     = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "ArunachalPradesh Govt JobDetails"
@@ -79,7 +79,7 @@ class ArunachalPradeshGovernmentJobDetails(models.Model):
 class AssamGovtJobDetails(models.Model):
     assam_details_id         = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Assam Govt JobDetails"
@@ -87,7 +87,7 @@ class AssamGovtJobDetails(models.Model):
 class BiharGovtJobDetails(models.Model):
     bihar_details_id         = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Bihar Govt JobDetails"
@@ -95,7 +95,7 @@ class BiharGovtJobDetails(models.Model):
 class ChandigarhGovtJobDetails(models.Model):
     chandigarh_details_id    = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Chandigarh Govt JobDetails"
@@ -103,7 +103,7 @@ class ChandigarhGovtJobDetails(models.Model):
 class ChhattisgarhGovtJobDetails(models.Model):
     chhattisgarh_details_id  = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Chhattisgarh Govt JobDetails"
@@ -111,7 +111,7 @@ class ChhattisgarhGovtJobDetails(models.Model):
 class DadraNagarHaveliGovtJobDetails(models.Model):
     dadra_nagar_haveli_details_id= models.AutoField(primary_key=True)
     more_info             = models.TextField()
-    join_ids               = models.IntegerField(default=None,blank=True,null=True)
+    join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "DadraNagarHavelis Govt JobDetails"
@@ -119,7 +119,7 @@ class DadraNagarHaveliGovtJobDetails(models.Model):
 class DamanDiuGovtJobDetails(models.Model):
     daman_diu_details_id     = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "DamanDiu Govt JobDetails"
@@ -127,7 +127,7 @@ class DamanDiuGovtJobDetails(models.Model):
 class DelhiGovtJobDetails(models.Model):
     delhi_details_id        = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Delhi Govt JobDetails"
@@ -135,7 +135,7 @@ class DelhiGovtJobDetails(models.Model):
 class GoaGovernmentJobDetails(models.Model):
     goa_details_id           = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Goa Govt JobDetails"
@@ -143,7 +143,7 @@ class GoaGovernmentJobDetails(models.Model):
 class GujuratGovtJobDetails(models.Model):
     gujurat_details_id       = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Gujurat Govt JobDetails"
@@ -151,7 +151,7 @@ class GujuratGovtJobDetails(models.Model):
 class HaryanaGovtJobDetails(models.Model):
     haryana_details_id         = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Haryana Govt JobDetails"
@@ -159,7 +159,7 @@ class HaryanaGovtJobDetails(models.Model):
 class HimachalPradeshGovtJobDetails(models.Model):
     himachal_details_id      = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "HimachalPradesh Govt JobDetails"
@@ -167,7 +167,7 @@ class HimachalPradeshGovtJobDetails(models.Model):
 class JammuKashmirGovtJobDetails(models.Model):
     jammu_kashmir_details_id = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "JammuKashmir Govt JobDetails"
@@ -175,7 +175,7 @@ class JammuKashmirGovtJobDetails(models.Model):
 class JharkhandGovtJobDetails(models.Model):
     jharkhand_details_id     = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Jharkhand Govt JobDetails"
@@ -183,7 +183,7 @@ class JharkhandGovtJobDetails(models.Model):
 class KarnatakaGovtJobDetails(models.Model):
     karnataka_details_id     = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "karnataka Govt JobDetails"
@@ -191,7 +191,7 @@ class KarnatakaGovtJobDetails(models.Model):
 class KeralaGovtJobDetails(models.Model):
     kerala_details_id        = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Kerala Govt JobDetails"
@@ -199,7 +199,7 @@ class KeralaGovtJobDetails(models.Model):
 class LakshadweepGovernmentJobDetails(models.Model):
     lakshadweep_details_id   = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Lakshadweep Govt JobDetails"
@@ -207,7 +207,7 @@ class LakshadweepGovernmentJobDetails(models.Model):
 class MadhyaPradeshGovtJobDetails(models.Model):
     madhya_pradesh_details_id= models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "MadhyaPradesh Govt JobDetails"
@@ -215,7 +215,7 @@ class MadhyaPradeshGovtJobDetails(models.Model):
 class MaharashtraGovtJobDetails(models.Model):
     maharashtra_details_id   = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Maharashtra Govt JobDetails"
@@ -223,7 +223,7 @@ class MaharashtraGovtJobDetails(models.Model):
 class ManipurGovtJobDetails(models.Model):
     manipur_details_id       = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Manipur Govt JobDetails"
@@ -231,7 +231,7 @@ class ManipurGovtJobDetails(models.Model):
 class MeghalayaGovtJobDetails(models.Model):
     meghalaya_details_id  = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Meghalaya Govt JobDetails"
@@ -239,7 +239,7 @@ class MeghalayaGovtJobDetails(models.Model):
 class MizoramGovtJobDetails(models.Model):
     mizoram_details_id       = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Mizoram Govt JobDetails"
@@ -247,7 +247,7 @@ class MizoramGovtJobDetails(models.Model):
 class NagalandGovtJobDetails(models.Model):
     nagaland_details_id      = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Nagaland Govt JobDetails"
@@ -255,7 +255,7 @@ class NagalandGovtJobDetails(models.Model):
 class PuduchheryGovtJobDetails(models.Model):
     puduchhery_details_id    = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Puduchhery Govt JobDetails"
@@ -263,7 +263,7 @@ class PuduchheryGovtJobDetails(models.Model):
 class PunjabGovernmentJobDetails(models.Model):
     punjab_details_id        = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Punjab Govt JobDetails"
@@ -271,7 +271,7 @@ class PunjabGovernmentJobDetails(models.Model):
 class RajasthanGovtJobDetails(models.Model):
     rajasthan_details_id     = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Rajasthan Govt JobDetails"
@@ -279,7 +279,7 @@ class RajasthanGovtJobDetails(models.Model):
 class SikkimGovtJobDetails(models.Model):
     sikkim_details_id         = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Sikkim Govt JobDetails"
@@ -287,7 +287,7 @@ class SikkimGovtJobDetails(models.Model):
 class TamilGovtJobDetails(models.Model):
     tamil_details_id         = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Tamil Govt JobDetails"
@@ -295,7 +295,7 @@ class TamilGovtJobDetails(models.Model):
 class TelanganaGovtJobDetails(models.Model):
     telangana_details_id     = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Telangana Govt JobDetails"
@@ -303,7 +303,7 @@ class TelanganaGovtJobDetails(models.Model):
 class TripuraGovtJobDetails(models.Model):
     tripura_details_id       = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Tripura Govt JobDetails"
@@ -311,7 +311,7 @@ class TripuraGovtJobDetails(models.Model):
 class UttarakhandGovtJobDetails(models.Model):
     uttarakhand_details_id   = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Uttarakhand Govt JobDetails"
@@ -319,7 +319,7 @@ class UttarakhandGovtJobDetails(models.Model):
 class UttarPradeshGovtJobDetails(models.Model):
     uttar_pradesh_details_id = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "UttarPradesh Govt JobDetails"
@@ -327,7 +327,7 @@ class UttarPradeshGovtJobDetails(models.Model):
 class WestBengalGovtJobDetails(models.Model):
     west_bengal_details_id   = models.AutoField(primary_key=True)
     more_info         = models.TextField()
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "WestBengal Govt JobDetails"
@@ -341,15 +341,11 @@ class WestBengalGovtJobDetails(models.Model):
 
 class AllBankJobDetails(models.Model):
     bankJobDetails_details_id      = models.AutoField(primary_key=True)
-    start_date        = models.CharField(max_length=60)
-    last_date         = models.CharField(max_length=60)
-    post_name         = models.CharField(max_length=255)
-    education         = models.CharField(max_length=255)
     more_info         = models.TextField()
     bank_name         = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "All Bank JobDetails"
@@ -365,7 +361,7 @@ class OtherFinancialJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Other Financial JobDetails"
@@ -388,7 +384,7 @@ class AllIndiaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AllIndia Teaching JobDetails"
@@ -403,7 +399,7 @@ class AndamanNicoborTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AndamanNicobor Teaching JobDetails"
@@ -418,7 +414,7 @@ class AndhraPradeshTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AndhraPradesh Teaching JobDetails"
@@ -433,7 +429,7 @@ class ArunachalPradeshTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "ArunachalPradesh Teaching JobDetails"
@@ -448,7 +444,7 @@ class AssamTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Assam Teaching JobDetails"
@@ -463,7 +459,7 @@ class BiharTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Bihar Teaching JobDetails"
@@ -478,7 +474,7 @@ class ChandigarhTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Chandigarh Teaching JobDetails"
@@ -493,7 +489,7 @@ class ChhattisgarhTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Chhattisgarh Teaching JobDetails"
@@ -508,7 +504,7 @@ class DadraNagarHaveliTeachingJobDetails(models.Model):
     requirement_board     = models.CharField(max_length=255)
     type                  = models.IntegerField()
     job_details_id               = models.IntegerField(default=None,blank=True,null=True)
-    join_ids               = models.IntegerField(default=None,blank=True,null=True)
+    join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "DadraNagarHavelis Teaching JobDetails"
@@ -523,7 +519,7 @@ class DamanDiuTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "DamanDiu Teaching JobDetails"
@@ -538,7 +534,7 @@ class DelhiTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Delhi Teaching JobDetails"
@@ -553,7 +549,7 @@ class GoaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Goa Teaching JobDetails"
@@ -568,7 +564,7 @@ class GujuratTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Gujurat Teaching JobDetails"
@@ -583,7 +579,7 @@ class HaryanaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Haryana Teaching JobDetails"
@@ -598,7 +594,7 @@ class HimachalPradeshTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "HimachalPradesh Teaching JobDetails"
@@ -613,7 +609,7 @@ class JammuKashmirTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "JammuKashmir Teaching JobDetails"
@@ -628,7 +624,7 @@ class JharkhandTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Jharkhand Teaching JobDetails"
@@ -643,7 +639,7 @@ class KarnatakaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "karnataka Teaching JobDetails"
@@ -658,7 +654,7 @@ class KeralaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Kerala Teaching JobDetails"
@@ -673,7 +669,7 @@ class LakshadweepTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Lakshadweep Teaching JobDetails"
@@ -688,7 +684,7 @@ class MadhyaPradeshTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "MadhyaPradesh Teaching JobDetails"
@@ -703,7 +699,7 @@ class MaharashtraTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Maharashtra Teaching JobDetails"
@@ -718,7 +714,7 @@ class ManipurTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Manipur Teaching JobDetails"
@@ -733,7 +729,7 @@ class MeghalayaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Meghalaya Teaching JobDetails"
@@ -748,7 +744,7 @@ class MizoramTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Mizoram Teaching JobDetails"
@@ -763,7 +759,7 @@ class NagalandTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Nagaland Teaching JobDetails"
@@ -778,7 +774,7 @@ class OdishaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Puduchhery Teaching JobDetails"
@@ -793,7 +789,7 @@ class PuduchheryTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Punjab Teaching JobDetails"
@@ -808,7 +804,7 @@ class PunjabTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Punjab Teaching JobDetails"
@@ -823,7 +819,7 @@ class RajasthanTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Rajasthan Teaching JobDetails"
@@ -838,7 +834,7 @@ class SikkimTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Sikkim Teaching JobDetails"
@@ -853,7 +849,7 @@ class TamilNaduTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Tamil Teaching JobDetails"
@@ -868,7 +864,7 @@ class TelanganaTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Telangana Teaching JobDetails"
@@ -883,7 +879,7 @@ class TripuraTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Tripura Teaching JobDetails"
@@ -898,7 +894,7 @@ class UttarakhandTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Uttarakhand Teaching JobDetails"
@@ -913,7 +909,7 @@ class UttarPradeshTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "UttarPradesh Teaching JobDetails"
@@ -928,7 +924,7 @@ class WestBengalTeachingJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "WestBengal Teaching JobDetails"
@@ -951,7 +947,7 @@ class AllIndiaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AllIndia Engg JobDetails"
@@ -967,7 +963,7 @@ class AllIndiaFellowEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AllIndia Fellow Engg JobDetails"
@@ -982,7 +978,7 @@ class AndamanNicoborEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AndamanNicobor Engg JobDetails"
@@ -997,7 +993,7 @@ class AndhraPradeshEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "AndhraPradesh Engg JobDetails"
@@ -1012,7 +1008,7 @@ class ArunachalPradeshEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "ArunachalPradesh Engg JobDetails"
@@ -1027,7 +1023,7 @@ class AssamEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Assam Engg JobDetails"
@@ -1042,7 +1038,7 @@ class BiharEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Bihar Engg JobDetails"
@@ -1057,7 +1053,7 @@ class ChandigarhEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Chandigarh Engg JobDetails"
@@ -1072,7 +1068,7 @@ class ChhattisgarhEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Chhattisgarh Engg JobDetails"
@@ -1087,7 +1083,7 @@ class DadraNagarHaveliEnggJobDetails(models.Model):
     requirement_board     = models.CharField(max_length=255)
     type                  = models.IntegerField()
     job_details_id               = models.IntegerField(default=None,blank=True,null=True)
-    join_ids               = models.IntegerField(default=None,blank=True,null=True)
+    join_id               = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "DadraNagarHavelis Engg JobDetails"
@@ -1102,7 +1098,7 @@ class DamanDiuEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "DamanDiu Engg JobDetails"
@@ -1117,7 +1113,7 @@ class DelhiEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Delhi Engg JobDetails"
@@ -1132,7 +1128,7 @@ class GoaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Goa Engg JobDetails"
@@ -1147,7 +1143,7 @@ class GujuratEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Gujurat Engg JobDetails"
@@ -1162,7 +1158,7 @@ class HaryanaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Haryana Engg JobDetails"
@@ -1177,7 +1173,7 @@ class HimachalPradeshEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "HimachalPradesh Engg JobDetails"
@@ -1192,7 +1188,7 @@ class JammuKashmirEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "JammuKashmir Engg JobDetails"
@@ -1207,7 +1203,7 @@ class JharkhandEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Jharkhand Engg JobDetails"
@@ -1222,7 +1218,7 @@ class KarnatakaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "karnataka Engg JobDetails"
@@ -1237,7 +1233,7 @@ class KeralaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Kerala Engg JobDetails"
@@ -1252,7 +1248,7 @@ class LakshadweepEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Lakshadweep Engg JobDetails"
@@ -1267,7 +1263,7 @@ class MadhyaPradeshEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "MadhyaPradesh Engg JobDetails"
@@ -1282,7 +1278,7 @@ class MaharashtraEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id    = models.IntegerField(default=None,blank=True,null=True)
-    join_ids    = models.IntegerField(default=None,blank=True,null=True)
+    join_id    = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Maharashtra Engg JobDetails"
@@ -1297,7 +1293,7 @@ class ManipurEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Manipur Engg JobDetails"
@@ -1312,7 +1308,7 @@ class MeghalayaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Meghalaya Engg JobDetails"
@@ -1327,7 +1323,7 @@ class MizoramEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Mizoram Engg JobDetails"
@@ -1342,7 +1338,7 @@ class NagalandEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Nagaland Engg JobDetails"
@@ -1357,7 +1353,7 @@ class OdishaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Puduchhery Engg JobDetails"
@@ -1372,7 +1368,7 @@ class PuduchheryEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Punjab Engg JobDetails"
@@ -1387,7 +1383,7 @@ class PunjabEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Punjab Engg JobDetails"
@@ -1402,7 +1398,7 @@ class RajasthanEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Rajasthan Engg JobDetails"
@@ -1417,7 +1413,7 @@ class SikkimEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Sikkim Engg JobDetails"
@@ -1432,7 +1428,7 @@ class TamilNaduEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Tamil Engg JobDetails"
@@ -1447,7 +1443,7 @@ class TelanganaEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Telangana Engg JobDetails"
@@ -1462,7 +1458,7 @@ class TripuraEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Tripura Engg JobDetails"
@@ -1477,7 +1473,7 @@ class UttarakhandEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Uttarakhand Engg JobDetails"
@@ -1492,7 +1488,7 @@ class UttarPradeshEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "UttarPradesh Engg JobDetails"
@@ -1507,7 +1503,7 @@ class WestBengalEnggJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "WestBengal Engg JobDetails"
@@ -1530,7 +1526,7 @@ class RailwayJob(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Railway JobDetails JobDetails"
@@ -1552,7 +1548,7 @@ class StatewisePoliceJobDetails(models.Model):
     requirement_board   = models.CharField(max_length=255)
     type                = models.IntegerField()
     job_details_id             = models.IntegerField(default=None,blank=True,null=True)
-    join_ids             = models.IntegerField(default=None,blank=True,null=True)
+    join_id             = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Statewise Police JobDetails"
@@ -1567,7 +1563,7 @@ class PoliceAndDefenceJobDetails(models.Model):
     requirement_board = models.CharField(max_length=255)
     type              = models.IntegerField()
     job_details_id           = models.IntegerField(default=None,blank=True,null=True)
-    join_ids           = models.IntegerField(default=None,blank=True,null=True)
+    join_id           = models.IntegerField(default=None,blank=True,null=True)
 
     def __str__(self):
         return "Police Defence JobDetails"
