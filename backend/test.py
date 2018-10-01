@@ -19,3 +19,10 @@ file = open("output.html","wb")
 for t in tables:
 	print(etree.tostring(t))
 	file.write(etree.tostring(t))
+
+from lxml import html
+
+sample = '<?xml version="1.0" encoding="UTF-8"?><root><a class="asig">I am the correct one.</a><a class="asig drcha">I am the wrong one.</a></root>'
+tree = html.fromstring(sample)
+print tree.xpath("//a[@class='asig']/text()")[0]
+print tree.cssselect("a[class='asig']")[0].text
