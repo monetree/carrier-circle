@@ -25,3 +25,4 @@
 	tree = html.fromstring(sample)
 	print tree.xpath("//a[@class='asig']/text()")[0]
 	print tree.cssselect("a[class='asig']")[0].text
+[a link](https://github.com/user/repo/blob/branch/other_file.md)
