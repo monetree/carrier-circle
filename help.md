@@ -26,6 +26,30 @@
 	print tree.xpath("//a[@class='asig']/text()")[0]
 	print tree.cssselect("a[class='asig']")[0].text
 	
-	
-[How to extract links from a webpage using lxml, XPath and Python?
-](https://stackoverflow.com/questions/2084670/how-to-extract-links-from-a-webpage-using-lxml-xpath-and-python)
+
+	from lxml import html, etree
+	from StringIO import StringIO
+
+	html_string = '''<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	   "http://www.w3.org/TR/html4/loose.dtd">
+
+	<html lang="en">
+	<head/>
+	<body>
+	    <table border="1">
+	      <tbody>
+		<tr>
+		  <td><a href="http://stackoverflow.com/foobar" title="Foobar">A link</a></td>
+		</tr>
+		<tr>
+		  <td><a href="http://stackoverflow.com/baz" title="Baz">Another link</a></td>
+		</tr>
+	      </tbody>
+	    </table>
+	</body>
+	</html>'''
+
+	tree = etree.parse(StringIO(html_string))
+	print tree.xpath('/html/body//tbody/tr/td/a[@title]/@href')
+
+	>>> ['http://stackoverflow.com/foobar', 'http://stackoverflow.com/baz']
