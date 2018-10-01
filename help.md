@@ -29,10 +29,8 @@
 
 	from lxml import html, etree
 	from StringIO import StringIO
-
 	html_string = '''<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	   "http://www.w3.org/TR/html4/loose.dtd">
-
 	<html lang="en">
 	<head/>
 	<body>
@@ -48,8 +46,6 @@
 	    </table>
 	</body>
 	</html>'''
-
 	tree = etree.parse(StringIO(html_string))
 	print tree.xpath('/html/body//tbody/tr/td/a[@title]/@href')
-
 	>>> ['http://stackoverflow.com/foobar', 'http://stackoverflow.com/baz']
