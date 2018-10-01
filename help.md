@@ -25,4 +25,7 @@
 	tree = html.fromstring(sample)
 	print tree.xpath("//a[@class='asig']/text()")[0]
 	print tree.cssselect("a[class='asig']")[0].text
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+	
+	
+[How to extract links from a webpage using lxml, XPath and Python?
+](https://stackoverflow.com/questions/2084670/how-to-extract-links-from-a-webpage-using-lxml-xpath-and-python)
