@@ -1034,7 +1034,7 @@ class NagalandTeachingJobs(models.Model):
         return "Nagaland Teaching Jobs"
 
 class OdishaTeachingJobs(models.Model):
-    puduchhery_id     = models.AutoField(primary_key=True)
+    odisha_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1049,7 +1049,7 @@ class OdishaTeachingJobs(models.Model):
         return "Puduchhery Teaching Jobs"
 
 class PuduchheryTeachingJobs(models.Model):
-    punjab_id         = models.AutoField(primary_key=True)
+    puduchhery_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1223,7 +1223,7 @@ class AllIndiaEnggJobs(models.Model):
 
 
 class AllIndiaFellowEnggJobs(models.Model):
-    all_india_id      = models.AutoField(primary_key=True)
+    all_india_fellow_id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1613,7 +1613,7 @@ class NagalandEnggJobs(models.Model):
         return "Nagaland Engg Jobs"
 
 class OdishaEnggJobs(models.Model):
-    puduchhery_id     = models.AutoField(primary_key=True)
+    odisha_id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1628,7 +1628,7 @@ class OdishaEnggJobs(models.Model):
         return "Puduchhery Engg Jobs"
 
 class PuduchheryEnggJobs(models.Model):
-    punjab_id         = models.AutoField(primary_key=True)
+    puduchhery_id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)

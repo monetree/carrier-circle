@@ -1,61 +1,8 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
-from .models import (
-            #all india govt JobDetails model
-            UpscJobDetails,SscJobDetails,OtherAllIndiaJobDetails,
-            #statewise govt JobDetails model
-            OdishaGovtJobDetails,AndamanNicoborGovtJobDetails,AndhraPradeshGovtJobDetails,
-            ArunachalPradeshGovernmentJobDetails,AssamGovtJobDetails,
-            BiharGovtJobDetails,ChandigarhGovtJobDetails,ChhattisgarhGovtJobDetails,
-            DadraNagarHaveliGovtJobDetails,DamanDiuGovtJobDetails,
-            DelhiGovtJobDetails,GoaGovernmentJobDetails,GujuratGovtJobDetails,
-            HaryanaGovtJobDetails,HimachalPradeshGovtJobDetails,
-            JammuKashmirGovtJobDetails,JharkhandGovtJobDetails,KarnatakaGovtJobDetails,
-            KeralaGovtJobDetails,LakshadweepGovernmentJobDetails,MadhyaPradeshGovtJobDetails,
-            MaharashtraGovtJobDetails,ManipurGovtJobDetails,MeghalayaGovtJobDetails,
-            MizoramGovtJobDetails,NagalandGovtJobDetails,PuduchheryGovtJobDetails,
-            PunjabGovernmentJobDetails,RajasthanGovtJobDetails,SikkimGovtJobDetails,
-            TamilGovtJobDetails,TelanganaGovtJobDetails,TripuraGovtJobDetails,
-            UttarakhandGovtJobDetails,UttarPradeshGovtJobDetails,WestBengalGovtJobDetails,
-            #bank JobDetails model
-            AllBankJobDetails,OtherFinancialJobDetails,
-            #all india teaching JobDetails model
-            AllIndiaTeachingJobDetails,
-            OdishaTeachingJobDetails,AndamanNicoborTeachingJobDetails,AndhraPradeshTeachingJobDetails,
-            ArunachalPradeshTeachingJobDetails,AssamTeachingJobDetails,
-            BiharTeachingJobDetails,ChandigarhTeachingJobDetails,ChhattisgarhTeachingJobDetails,
-            DadraNagarHaveliTeachingJobDetails,DamanDiuTeachingJobDetails,
-            DelhiTeachingJobDetails,GoaTeachingJobDetails,GujuratTeachingJobDetails,
-            HaryanaTeachingJobDetails,HimachalPradeshTeachingJobDetails,
-            JammuKashmirTeachingJobDetails,JharkhandTeachingJobDetails,KarnatakaTeachingJobDetails,
-            KeralaTeachingJobDetails,LakshadweepTeachingJobDetails,MadhyaPradeshTeachingJobDetails,
-            MaharashtraTeachingJobDetails,ManipurTeachingJobDetails,MeghalayaTeachingJobDetails,
-            MizoramTeachingJobDetails,NagalandTeachingJobDetails,PuduchheryTeachingJobDetails,
-            PunjabTeachingJobDetails,RajasthanTeachingJobDetails,SikkimTeachingJobDetails,
-            TamilNaduTeachingJobDetails,TelanganaTeachingJobDetails,TripuraTeachingJobDetails,
-            UttarakhandTeachingJobDetails,UttarPradeshTeachingJobDetails,WestBengalTeachingJobDetails,
-            #all india engineering JobDetails model
-            AllIndiaEnggJobDetails,AllIndiaFellowEnggJobDetails,
-            OdishaEnggJobDetails,AndamanNicoborEnggJobDetails,AndhraPradeshEnggJobDetails,
-            ArunachalPradeshEnggJobDetails,AssamEnggJobDetails,
-            BiharEnggJobDetails,ChandigarhEnggJobDetails,ChhattisgarhEnggJobDetails,
-            DadraNagarHaveliEnggJobDetails,DamanDiuEnggJobDetails,
-            DelhiEnggJobDetails,GoaEnggJobDetails,GujuratEnggJobDetails,
-            HaryanaEnggJobDetails,HimachalPradeshEnggJobDetails,
-            JammuKashmirEnggJobDetails,JharkhandEnggJobDetails,KarnatakaEnggJobDetails,
-            KeralaEnggJobDetails,LakshadweepEnggJobDetails,MadhyaPradeshEnggJobDetails,
-            MaharashtraEnggJobDetails,ManipurEnggJobDetails,MeghalayaEnggJobDetails,
-            MizoramEnggJobDetails,NagalandEnggJobDetails,PuduchheryEnggJobDetails,
-            PunjabEnggJobDetails,RajasthanEnggJobDetails,SikkimEnggJobDetails,
-            TamilNaduEnggJobDetails,TelanganaEnggJobDetails,TripuraEnggJobDetails,
-            UttarakhandEnggJobDetails,UttarPradeshEnggJobDetails,WestBengalEnggJobDetails,
-            #railway JobDetails model
-            RailwayJobDetails,
-            #police & defence JobDetails model,
-            StatewisePoliceJobDetails,PoliceAndDefenceJobDetails,
-            )
-
+from .models import *
+from scrap.models import *
 """
 Scrapping imports
 """
@@ -63,6 +10,11 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from random import randint
+import urllib.request as urllib
+from urllib.request import Request, urlopen, URLError
+from scrapy.selector import Selector
+from scrapy.http import HtmlResponse
+
 """
 ++++++++++++++++
 """
@@ -73,70 +25,46 @@ class AllIndiaGovtJobDetails:
     @ Api for UPSC data...
     """
 
-    def get_upsc(request):
-        #empty model
-        UpscJobDetails.objects.all().delete()
+    def upsc_details(request):
+        response = HtmlResponse(url = 'http://www.freejobalert.com/upsc-advt-no-18/33742/')
+        df=response.css('.title.may-blank::text').extract()
+        print(df)
+
+        upsc = list(UpscJobs.objects.values("upsc_id","join_id","more_info"))
         lst=[]
         lst2=[]
         dict={}
         dict2={}
-        r=requests.get("http://www.freejobalert.com/government-JobDetails/")
-        c=r.content
-        soup=BeautifulSoup(c,"html.parser")
-        all=soup.find_all("table",{"style":"color:#000000; border: 2px solid #006699;border-collapse: collapse; max-width:790px;"})
-        data=all[0].find_all("tr",{"style":"border: 1px solid #000000;"})
-        for i in data:
-            d = i.find_all("td")
-            dict["start_date"] = d[0].text
-            dict["post_name"] = d[1].text
-            dict["education"] = d[2].text
-            dict["last_date"] = d[4].text
-            l=d[5].text
-            if l != "":
-                link = d[5].find("strong").find("a")['href']
-                if link.split(".")[1] == "freejobalert":
-                    dict["more_info"] = d[5].find("strong").find("a")['href']
-                    dict["type"] = 2
-                    link_remove_slash = link.split("/")
-                    link_to_string = (''.join(link_remove_slash))
-                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
-                    if len(job_id) == 5:
-                        dict["job_id"] = int(job_id)
-                    elif len(job_id) == 7:
-                        dict["job_id"] = int(job_id[2::])
-                    else:
-                        dict["job_id"] = None
+        for u in upsc:
+            upsc_id = u["upsc_id"]
+            join_id = u["join_id"]
+            url     = u["more_info"]
+            r=requests.get(url)
+            c=r.content
+            soup=BeautifulSoup(c,"html.parser")
+            table = soup.find_all("table",{"style":"width: 500px;"})
+            if len(table) != 0:
+                title    =table[0].find_all("tr")[0]
+                title_td = title.find_all("td")
 
-                else:
-                    dict["more_info"] = d[5].find("strong").find("a")['href']
-                    dict["type"] = 1
-                    dict["job_id"] = None
-                join_id = randint(99999, 999999)
-                #check the existing of join_id
-                count_join_id = UpscJobDetails.objects.filter(join_id=join_id).count()
-                if count_join_id is not 0:
-                    join_id = join_id + 1
-                pdf_link = re.search(r'.pdf$',link)
-                if pdf_link:
-                    pdf_link_lst=link.split(".")
-                    if "freejobalert" in pdf_link_lst:
-                        dict["type"] = 3
-                #insert into mysql database
-                obj=UpscJobDetails.objects.create(
-                    start_date=dict["start_date"],last_date=dict["last_date"],
-                    post_name=dict["post_name"],education=dict["education"],
-                    more_info=dict["more_info"],type=dict["type"],
-                    job_id=dict["job_id"],join_id=join_id
-                )
-            lst.append(dict.copy())
-        dict2["upsc"] = lst
-        lst2.append(dict2)
-        return JsonResponse(lst2,safe=False)
+                for i in title_td:
+                    d = i.find_all("p")
+                    p0 = d[0]
+                    p2 = d[2]
+
+                    for l in p0:
+                        dict["job_title"] = l.text
+                    for l in p2:
+                        dict["board"] = l.text
+
+                        lst.append(dict.copy())
+
+        return JsonResponse(lst,safe=False)
 
     """
     @ Api for SSC data...
     """
-    def get_ssc(request):
+    def ssc_details(request):
         #empty model
         SscJobDetails.objects.all().delete()
         lst=[]
@@ -198,7 +126,7 @@ class AllIndiaGovtJobDetails:
         """
         @ Api for other All india JobDetails...
         """
-    def get_other_all_india(request):
+    def other_all_india_details(request):
         #empty model
         OtherAllIndiaJobDetails.objects.all().delete()
         lst=[]
@@ -339,7 +267,7 @@ class StateGovtJobDetails:
         api = StateGovtJobDetails.get_all_state("http://www.freejobalert.com/ap-government-JobDetails/","andhra_prtadesh_govt_job_details","AndhraPradeshGovtJobDetails")
         return JsonResponse(api,safe=False)
 
-    def arunachal_pradesh_government_job_details(request):
+    def arunachal_pradesh_govt_job_details(request):
         api = StateGovtJobDetails.get_all_state("http://www.freejobalert.com/arunachal-pradesh-government-JobDetails/","arunachal_pradesh_govt_job_details","ArunachalPradeshGovernmentJobDetails")
         return JsonResponse(api,safe=False)
 
