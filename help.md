@@ -49,3 +49,21 @@
 	tree = etree.parse(StringIO(html_string))
 	print tree.xpath('/html/body//tbody/tr/td/a[@title]/@href')
 	>>> ['http://stackoverflow.com/foobar', 'http://stackoverflow.com/baz']
+
+
+
+
+	import requests
+	from bs4 import BeautifulSoup
+	page = requests.get('http://www.freejobalert.com/upsc-advt-no-18/33742/')
+	c = page.content
+	soup = BeautifulSoup(c,"html.parser")
+	row = soup.find_all('tr')
+	dict = {}
+	for i in row:
+	    for title in i.find_all('span', attrs={
+		'style':'color: #008000;'}):
+		dict['Title'] = title.text
+	    for link in i.find_all('a',attrs={'title':'UPSC'}, href=True):
+		dict['Link'] = link['href']
+		print(dict)
