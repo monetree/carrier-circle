@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 from random import randint
 import urllib.request as urllib
 from urllib.request import Request, urlopen, URLError
-from scrapy.selector import Selector
-from scrapy.http import HtmlResponse
+from lxml import html
+from lxml import etree
 
 """
 ++++++++++++++++
@@ -25,11 +25,11 @@ class AllIndiaGovtJobDetails:
     @ Api for UPSC data...
     """
 
-    def upsc_details(request):
-        response = HtmlResponse(url = 'http://www.freejobalert.com/upsc-advt-no-18/33742/')
-        df=response.css('.title.may-blank::text').extract()
-        print(df)
+    def cleanhtml(raw_html):
+      cleantext = re.sub(r'<.*?>', '', raw_html)
+      return cleantext
 
+    def upsc_details(request):
         upsc = list(UpscJobs.objects.values("upsc_id","join_id","more_info"))
         lst=[]
         lst2=[]
@@ -39,88 +39,64 @@ class AllIndiaGovtJobDetails:
             upsc_id = u["upsc_id"]
             join_id = u["join_id"]
             url     = u["more_info"]
-            r=requests.get(url)
-            c=r.content
-            soup=BeautifulSoup(c,"html.parser")
-            table = soup.find_all("table",{"style":"width: 500px;"})
-            if len(table) != 0:
-                title    =table[0].find_all("tr")[0]
-                title_td = title.find_all("td")
 
-                for i in title_td:
-                    d = i.find_all("p")
-                    p0 = d[0]
-                    p2 = d[2]
+        page = requests.get("http://www.freejobalert.com/upsc-recruitment/16960/#Engg-Services2019")
+        c = page.content
+        soup=BeautifulSoup(c,"html5lib")
+        table=soup.find_all("table")[1]
+        trs = table.find_all("tr")
+        tds = trs[1].find_all("td")[0].find("span").find("strong").text
+        payment = trs[1].find_all("ul")
+        if len(payment) != 0:
+            li = payment[0].find_all("li")
+            for l in li:
+                dict["payment"] = l.text
+                lst.append(dict.copy())
+            dict2["payment_details"] = lst
+            lst2.append(dict2)
+        # important_dates = trs[2].find_all("ul")
+        # if len(important_dates) != 0:
+        #     li = important_dates[0].find_all("li")
+        #     for l in li:
+        #         dict["dates"] = l.text
+        #         lst.append(dict.copy())
+        #     dict2["important_dates"] = lst
+        #     lst2.append(dict2)
 
-                    for l in p0:
-                        dict["job_title"] = l.text
-                    for l in p2:
-                        dict["board"] = l.text
 
-                        lst.append(dict.copy())
 
-        return JsonResponse(lst,safe=False)
+
+        return JsonResponse(lst2,safe=False)
+
+
+            # from lxml import html
+            # from lxml import etree
+            # import requests
+            # page = requests.get('http://www.freejobalert.com/upsc-recruitment/16960/#Engg-Services2019')
+            # tree = html.fromstring(page.content)
+            # tables = tree.xpath('//table[@style="width: 500px;"]')
+            # for t in tables:
+            #     ts = etree.tostring(t)
+            #     lst.append(ts)
+
+
 
     """
     @ Api for SSC data...
     """
     def ssc_details(request):
-        #empty model
-        SscJobDetails.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
         dict2={}
-        r=requests.get("http://www.freejobalert.com/government-JobDetails/")
-        c=r.content
-        soup=BeautifulSoup(c,"html.parser")
-        all=soup.find_all("table",{"style":"color:#000000; border: 2px solid #006699;border-collapse: collapse; max-width:790px;"})
-        data=all[1].find_all("tr",{"style":"border: 1px solid #000000;"})
-        for i in data:
-            d = i.find_all("td")
-            dict["start_date"] = d[0].text
-            dict["post_name"] = d[1].text
-            dict["qualification"] = d[2].text
-            dict["last_date"] = d[4].text
-            l=d[5].text
-            if l != "":
-                link = d[5].find("strong").find("a")['href']
-                if link.split(".")[1] == "freejobalert":
-                    dict["more_info"] = d[5].find("strong").find("a")['href']
-                    dict["type"] = 2
-                    link_remove_slash = link.split("/")
-                    link_to_string = (''.join(link_remove_slash))
-                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
-                    if len(job_id) == 5:
-                        dict["job_id"] = int(job_id)
-                    elif len(job_id) == 7:
-                        dict["job_id"] = int(job_id[2::])
-                    else:
-                        dict["job_id"] = None
-                else:
-                    dict["more_info"] = d[5].find("strong").find("a")['href']
-                    dict["type"] = 1
-                    dict["job_id"] = None
-                join_id = randint(99999, 999999)
-                #check the existing of join_id
-                count_join_id = SscJobDetails.objects.filter(join_id=join_id).count()
-                if count_join_id is not 0:
-                    join_id = join_id + 1
-                pdf_link = re.search(r'.pdf$',link)
-                if pdf_link:
-                    pdf_link_lst=link.split(".")
-                    if "freejobalert" in pdf_link_lst:
-                        dict["type"] = 3
-                #insert into mysql database
-                obj=SscJobDetails.objects.create(
-                    start_date=dict["start_date"],last_date=dict["last_date"],
-                    post_name=dict["post_name"],education=dict["qualification"],
-                    more_info=dict["more_info"],type=dict["type"],
-                    job_id=dict["job_id"],join_id=join_id
-                )
-            lst.append(dict.copy())
-        dict2["ssc"] = lst
-        lst2.append(dict2)
+        ssc_jobs = list(SscJobs.objects.values("ssc_id","type","join_id","more_info"))
+        for ssc in ssc_jobs:
+            if ssc["type"] == 2:
+                url = ssc["more_info"]
+                r=requests.get("http://www.freejobalert.com/government-JobDetails/")
+                c=r.content
+                soup=BeautifulSoup(c,"html.parser")
+
         return JsonResponse(lst2,safe=False)
 
         """
@@ -192,66 +168,24 @@ class AllIndiaGovtJobDetails:
     """
 class StateGovtJobDetails:
     def get_all_state(url,keyword,model_name):
-        #empty model
-        model = eval(model_name)
-        model.objects.all().delete()
         lst=[]
         lst2=[]
         dict={}
         dict2={}
-        r=requests.get(url)
-        c=r.content
-        soup=BeautifulSoup(c,"html.parser")
-        all=soup.find_all("table",{"style":"color:#000000; border: 2px solid #006699;border-collapse: collapse; max-width:790px;"})
-        data=all[0].find_all("tr",{"style":"border: 1px solid #000000;"})
-        for i in data:
-            d = i.find_all("td")
-            dict["start_date"] = d[0].text
-            dict["requirement_board"] = d[1].text
-            dict["post_name"] = d[2].text
-            dict["qualification"] = d[3].text
-            dict["last_date"] = d[5].text
-            l=d[6].text
-            if l != "":
-                link = d[6].find("strong").find("a")['href']
-                if link.split(".")[1] == "freejobalert":
-                    dict["more_info"] = d[6].find("strong").find("a")['href']
-                    dict["type"] = 2
-                    link_remove_slash = link.split("/")
-                    link_to_string = (''.join(link_remove_slash))
-                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
-                    if len(job_id) == 5:
-                        dict["job_id"] = int(job_id)
-                    elif len(job_id) == 7:
-                        dict["job_id"] = int(job_id[2::])
-                    else:
-                        dict["job_id"] = None
-                else:
-                    dict["more_info"] = d[6].find("strong").find("a")['href']
-                    dict["type"] = 1
-                    dict["job_id"] = None
-                join_id = randint(99999, 999999)
-                #check the existing of join_id
-                count_join_id = model.objects.filter(join_id=join_id).count()
-                if count_join_id is not 0:
-                    join_id = join_id + 1
-                pdf_link = re.search(r'.pdf$',link)
-                if pdf_link:
-                    pdf_link_lst=link.split(".")
-                    if "freejobalert" in pdf_link_lst:
-                        dict["type"] = 3
-                #insert into mysql database
-                obj = model.objects.create(
-                    start_date=dict["start_date"],last_date=dict["last_date"],
-                    post_name=dict["post_name"],education=dict["qualification"],
-                    more_info=dict["more_info"],type=dict["type"],
-                    requirement_board=dict["requirement_board"],
-                    job_id=dict["job_id"],join_id=join_id
-                )
+        model = eval(model_name)
+        obj = list(AndhraPradeshGovtJobs.objects.values())
+        for o in obj:
+            if o["type"] == 2:
+                url = o["more_info"]
+                r=requests.get(url)
+                c=r.content
+                soup=BeautifulSoup(c,"html.parser")
+                table=soup.find_all("table",{"style":"width: 500px;"})[0]
+                tr = table.find_all("tr")[-2::]
+                print(tr)
 
-            lst.append(dict.copy())
-        dict2[keyword] = lst
-        lst2.append(dict2)
+
+
         return lst2
 
     def odisha_govt_job_details(request):
