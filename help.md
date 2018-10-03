@@ -67,3 +67,8 @@
 	    for link in i.find_all('a',attrs={'title':'UPSC'}, href=True):
 		dict['Link'] = link['href']
 		print(dict)
+
+
+
+
+https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/
