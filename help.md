@@ -72,3 +72,17 @@
 
 
 https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/
+
+
+
+
+
+
+
+
+
+
+
+group concat sql query:
+
+	select group_concat(api_user.id),api_company.name from api_company inner join api_user on api_company.id=api_user.company_name_id group by api_company.name;
