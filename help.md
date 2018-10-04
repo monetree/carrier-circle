@@ -70,8 +70,8 @@
 
 
 
-
-https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/
+string accuracy matcher..
+	https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/
 
 
 
