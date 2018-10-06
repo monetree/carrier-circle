@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="/hub/application/images/inb.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style4 {
+	color: #FF0000;
+	font-size: 24px;
+}
+-->
+</style>
+<title>RECRUITMENT OF SPECIALIST CADRE OFFICERS ON REGULAR AND CONTRACTUAL BASIS
+(ADVERTISEMENT NO : CRPD/SCO/SECURITY & FIRE/2018-19/05)</title>
+<NOSCRIPT>
+<meta http-equiv="Refresh" content="1; URL=note1.php">
+</NOSCRIPT>
+<style>
+.link1{
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #00a2cf;
+	text-decoration: none;
+	font-weight: normal;
+}
+</style>
+<style>
+#down-time{
+width:100%;
+height:20px;
+z-index:1000;
+position:absolute;
+font:Arial, Helvetica, sans-serif;
+font-size:20px;
+color:#FF0000;
+background:#0199cd;
+font-weight: bold;
+}
+.style1 {color: #FF5200}
+</style>
+<!--script>
+function mypopup(url,width,height)
+ {
+   width=window.screen.width;
+   height=window.screen.height;
+   mywindow = window.open (url,"mywindow","location=0,status=1,scrollbars=1,resizable=1,menubar=0,toolbar=no,width="+width+",height="+height);
+   //mywindow.moveTo(0,0);
+   mywindow.focus();
+ } 
+</script-->
+</head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+
+  ga('create', 'UA-49864857-1', 'sifyitest.com');
+  ga('send', 'pageview');
+  
+  
+</script>
+<script>
+//if(TAB_DEVICE == 0){
+	window.history.forward(1);
+//}else if(TAB_DEVICE > 0){
+//	 if (event.persisted) {
+ //       window.history.forward();
+//    }
+//}
+
+</script>
+<body topmargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0" oncontextmenu="return false;">
+
+<table width="780" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="tdbg"><table width="780" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+		<!-- <table width="100%" border="0" cellpadding="0" cellspacing="0" id="logotable">
+          <tr>
+            <td width="300" rowspan="2" bgcolor="#FFFFFF"><img src="images/logo.gif" width="206" height="69" border="0" /></a></td>
+            <td width="675" colspan="4" align="right" bgcolor="#FFFFFF"><img src="images/logo1.gif" width="572" height="69" /></td>
+          </tr>
+</table> -->
+ </td>
+        </tr>
+		<!-- <tr>
+        <td height="10" bgcolor="#FF5200" class="style1"></td>
+        </tr> -->
+      <tr>
+        <td height="10"></td>
+        </tr>
+        <tr>
+          <td height="300" valign="top"><table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="750" height="15"></td>
+            </tr>
+            <!-- <tr>
+              <td height="1" bgcolor="#FF5200"></td>
+            </tr> -->
+          
+          </table>
+            <table width="758" border="0" align="center" cellpadding="2" cellspacing="2">
+
+			 <!-- <tr>
+                <td align="center" valign="middle" class="tablecontent1"><img src="images/bullet1.gif" width="7" height="11" /></td>
+                <td align="left" valign="middle" class="tablecontent1"><a class="disability" onclick="javascript:mypopup('userlogin.php?op=2','700','400')" href="#">CHANGE YOUR APPLICATION DETAILS</a></td>
+              </tr>	-->
+              <tr>
+                <td align="center" valign="middle" class="tablecontent1">
+				  <div>
+                    <p align="center" class="style4">Your Browser is not allowed to access this page.<br />
+                     Supporting Browsers : Internet Explorer (9 or above), Mozilla Firefox 20.0 or above, Google chrome 30.0 or above, Safari 6.0 or above.</p>
+			      </div>
+				  <p></a></p>			    </td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+        <td height="5" valign="top"></td>
+      </tr>
+      <tr>
+        <td>      </tr>
+      <tr>
+        <td>            </tr>
+      <tr>
+        <td>            </tr>
+      <tr>
+        <td>            </tr>
+      <tr>
+        <td>      
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

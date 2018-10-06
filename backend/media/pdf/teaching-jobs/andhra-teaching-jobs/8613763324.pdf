@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>  Welcome To Sri Venkateswara Vedic University  </title>
+  <meta name="generator" content="editplus" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <script type="text/javascript" src="/news/news.js">
+  <!--
+
+  //-->
+  </script>
+  <script type="text/javascript">
+<!--
+function FindObject(id, doc)
+{
+   var child, elem;
+   if(!doc)
+      doc=document;
+   if(doc.getElementById)
+      elem=doc.getElementById(id);
+   else
+   if(doc.layers)
+      child=doc.layers;
+   else
+   if(doc.all)
+      elem=doc.all[id];
+   if(elem)
+      return elem;
+   if(doc.id==id || doc.name==id)
+      return doc;
+   if(doc.childNodes)
+      child=doc.childNodes;
+   if(child)
+   {
+      for(var i=0; i<child.length; i++)
+      {
+         elem=FindObject(id,child[i]);
+         if(elem)
+            return elem;
+      }
+   }
+   var frm=doc.forms;
+   if(frm)
+   {
+      for(var i=0; i<frm.length; i++)
+      {
+         var elems=frm[i].elements;
+         for(var j=0; j<elems.length; j++)
+         {
+            elem=FindObject(id,elems[i]);
+            if(elem) return elem;
+         }
+      }
+   }
+   return null;
+}
+// -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function Clear(id)
+{
+   var elem=FindObject(id);
+   if(elem)
+      elem.value="";
+}
+//-->
+</script>
+
+  <style type="text/css">
+
+.aerobuttonmenu{ /*container that holds a row of aero buttons*/
+overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+width: auto;
+background: #F7F7F7; /*menu strip background*/
+border: 1px solid gray;
+padding: 4px 0;
+border-width: 1px 0;
+}
+
+* html .aerobuttonmenu{ /*IE6 and below hack. Set explicit strip width*/
+width: 100%;
+}
+
+.aerobuttonmenu a.aero{ /*aero button CSS*/
+background: transparent url('/work/menu/images/bleft.gif') no-repeat top left;
+display: block;
+float: left;
+font: bold 13px Verdana, Trebuchet MS; /* Change 13px as desired */
+line-height: 23px; /* This value + 8px should equal height of button background (default is 31px) */
+height: 31px; /* Height of button background height */
+padding-left: 20px; /* Width of left menu image */
+text-decoration: none;
+margin-right: 5px; /*spacing between buttons*/
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90); /*this and next two rules control opacity of buttons before hover*/
+opacity: 0.9;
+-moz-opacity: 0.9;
+}
+
+.aerobuttonmenu a.aero:link, .aerobuttonmenu a.aero:visited, .aerobuttonmenu a:active{
+color: white; /*button text color*/
+}
+
+.aerobuttonmenu a.aero span{
+background: transparent url('/work/menu/images/bright.gif') no-repeat top right;
+display: block;
+padding: 2px 22px 6px 2px; /*Set 10px here to match value of 'padding-left' value above*/
+}
+
+.aerobuttonmenu a.aero:hover{ /* Hover state CSS */
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); /*this and next two rules control opacity of buttons during hover*/
+opacity: 1;
+-moz-opacity: 0.99;
+}
+
+.aerobuttonmenu a.aero:hover span{ /* Hover state CSS (for text) */
+color: yellow;
+}
+
+.black a.aero{
+background-image: url('/images/aeroleftblack.gif');
+}
+
+.black a.aero span{
+background-image: url('/images/aerorightblack.gif');
+}
+
+.aerobuttonmenu .rightsection{
+float: right;
+width: auto;
+position: relative;
+top: 3px;
+padding-right: 5px;
+text-align: right;
+margin-top: 0px;
+}
+
+.aerobuttonmenu .rightsection a{
+color: navy;
+}
+form{margin: 0px;}
+</style>
+
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">
+	<div class="olive_container_head">
+	 <img src="/images/olive_sidebar_left.jpg" alt="" class="float_left"/>
+	 <img src="/images/olive_sidebar_right.jpg" alt="" class="float_right"/>
+	</div>
+	<div class="olive_container_content">
+	<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="center"><a href="/aboutlogo.php"><img src="logo.JPG" alt="About SVVU logo" width="120" border="0"/></a></td>
+		<td valign="bottom"><img src="/images/newtitle.gif"  alt="" /></td>
+		
+	</tr>
+	</table>
+			
+	</div>
+   </div>
+
+   <div id="hmenu">
+		
+				 <div class="aerobuttonmenu">
+
+<div class="rightsection">
+<!--	<form method="get" action="/search/" id="search" >
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<input type="text" id="query" name="query" value="" />
+					<input  type="hidden" name="search" value="1" /></td>
+					<td><input type="image" id="submit" src="/images/search.png" /></td>
+				</tr>
+			</table>
+			</form>-->
+</div>
+
+<a href="/" class="aero"><span>Home</span></a> 
+<a href="/aboutus.php" class="aero"><span>About Us</span></a>
+<a href="/contactus.php" class="aero"><span>Contact Us</span></a> 
+<a href="/sitemap.php" class="aero"><span>Sitemap</span></a> 
+</div> 
+
+	</div>
+
+	<div id="body">
+		<table width="100%" border="0">
+			<tr>
+				<td valign="top" width="175">
+				<div class="bcontainer_head">
+					<img src="/images/bsidebar_left.jpg" alt="" class="float_left"/>
+					<img src="/images/bsidebar_right.jpg" alt="" class="float_right"/>
+					<div class="container_head_text">
+						MENU
+					</div>
+				</div>
+				<!-- Container Content -->
+				<div class="bcontainer_content">
+					<div class="arrowlistmenu" >
+					<ul>
+						<li><a href="/establishment.php">Establishment</a></li>
+						<li><a href="/administration.php">Administration</a></li>
+						<li><a href="/faculties_and_departments.php">Faculties and Departments</a></li>
+						<li><a href="/students_amenities.php">Students Amenities</a></li>
+						<li><a href="/events.php">Important Events</a></li>
+						<li><a href="/schemes.php">Schemes</a></li>
+						<li><a href="/pub.php">Publications</a></li>
+						<li><a href="/CVSR.php">Centre For Veda-Science Research</a></li>
+						<li><a href="vedadarshini/index.html">Veda Darshini Journal</a></li>
+						<!-- <li><a href="/TimeTable.php">Time-Table</a></li> -->
+						<li><a href="/placement.php">Placement Cell</a></li>
+						<!-- <li><a href="/Recruitment.php">Recruitment</a></li>-->
+						<li><a href="/press.php">Press Release</a></li>
+						<li><a href="/VedicUniversityActNew.pdf" target="_new">Vedic University Act</a></li>
+						<li><a href="/rti.php">Right To Information Act (RTI)</a></li>
+						<li><a href="/svvrp/svvrp.php">S.V. Vedic Recording Project</a></li>
+						<li><a href="/seminars.php">Seminars/Conferences/Workshops</a></li>
+						<li><a href="/Research.php">Research</a></li>
+						<li><a href="/images/photos/Photogallery/index.php">Photo Gallery</a></li>
+						<li><a href="Tender.php">Tenders</a></li>
+					<!--	<li><a href="/ac.php">Academic Calendar 2013-2014</a></li> -->
+					</ul>
+					</div>
+				</div>
+				<br />
+				<div class="ocontainer_head">
+					<img src="/images/osidebar_left.jpg" alt="" class="float_left"/>
+					<img src="/images/osidebar_right.jpg" alt="" class="float_right"/>
+					<div class="container_head_text">
+						News
+					</div>
+				</div>
+				<!-- Container Content -->
+				<div class="ocontainer_content">
+					  <script type="text/javascript">
+
+						//new pausescroller(name_of_message_array, CSS_ID, CSS_classname, pause_in_miliseconds)
+						new pausescroller(pausecontent, "pscroller1", "someclass", 3000)
+					  </script>
+				</div>
+				<div>
+				<p align=center>
+<!--				<a href="/vcdairy.php"><img src="/images/photos/vc.jpg" width=95 height=90><br>VC-Diary</a></p> -->
+				</div>
+<!-- <a href="admission.php">Prospectus & Application Form for the Academic Year 2014-15</a> -->
+<!-- <a href="ApplnDyDir.pdf">Download Application along with API form for the post of Deputy Director</a> -->
+<p><a href=ms.php>Procurement of Manuscript</a></p>
+				</td>
+
+				<td valign="top"><div class="container_head">
+					<img src="/images/sidebar_left.jpg" alt="" class="float_left"/>
+					<img src="/images/sidebar_right.jpg" alt="" class="float_right"/>
+					<div class="container_head_text">
+						WELCOME TO SVVU					</div>
+				</div>
+				<div class="container_content">
+
+<Marquee bgcolor=blue><a href="vv.php"><font size=5><font color=white>&#2357;&#2375;&#2342;&#2357;&#2367;&#2330;&#2366;&#2352;&#2360;&#2352;&#2339;&#2367;&#2307;</font></font> &nbsp; &nbsp; <font size=5><font color=white>Veda-vicaara-sarani</font></font></Marquee>
+
+<p align=center><font size=4><a href="sevadhi.php">Call for research articles for refereed journal Shevadhi</a> </p>
+<p align=center><font size=4><a href="CVSR.php">Center For Veda-Science Research</a></p>
+<!-- <font size=5> -->
+<!-- <p align=center><a href="HinduDharmaTimeTable18.pdf">Examination Time-Table for Diploma in Hindu Dharma (Online Course)</a></font></p>
+-->
+<!-- <p align=center><a href="SowjanyaPhD.pdf">Notification of Eligiblity for the award of Vidyavaridhi</a> </p> -->
+<!-- <marquee><p align=center><font size=5><a href="admission1.php">Admission Notification 2018-19 (Last date for submission of application forms is extended upto 15-06-2018)</a></font></p></marquee> 
+-->
+<!-- <marquee>Last date for submission of application forms seeking admission into various regular and part-time evening courses is extended upto 15-06-2018</marquee> -->
+<!-- <p align=center><a href=exams.php>M.A. Sanskrit IV Semester Examination Time-Table 2018</a></p> -->
+<!--
+<p align=center><a href="VVET-TIME-TABLE.pdf">Vidyavaridhi Entrance Test Time-Table</a>
+-->
+
+<!-- <Marquee bgcolor=green><a href="conv.php"><font size=5><font color=white>3<sup>rd</sup> Convocation is going to be held on 18<sup>th</sup>, November, 2015</font></font></a></Marquee>
+-->
+
+<!-- <Marquee direction=right><a href="admission.php"><font size=4>Prospectus & Application Form for seeking admission into various Diploma Courses for the Academic Year 2014-15</a></font></center></marquee> -->
+<!-- <Marquee><a href="Ag.php"><font color=red size=4>Prospectus & Application Form for seeking admission into Adarsha Gurukulam for the academic year 2014-15</font></a></marquee> -->
+<!-- <p align=center><a href="2ndConvocation.pdf"><font size=4>Notification and Application form for 2<sup>nd</sup> Convocaton</font></a></p> -->
+<!-- <p align=center><a href="Results.php"><font size=4>Results of M.Phil. and Ph.D. Entrance Test held on 18-07-2014</font></a></p> -->
+<!-- <Marquee direction=right><a href="agama.php"><font size=4>National Seminar on Agamas from 7<sup>th</sup> to 9<sup>th</sup> January, 2015</font></a></Marquee>-->
+<hr style="height:20px;background: #fff url(design3.jpg) no-repeat scroll center;border:none;" />
+<p align=center><font size=5><a href="WInt-T.pdf">Walk-in-Interviews for Certain Traditional Courses</a></font></p>
+<!--
+<font size=5>
+<center>
+<a href="/vc.php"> Application for the post of Vice-chancellor </a>
+</center>
+</font>
+-->
+<!-- <p align=center><font size=4><a href="nvc.php">National Vedic Conference Videos</a></font></p> -->
+<!--
+<font size=4>
+<!-- <p align=center><a href="conv.php">4<sup>th</sup> Convocation</a></p> -->
+<!-- <p align=center><a href="Ag.php">Adarsha Veda Gurukulam - Admission Notification - 2017-18</a></p>-->
+<!--  <p align=center><font size=4><a href="WalkIn1718.pdf">Walk-in-Interview for appointment of Guest/Part-Time Lecturers in Traditional   Courses</a></font></p> -->
+<!-- <p align=center><a href="rect2017.php">Recruitment Notification - 2017</a></p> -->
+<!--<p align=center><a href="PreVidyavaridhiCircular.pdf">Pre-Vidyavaridhi Course Work Examination Circular</a></p>
+<p align=center><a href="PreVidyavaridhiApplication.docx">Pre-Vidyavaridhi Course Work Examination Application Form</a></p>
+--><!--
+</font>
+-->
+<!-- <p align=center><a href="YouthFestival2018Final.pdf"><font size=5>National Vedic Youth Festival 2018</font></a></p> -->
+<font size=4><p align=right><a href="/HinduDharma/login.php">Diploma in Hindu Dharma Login</a></p></font>
+
+
+<!--
+<p align=center><font size=4><a href="exams.php">Part-Time Evening Courses and Private Studies Examination Time Table</a></p>
+<p align=center><font size=4><a href="SGT.doc">Download Tender Form for Security Gurads</a></font></p>
+<p align=center><font size=4><a href="PsPtCourses.pdf">Examination Fee & Application form for Private Study and Evening Courses</a></font></p> -->
+<!-- <hr style="color:#c00;background-color:#c00;height:5px;border:none;" /> -->
+<!-- <Marquee><a href="pvtstudy.php"><font size=4>Private Study Admissions - Application Form (last date 24-08-2015)</font></a></Marquee> -->
+
+
+<!-- <marquee><font size=4><a href="Stud.html">Application Form For Online Course On Hindu Dharma</a></font></marquee> -->
+
+<!--
+<marquee>
+<p align=center><font size=4><b><a href="icvs.php">International Conference on Veda-Sciences - November, 2015</a></b></font></p>
+</marquee>
+-->
+<font size=5>
+<!-- <marquee>Prof. K.E. Devanathan was appointed as Vice-Chancellor i/c </marquee> -->
+<!-- <p align=center><a href="VedaDarshini.pdf">Call for research articles for our monthly journal on Veda-Science "Veda Darshini"</a></p> -->
+<!-- <marquee><a href="EngWorkshop.php">English Workshop</a></marquee>  -->
+<!-- <marquee><a href="4thChance.php">4<sup>th</sup> Chance to Sastri/Acharya Old Students to Complete the Course</a></marquee> -->
+<!-- <p align=center><a href="Proposal_Mahamahopadhyaya.pdf">Proposal for Mahamahopadhyaya</a></p>
+<p align=center><a href="AdarshaGurukulam16-17.pdf">Admission into Adrasha Veda Gurukulam</a></p> 
+<p align=center><a href="AdvSupplnAppln.pdf">Application for Advanced Supplementary Examinations</a></p> -->
+<!-- <p align=center><a href="Admission.php">Admission into Traditional M.Phil & Ph.D. Programmes</a></p> 11>
+<!-- <p align=center><a href="RC2016_NT_news.php">Recruitment Notification - 2016 (I) & (II) Interviews/Written Test deferred</a></p> -->
+<!-- <p align=center><a href="PvtStudyNotice.php">Notice: Students of Private Study Course</a></p> 
+<p align=center><a href="exams.php">Notice: Examination Circular and Time Table for All Courses</a></p>  -->
+<!-- <p align=center><a href="RC2016.php"> Recruitment Notification</a> -->
+<!-- <p align=center><a href="Ramanuja.docx">National Seminar on "The Philosophy of Ramanuja"</a></p> -->
+</font>
+<hr style="height:20px;background: #fff url(design2.jpg) no-repeat scroll center;border:none;" />
+
+				<!-- Content Starts Here -->
+
+
+
+
+<script language="JavaScript1.2" src="menu.js"></script>
+<script language="JavaScript1.2" src="cdm_all.js"></script>
+<script  src="use.js"></script>
+
+
+<script language="JavaScript" fptype="dynamicanimation">
+<!--
+function dynAnimation() {}
+function clickSwapImg() {}
+//-->
+</script>
+<script language="JavaScript1.2" fptype="dynamicanimation" src="animate.js">
+</script>
+
+
+
+
+
+
+
+<!-- 
+<img src="images/photos/students.jpg"  width="300" alt="vedic students" class="right"/>
+-->
+<img src="v0.gif" name="slide" border=0 style="filter: blendTrans(duration=3)" width=200 height=193 start="fileopen" class="right">
+
+
+
+<script language="JavaScript1.1">
+<!--
+
+var whichlink=0
+var whichimage=0
+var blenddelay=(ie)? document.images.slide.filters[0].duration*1000 : 0
+function slideit(){
+if (!document.images) return
+if (ie) document.images.slide.filters[0].apply()
+document.images.slide.src=imageholder[whichimage].src
+if (ie) document.images.slide.filters[0].play()
+//whichlink=whichimage
+whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0
+setTimeout("slideit()",slidespeed+blenddelay)
+}
+slideit()
+//-->
+            </script>
+
+
+<p>
+It is an undeniable fact that that the ideals enshrined in the Vedas promote Universal peace, harmony and brotherhood.  Today, the need of the hour is to protect the most efficient and pious literature of Vedas and to spread the message contained in it.  His Excellency Shri Rameshwar Thakur Ji, the then Governor of Andhra Pradesh, envisaged that Vedic University would eminently suit to promote the Vedic knowledge in all its dimensions and desired the establishment of such a University.  The Government of Andhra Pradesh reacted positively and Tirumala Tirupati Devasthanams, which is committed to Sanatana Hindu Dharmam, came forward to fully fund the University.  Thus, Sri Venkateswara Vedic University came into existence on 12.07.2006 with the following</p>
+
+<div class="cli">
+<b>OBJECTIVES:</b>
+<ol>
+	<li>to preserve, foster and promote oral traditions of Vedic, Agamic and Cognate Literature, with focus on right intonations</li>
+	<li>to conduct research and propagate the relevance of knowledge system and the wisdom contained in the Vedic Literature for meeting the challenges of life in the technology driven contemporary society</li>
+	<li>to bring out the profoundness of the rational approach and the scientific temper, presented in the Vedas in the context of pursuit of knowledge and realization of higher levels of consciousness</li>
+	<li>to consolidate, revive and promote the Vedic learning and Sanskrit study so as  to integrate the scientific thought contained in the Vedas particularly in the disciplines of mathematics, astronomy, agriculture, meteorology, chemistry, metallurgy, yoga, humanities, social sciences and management with the modern scientific and technological studies, so that through integration of Vedic and Scientific concepts advancement of scientific knowledge can be facilitated</li>
+	<li>to bring out awareness about the authentic interpretation of the Vedas in India and Abroad, facilitating proper understanding of richness of the rational approach to life and scientific temper presented in the Vedic knowledge system</li>
+	<li>to create a network of Vedic, Sanskrit and other academic Institutions with reciprocal arrangement and facilities for interaction with a view to fostering a synergy of efforts to propagate the Vedic Wisdom in the contemporary society</li>
+	<li>to publish all the Vedas and related texts, Bhashyas and commentaries in all Indian scripts</li>
+	<li>to create a body of literature in Modern Indian Languages on the contents of the Vedas</li>
+	<li>to translate the Vedas and Bhashyas in all Modern Indian Languages and publish</li>
+	<li>to build up Audio and  Audio-visual records of Vedic chanting and various rituals</li>
+	<li>to prepare various kinds of tools, such charts, diagrams and pictures of various kinds of rituals as a measure of preservation and to digitize and computerize the Vedas and develop required software for various purposes</li>
+</ol>
+</div>
+
+				</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+   <div id="footer">
+	<div class="olive_fcontainer_content">
+		 <a href="/" >Home</a> | <a href="/aboutus.php" >About Us</a> | <a href="/contactus.php" >Contact Us</a> | <a href="/sitemap.php" >Sitemap</a> | <a href="/privacy.php" >Privacy Policy</a> | <a href="/disclaimer.php" >Disclaimer</a><br />
+		 Copyright &copy; 2008 <a href="http://www.svvedicuniversity.ac.in" >svvedicuniversity.ac.in</a> All rights reserved.
+
+	</div>
+	<div class="olive_fcontainer_head">
+		<img src="/images/olive_sidebar_fleft.jpg" alt="" class="float_left"/>
+		<img src="/images/olive_sidebar_fright.jpg" alt="" class="float_right"/>
+	</div>
+
+   </div>
+
+  </div>
+</body>
+</html>

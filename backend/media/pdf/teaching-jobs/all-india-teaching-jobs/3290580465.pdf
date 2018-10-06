@@ -1,0 +1,451 @@
+ 
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Welcome to ESIC Medical College, Sanathagar, Hyderabad</title>
+<link href="include/style.css" rel="stylesheet" type="text/css">
+<script type="text/ecmascript" src="include/function.js"></script>
+
+<!--Javascript banner code start here copy in head section-->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="include/skdslider.min.js"></script>
+<link href="include/skdslider.css" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo').skdslider({'delay':5000, 'fadeSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoStart':true});
+			jQuery('#demo1').skdslider({'delay':5000, 'fadeSpeed': 2000,'autoStart':true,'pauseOnHover':true});
+		});
+</script>
+<style type="text/css">
+
+</style>
+<!--Javascript banner code start here-->
+
+
+
+
+</head>
+
+<body>
+
+<!--Start main container -->
+  <div class="mainCntr">
+  <!--Start top menu -->
+
+	  <!--End menu -->
+	<!--Start header container -->
+    <!--lightbox youtude video-->
+
+	<link rel="stylesheet" href="include/colorbox.css" />
+
+		
+
+		<script src="include/jquery.colorbox.js"></script>
+
+	<script>
+
+			$(document).ready(function(){
+
+			$(".group1").colorbox({rel:'group1'});
+
+				$(".youtube").colorbox({iframe:true, innerWidth:400, innerHeight:300});
+
+			
+
+			
+
+			
+
+			});
+
+		</script>
+
+
+
+<!--<div class="menuCntr">
+
+  <div class="navbar">
+
+    <div class="menuright">
+
+      <div class="loginMenu">
+
+        <ul>
+
+          <li><a href="#">Hindi</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>-->
+
+<div class="headerCntr">
+
+  <div class="header">
+
+    <div class="logo"> <a href="index.php"><img src="images/logo.png" alt=""  /></a> </div>
+
+    <div class="socialicon">
+
+  <em>Follow us on</em> <a href="https://www.facebook.com/esicmchyd/" target="_new"><img src="../images/facebook-icon.png" alt=""></a>
+
+  <a href="https://twitter.com/esicmchyd" target="_new"><img src="../images/twitter-icon.png" alt=""></a>
+
+  </div>
+
+	<div class="headerRgt">
+
+	
+
+      <div class="searchArea"> <img src="images/vip_esic.jpg" alt="VIP" /> </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="navcontainer">
+
+  <div class="menuboxcontainer">
+
+    <div class="menuBox">
+
+      <ul>
+
+        <li><a href="index.php">HOME</a></li>
+
+        <li> <a href="#" id="ser1" onmouseover="menu_show('service','ser1')" onmouseout="menu_hide('service','ser1')">ABOUT US</a>
+
+          <div class="submenu" id="service" onmouseover="menu_show('service','ser1')" onmouseout="menu_hide('service','ser1')" >
+
+            <div class="botpart">
+
+              <ul>
+
+                <li><a href="about_esic.php">About ESIC</a></li>
+
+                <li><a href="about_esic_medical_college.php">About ESIC Medical College</a></li>
+
+                <li><a href="administration.php">Administration</a></li>
+
+                <li><a href="departments.php">Departments</a></li>
+
+                <li><a href="committees.php">Committees</a></li>
+
+                <li><a href="phone_directory.php">Phone Directory</a></li>
+
+                <li><a href="award_honors.php">Award & Honors</a></li>
+
+                <li><a href="press_media_release.php">Press Media Release</a></li>
+
+                <li><a href="annual_report.php">Annual Report</a></li>
+
+                <li><a href="university.php">University</a></li>
+
+                <li><a href="infrastructure.php">Infrastructure</a></li>
+
+              </ul>
+
+              <div class="clr"></div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <li><a href="hospital_services.php">HOSPITAL SERVICES</a></li>
+
+        <li> <a href="#" id="ser2" onmouseover="menu_show('acad','ser2')" onmouseout="menu_hide('acad','ser2')">EDUCATION</a>
+
+          <div class="submenu" id="acad" onmouseover="menu_show('acad','ser2')" onmouseout="menu_hide('acad','ser2')" >
+
+            <div class="botpart">
+
+              <ul>
+
+                <li><a href="course.php">Course</a></li>
+
+                <li><a href="admission.php">Admission Notifications</a></li>
+
+                <li><a href="student_zone.php">Student Zone</a></li>
+
+                <li><a href="Calendar_events.php">Events Calendar</a></li>
+
+                <li><a href="committee.php">Committee</a></li>
+
+                <li><a href="training.php">Training</a></li>
+
+                <li><a href="journal_esi.php">Journal ESI</a></li>
+
+              </ul>
+
+              <div class="clr"></div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <li> <a href="#" id="ser3" onmouseover="menu_show('infra','ser3')" onmouseout="menu_hide('infra','ser3')">RESEARCH </a>
+
+          <div class="submenu" id="infra" onmouseover="menu_show('infra','ser3')" onmouseout="menu_hide('infra','ser3')" >
+
+            <div class="botpart">
+
+              <ul>
+
+                <li><a href="research_and_development.php">Research & Development</a></li>
+
+                <li><a href="research_committee.php">Research Committee</a></li>
+
+                <li><a href="ethics_committee.php">Ethics Committee</a></li>
+
+                <li><a href="organised_research_program.php">Organised Research Program</a></li>
+
+              </ul>
+
+              <div class="clr"></div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <li> <a href="#" id="ser4" onmouseover="menu_show('depart','ser4')" onmouseout="menu_hide('depart','ser4')">CAREER </a>
+
+          <div class="submenu" id="depart" onmouseover="menu_show('depart','ser4')" onmouseout="menu_hide('depart','ser4')" >
+
+            <div class="botpart">
+
+              <ul>
+
+                <li><a href="advertising_of_recruitment.php">Advertising of Recruitment</a></li>
+
+                <li><a href="result_of_recruitment.php">Result of Recruitment</a></li>
+
+                <li><a href="rules_and_regulations.php">Rules & Regulations</a></li>
+
+                <li><a href="download.php">Download</a></li>
+
+                <li><a href="archive.php">Archive</a></li>
+
+              </ul>
+
+              <div class="clr"></div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+         <li> <a href="#" id="for1" onmouseover="menu_show('forum','for1')" onmouseout="menu_hide('forum','for1')">PUBLIC FORUM </a>
+
+          <div class="submenu" id="forum" onmouseover="menu_show('forum','for1')" onmouseout="menu_hide('forum','for1')" >
+
+            <div class="botpart">
+
+              <ul>
+
+                <li><a href="images/CitizenCharter1112.pdf" target="_blank">Citizen Charter</a></li>
+
+                <li><a href="body_donation.php">Body Donation</a></li>
+
+                <li><a href="helplines.php">Helplines</a></li>
+
+                <li><a href="rules_and_regulations.php">Rules & Regulations</a></li>
+                <li><a href="bmw.php">Bio Medical Waste Management</a></li>
+                <li><a href="rti.php">RTI</a></li>
+
+				<li><a href="photo-gallery.php">Photo Gallery</a></li>
+
+				<li><a href="videos.php">Videos</a></li>
+				
+				<li><a href="Activities.php">CME/Conferences/Academic Activities</a></li>
+
+              </ul>
+
+              <div class="clr"></div>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li><a href="U2016.php">ADMISSIONS</a></li>
+        <li><a href="APPROVAL.php">GOVT. APPROVAL</a></li>
+        <li><a href="contact_us.php">CONTACT US</a></li>
+        <li><a href="attendance.php">FACULTY ATTENDANCE</a></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+     <!--End header -->
+	<!--Start Navigation -->
+
+   <!--End Navigation -->
+
+  <!--Start Content container -->
+    <div class="contentCntr">
+		  <!-- Start Slider banner
+ <div class="bannerCon">
+       <div class="prevBtn"><a href="#" class="previous"><img src="images/slide_prev.png" alt="" /></a></div>
+        <div class="nextBtn"><a href="#" class="next"><img src="images/slide_next.png" alt="" /></a></div>
+
+        	<div class="bannerBox"><img src="images/banner2.jpg" alt="" /> </div>
+
+  	</div>
+End Slider banner -->
+
+<!--banner start here-->
+<div id="demo" class="skdslider">
+ <ul>
+ <li><img src="images/slider_img/5.jpg" /></li>
+<li><img src="images/slider_img/9.jpg" /></li>
+<li><img src="images/slider_img/fourth_banner.jpg" /></li>
+<li><img src="images/slider_img/2.jpg" /></li>
+<li><img src="images/slider_img/4.jpg" /></li>
+
+
+
+</ul>
+</div>
+<!--banner end here-->
+   <!--Strat Leftt colmn  -->
+<div class="leftContainer">
+  <div class="welcomecontainer">
+  
+<div><ul style="    list-style-type: none; font-size: 13px; background: #209b60; padding: 5px;color: white;display: flex;"><li> Faculty/Specialist/Sr/Jr/Tutor (Contract basis) Sept 2018<a href="http://www.esicmchyd.ac.in/result_of_recruitment.php" target="_blank" style="outline: none; color: #ffffff; text-decoration: underline;">Click here for list of candidates</a></li><ul></div>
+<div><ul style="    list-style-type: none; font-size: 13px; background: #209b60; padding: 5px;color: white;display: flex;"><li> Details of online applications for Nursing Internship program<a href="Notice of Nursing internship programme 826 online applications.pdf" target="_blank" style="outline: none; color: #ffffff; text-decoration: underline;">Click here</a></li><ul></div>
+<div><ul style="    list-style-type: none; font-size: 13px; background: #209b60; padding: 5px;color: white;display: flex;"><li> Merit List of Candidate for Nursing Internship program<a href="Notice of Nursing internship programme 246 eligible candidates.pdf" target="_blank" style="outline: none; color: #ffffff; text-decoration: underline;">Click here</a></li><ul></div>
+<div><ul style="    list-style-type: none; font-size: 13px; background: #209b60; padding: 5px;color: white;display: flex;"><li> Document Verification for Nursing Internship program<a href="NOtice of Nursing internship programme document verification sc.pdf" target="_blank" style="outline: none; color: #ffffff; text-decoration: underline;">Click here</a></li><ul></div>
+<div><ul style="    list-style-type: none; font-size: 13px; background: #209b60; padding: 5px;color: white;display: flex;"><li> Anti Ragging Committee  <a href="Anti Ragging Committee.pdf" target="_blank" style="outline: none; color: #ffffff; text-decoration: underline;">Click here</a></li><ul></div>
+
+<marquee behaviour=alternate><a ><a href="Notification_Faculty_Sep 2018.pdf" target="_blank">"RECRUITMENT NOTIFICATION FOR FACULTY/SUPERSPECIALITY FACULTY ON CONTRACT BASIS......CLICK HERE**************</a> <a href="Notification_Sr_JR_Tutor_Specialist_Sept_2018.pdf" target="_blank">"RECRUITMENT NOTIFICATION FOR RESIDENTS/TUTORS/FULL TIME & PART TIME SPECIALISTS ON CONTRACT BASIS....CLICK HERE **************</a></li></marquee>
+    <img src="images/CSP_9126.jpg" alt="welcome" class="img" />
+	 <div class="welcome">Dean's Message :</div>
+    <p>ESI Corporation is striving to make this Medical College the best Medical College for Patient care, Teaching and Research.
+</p>
+<a href="http://snack.to/bhmy12be" target="_blank"><img alt="" src="images/PPT.jpg"></a> <br/></li>
+      </div>
+	  <div style="clear:both"></div>
+	  <div class="newscontainer">
+	    <div class="clr"></div>
+</div>
+
+<br>
+
+<div class="gallerycontainer">
+ <div class="galtitle"><a href="videos.php">Video Gallery</a></div>
+ <!--  <div class="galpic"><a href="#"><img src="images/home-gal-pic1.jpg" alt="pic" width="155" height="138" border="0" /></a></div>
+  <div class="galpic"><a href="#"><img src="images/home-gal-pic2.jpg" alt="pic" width="155" height="138" border="0" /></a></div>
+  <div class="galpic"><a href="#"><img src="images/home-gal-pic3.jpg" alt="pic" width="155" height="138" border="0" /></a></div>
+  <div class="galpic endpic"><a href="#"><img src="images/home-gal-pic4.jpg" alt="pic" width="155" height="138" border="0" /></a></div>-->
+  <div class="tubebox">
+	  <h3></h3>
+		<h3 style="margin-bottom:9px !important; font-size:15px;  margin-top: 0px;">ESIC Medical College- Welcome note by Honorable Minister Sri Bandaru Dattatreya garu for MBBS New Joinees 2016-17 batch </h3>
+			<li><a href="Video/cmcsanathnagarenglish.mp4" class="youtube"><img alt="" src="images/video_img.jpg"></a> <br/> English</li>
+            <li><a href="Video/sicmcsanathnagarhindi.mp4" class="youtube"><img alt="" src="images/video_img.jpg"></a><br/> Hindi</li>
+           <li><a href="Video/sicmcsanathnagartelugu.mp4" class="youtube"><img alt="" src="images/video_img.jpg"></a><br/> Telugu</li>
+			</div>
+
+
+<div><a href=".pdf" target="_blank">"24x7 ANTI RAGGING HELPLINE; Toll Free No: 1800-180-5522, Email: helpline@antiragging.in" ******</a ></div>
+
+
+<div class="clr"></div>
+</div>
+
+<div class="clr"></div>
+</div>
+<!--End Leftt colmn  -->
+   <!--Strat Right colmn  -->
+
+
+<div class="rightContainer">
+
+  <div class="linkscontainer">
+
+    <h2>Useful Links</h2>
+
+    <div class="linkbox">
+
+      <ul>
+
+        <li><a href="http://esic.nic.in/" target="_blank">www.esic.nic.in</a></li>
+
+        <li><a href="http://esic.in" target="_blank">www.esic.in</a></li>
+
+        <li><a href="http://india.gov.in" target="_blank">www.india.gov.in</a></li>
+
+        <li><a href="http://mohfw.nic.in" target="_blank">www.mohfw.nic.in</a></li>
+
+        <li><a href="http://whoindia.org" target="_blank">www.whoindia.org</a></li>
+
+        <li><a href="http://www.nic.in/" target="_blank">www.nic.in</a></li>
+
+        <li><a href="http://labour.nic.in" target="_blank">www.labour.nic.in</a></li>
+
+        <div class="clr"></div>
+
+      </ul>
+
+    </div>
+    
+    <br >
+    <h2>Upcoming Events</h2>
+        <li><a href=".pdf" target="_blank">30.06.2018 : CME on TB and Chest Disease </a></li>
+        <li><a href=".pdf" target="_blank">08.07.2018:CME on Everything About Thyroid  </a></li>
+    <li><a href="http://www.esicmchyd.ac.in/Calendar_events.php" target="_blank">View all Events</a></li>
+    
+    </div>
+    <br >
+    <h2>Student Zone</h2>
+    <li><a href="http://www.esicmchyd.ac.in/student_zone.php" target="_blank">Teaching Schedule</a></li>
+    
+    </div>
+<!--	 <div class="tubebox" style="border-top:5px solid #fff;">
+
+	  <h2>Videos <a href="videos.php"><small>View All</small></a></h2>
+
+		<!--<small><a href="#">View All >></a></small><h4  style="margin-bottom:9px !important;  margin-top: 0px;">Listen to our Students</h4>
+
+			<p><a class='youtube' href="https://www.youtube.com/embed/MB6GCFfjh2c"><img src="images/video_img.jpg" alt=""/></a></p>
+
+			</div>-->
+
+  </div>
+
+</div>
+
+   <!--End Right colmn  -->
+
+<div class="clr"></div>
+    </div>
+   <!--End Content center -->
+    <!--Start Footer -->
+  <div class="footerCntr">
+  <div class="footerBox"> &copy; 2016 ESI Medical College. All rights reserved. |  Visitor on Site 3139
+</div>
+
+<!--End Footer -->
+</div>
+<embed src="images/ESIC.mp3" loop="false" hidden="true" autostart="true" >
+<!--End main container -->
+</body>
+</html>

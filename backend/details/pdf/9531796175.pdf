@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+<!-- Multiple states and Multiple URL changes -->
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>State Bank Collect</title>
+<link rel="stylesheet" href="/sbijava/css/style.css" type="text/css" />
+ <style type="text/css">
+ /* CSS Document */
+ 
+/* RESET */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ 
+body {
+	line-height: 1;
+	font:12px Arial, Helvetica, sans-serif;
+}
+ 
+ol, ul {
+	list-style: none;
+}
+ 
+blockquote, q {
+	quotes: none;
+}
+ 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+/* RESET END */
+/* Grouping css*/
+#header, #logo, #nav, #nav span, #banner, #content h4 span, #sbi_logo, #sbbj_logo, #sbh_logo, #sbm_logo, #sbp_logo, #sbt_logo, .list, .arrow, ul.list li div, ul.list li, .heading, .button, txt_heading, #footer{
+	float:left; 
+}
+#sbcollect_logo {
+	float:right;
+}
+#header, #nav, #content h4 span, ul.list li, .heading, #banner, #footer {
+	width:100%;
+}
+/* Page css*/
+#wrapper {
+	margin:0 auto;
+	width:1000px;
+	position:relative;
+	font:12px Arial, Helvetica, sans-serif;
+	overflow:hidden;
+}
+#header {
+	background:url(/sbijava/images/prelogin/header_bg.png) repeat-x;
+	height:91px;
+}
+#sbi_logo {
+	background:url(/sbijava/images/prelogin/sbi-logo-banker.png) no-repeat;
+	width:240px;
+	height:70px;
+	margin:10px 0 0 10px;
+}
+#sbbj_logo {
+	background:url(/sbijava/images/prelogin/sbbj_logo.png) no-repeat;
+	width:240px;
+	height:70px;
+	margin:10px 0 0 10px;
+}
+#sbh_logo {
+	background:url(/sbijava/images/prelogin/sbh_logo.png) no-repeat;
+	width:240px;
+	height:70px;
+	margin:10px 0 0 10px;
+}
+#sbm_logo {
+	background:url(/sbijava/images/prelogin/sbm_logo.png) no-repeat;
+	width:240px;
+	height:70px;
+	margin:10px 0 0 10px;
+}
+#sbp_logo {
+	background:url(/sbijava/images/prelogin/sbp_logo.png) no-repeat;
+	width:240px;
+	height:70px;
+	margin:10px 0 0 10px;
+}
+#sbt_logo {
+	background:url(/sbijava/images/prelogin/sbt_logo.png) no-repeat;
+	width:240px;
+	height:70px;
+	margin:10px 0 0 10px;
+}
+#sbcollect_logo {
+	background:url(/sbijava/images/prelogin/sbcollect.png) no-repeat;
+	width:150px;
+	height:25px;
+	margin:30px 10px 0 0;
+}
+#nav {
+	background-color:#5a86dd;
+	height:33px;
+}
+#nav span {
+	padding:8px 0 10px 10px;
+	color:#e9effa;
+}
+.font_14 {
+	font-size:14px;
+}
+.font_12 {
+	font-size:12px !important;
+}
+#banner {
+	/* background:url(sbijava/images/prelogin/sbcollect_banner.png) no-repeat; */
+	background:url(/sbijava/images/prelogin/SB_collect_banner.png) no-repeat;
+	height:200px;
+	border-bottom:5px solid #54acba;
+}
+#content h4 span {
+	font-size:15px;
+	color:#0089cf;
+	font-weight:bold;
+	padding:10px 0 0 10px;
+	width:49%;
+}
+#content span a {
+	color:#343434;
+	margin-left:5px;
+	text-decoration:none;
+}
+.font_13 {
+	font-size:13px;
+}
+.txt_green {
+	color:#54acba;
+	font-weight:bold;
+}
+.heading {
+	padding:12px 0 0 22px;
+	font-weight:bold;
+	display:block;
+}
+ul.list li div{
+	margin:11px 10px 0 0;
+	color:#4e4e4e;
+	width:900px;
+	text-align:justify;
+	line-height:20px;
+}
+.arrow {
+	background:url(/sbijava/images/prelogin/arrow.png) no-repeat scroll transparent;
+	width:7px; 
+	height:12px;
+	margin:15px 10px 0 45px;
+}
+input {
+	margin:15px 10px 0 45px;
+}
+.float_left {
+	float:left;
+}
+.marginTRL {
+	margin:13px 10px 0 0;
+}
+.marginT5 {
+	margin-top:5px;
+}
+.button {
+	background:url(/sbijava/images/prelogin/proceed_btn.png) no-repeat center;
+	width:81px;
+	height:25px;
+	text-align:center;
+	margin-left:475px;
+	cursor:pointer;
+	border:none;
+	color:#FFFFFF;
+}
+.button a {
+	text-decoration:none;
+	color:#fff;
+	padding:5px 0 0 13px;
+}
+.width100 {
+	width:100%;
+}
+.bold {
+	font-weight:bold;
+}
+.bulb {
+	background:url(/sbijava/images/prelogin/bulb.png) no-repeat;
+	width:32px;
+	height:50px;
+	margin:15px 10px 0 45px;
+}
+.marginT40 {
+	margin-top:40px;
+}
+ 
+.float_left {
+    float: left;
+}
+#footer {
+	background-color:#54acba;
+	height:30px;
+	margin-top:30px;
+}
+#footer a {
+	color:#fff;
+	text-decoration:none;
+}
+#footer a:hover {
+	text-decoration:underline;
+}
+.float_right {
+	float:right;
+}
+.footer_txt {
+	padding:10px 10px 0 10px;
+	color:#fff;
+}
+ 
+.terms-conditions {
+	float:left;
+	padding:10px 0 0 40px;
+}
+ 
+.terms-conditions input{
+	float:left;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	height:20px;
+	width:20px;
+}
+ 
+.terms-conditions-text {
+	margin-top:2px;
+	padding-left:5px;
+	float:left;
+	color:#4E4E4E;
+	font-weight:normal
+}
+ 
+.clear {
+	clear:both
+}
+ 
+.topnavlink{font-weight:bold;color:#fff;background-color:#5a86de;text-decoration:none;vertical-align:middle;padding:2px 8px 2px 8px;margin:0px 5px 0px 5px;}
+a.topnavlink:hover{color:#fff;background-color:#52aec6;height: 33px;}
+
+.tab_english {
+	display:block;
+}
+.tab_hindi {
+	display:none;
+}
+.text_blue {
+	color:#04a4ea !important;
+	text-decoration:underline;
+}
+ </style>
+</head>
+ 
+<body>
+<form name="welcomecollect" method="post">
+<input type="hidden" id="selectedCorpID" name="selectedCorpID" value="" />
+
+
+<input type="hidden" id="donationstatelistcount" name="donationstatelistcount" value='1'/>
+
+
+<input type="hidden" id="selectedInstID" name="selectedInstID" value='IN680238' />
+<input type="hidden" id="selectedState" name="selectedState" value='Chandigarh' />
+
+
+<div id="wrapper">
+  <div id="header">
+	<div id="sbi_logo"></div>
+	<div id="sbcollect_logo"></div>
+  </div>
+  <div id="nav">
+  	<span class="font_14"><a href="#" class="topnavlink" onclick="window.open('/sbijava/productsandservices.html','productservice','width=780, height=500, status=1, scrollbars=1, location=0')">Products &amp; Services</a></span>
+  
+  	<div style="float:right">
+  		
+	  	<span class="font_14" style="float:right"><a href="#" class="topnavlink" onclick="window.open('https://corp.onlinesbi.com/corporate/sbi/corp_sb_collect.html','productservice','width=780, height=500, status=1, scrollbars=1, location=0')">Know&nbsp;More</a></span>
+  	</div>
+  	
+  </div>
+  
+  <div  id="banner">
+  </div>
+    &nbsp;
+  <div id="disclaimer_english">
+       <h4>
+    	<span style="color: #0089CF; outline:none;font-weight:bold;font-size: 13px;"  class="width100">DISCLAIMER CLAUSE </span>
+		<span style="outline:none;float:right;padding:10px 0 0 10px; color: #000000;font-size: 13px;font-weight:bold;text-decoration: none;">&#2337;&#2367;&#2360;&#2381;&#2325;&#2381;&#2354;&#2375;&#2350;&#2352; &#2325;&#2381;&#2354;&#2377;&#2395;  &#2361;&#2367;&#2306;&#2342;&#2368; &#2350;&#2375;&#2306; &#2342;&#2375;&#2326;&#2344;&#2375; &#2361;&#2375;&#2340;&#2369;   <a href="javascript:toggleDisclaimer('disclaimer_english','disclaimer_hindi');">   <b class="text_blue">   &#2351;&#2361;&#2366;&#2306; &#2325;&#2381;&#2354;&#2367;&#2325; </b></a> &#2325;&#2352;&#2375;&#2306;.</span>
+
+		 <span style="outline:none;float:right;padding:10px 0 0 510px; color: #000000;font-size: 13px;font-weight:bold;text-decoration: none;">
+		<a href="javascript:toggleDisclaimer('disclaimer_english','disclaimer_hindi');" ><b class="text_blue">Click here</b></a>  to view the disclaimer clause in Hindi.
+		</span>
+	</h4> 
+		<span class="heading txt_green font_13 width100">Terms Used:</span>
+    	<ul class="list">
+		      <li><span class="arrow"></span>
+		        <div><span class="txt_green">Corporate Customer: </span>Firm/Company/Institution (F/C/I) collecting payment from their beneficiaries.</div>
+		      </li>
+		      <li><span class="arrow"></span>
+		        <div><span class="txt_green">User:</span> The beneficiary making a payment to F/C/I for the services/goods availed.</div>
+		      </li>
+		      <li><span class="arrow"></span>
+		        <div>Bank shall not be responsible, in any way, for the quality or merchantability of any product/merchandise or any of the services related thereto, whatsoever, offered to the User by the Corporate Customer. Any disputes regarding the same or delivery of the Service or otherwise will be settled between Corporate Customer and the User and Bank shall not be a party to any such dispute. Any request for refund by the User on any grounds whatsoever should be taken up directly with the Corporate Customer and the Bank will not be concerned with such a request.</div>
+		      </li>
+		      <li><span class="arrow"></span>
+		        <div>Bank takes no responsibility in respect of the services provided and User shall not be entitled to make any claim against the Bank for deficiency in the services provided by the 
+		          Corporate Customer.</div>
+		      </li>
+		      <li><span class="arrow"></span>
+		        <div>The User shall not publish, display, upload or transmit any information prohibited under Rule 3(2) of the Information Technology (Intermediaries guidelines) Rules, 2011.</div>
+		      </li>
+		      <li><span class="arrow"></span>
+		        <div>In case of non-compliance of the terms and conditions of usage by the User, the Bank has the right to immediately terminate the access or usage rights of the User to the computer
+		          resource of the Bank and remove the non-compliant information.</div>
+		      </li>
+	    </ul>
+	   <div class="terms-conditions">
+	      <input type="checkbox" name="checkbox" id="checkbox">
+	      <div class="terms-conditions-text">I have read and accepted the terms and conditions stated above. <br>
+	        <span class="marginT5 float_left">(Click Check Box to proceed for payment.) </span></div>
+	    </div>
+	    <div class="clear">
+	    </div>
+	    <!-- <div class="button font_13 bold"><a class="float_left" href="#">Proceed</a></div> -->
+	    <center>
+	    	<input type="button" onclick="changeView('919231','')" value="Proceed" id="proceed" name="proceed">
+	    </center>
+	    <div class="clear"></div>
+  </div>
+  	
+  <div id="disclaimer_hindi" class="tab_hindi">
+	    <h4>
+	    
+	    <span class="width100" style="color: #0089CF; outline:none;font-weight:bold;font-size: 13px;" >&#2309;&#2360;&#2381;&#2357;&#2368;&#2325;&#2352;&#2339; &#2326;&#2339;&#2381;&#2337; </strong><strong>(</strong><strong>&#2337;&#2367;&#2360;&#2381;&#2325;&#2381;&#2354;&#2375;&#2350;&#2352; &#2325;&#2381;&#2354;&#2379;&#2360;</strong><strong>)</span>
+	    <span style="outline:none;float:right;padding:10px 0 0 10px; color: #000000;font-size: 13px;font-weight:bold;text-decoration: none;">
+	    &#2337;&#2367;&#2360;&#2381;&#2325;&#2381;&#2354;&#2375;&#2350;&#2352; &#2325;&#2381;&#2354;&#2377;&#2395;
+	    &#2309;&#2306;&#2327;&#2381;&#2352;&#2375;&#2332;&#2364;&#2368; 
+	      &#2350;&#2375;&#2306; &#2342;&#2375;&#2326;&#2344;&#2375; &#2361;&#2375;&#2340;&#2369;
+	    <a href="javascript:toggleDisclaimer('disclaimer_hindi','disclaimer_english');" >   
+ 		 <b class="text_blue">&#2351;&#2361;&#2366;&#2306; &#2325;&#2381;&#2354;&#2367;&#2325; </b>
+	      </a>&#2325;&#2352;&#2375;&#2306;.</span>
+	
+	    </h4>
+	    <span class="heading txt_green font_13 width100">&#2346;&#2381;&#2352;&#2351;&#2369;&#2325;&#2381;&#2340; &#2358;&#2348;&#2381;&#2342;:</strong></span>
+	    <ul class="list">
+	      <li><span class="arrow"></span>
+	        <div><span class="txt_green">&#2325;&#2377;&#2352;&#2381;&#2346;&#2379;&#2352;&#2375;&#2335; &#2327;&#2381;&#2352;&#2366;&#2361;&#2325; : </span>&#2347;&#2352;&#2381;&#2350; / &#2325;&#2306;&#2346;&#2344;&#2368; / &#2360;&#2306;&#2360;&#2381;&#2341;&#2366;&#2344; (&#2347; /&#2325;&#2306; /&#2360;&#2306; ) &#2332;&#2367;&#2344;&#2381;&#2361;&#2375;&#2306;  &#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366; &#2360;&#2375; &#2349;&#2369;&#2327;&#2340;&#2366;&#2344; &#2319;&#2325;&#2340;&#2381;&#2352;&#2367;&#2340; &#2325;&#2352;&#2344;&#2366; &#2361;&#2376;. </div>
+	      </li>
+	      <li><span class="arrow"></span>
+	        <div><span class="txt_green">&#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366; : </span>&#2332;&#2367;&#2360;&#2344;&#2375; &#2347; /&#2325;&#2306; /&#2360;&#2306; &#2325;&#2368;  &#2360;&#2375;&#2357;&#2366;&#2323;&#2306; / &#2357;&#2360;&#2381;&#2340;&#2369;&#2323;&#2306;  &#2325;&#2366; &#2313;&#2346;&#2351;&#2379;&#2327; &#2325;&#2367;&#2351;&#2366; &#2361;&#2376; &#2340;&#2341;&#2366; &#2347; /&#2325;&#2306; /&#2360;&#2306; &#2325;&#2379; &#2313;&#2360;&#2325;&#2375; &#2319;&#2357;&#2332; &#2350;&#2375;&#2306; &#2349;&#2369;&#2327;&#2340;&#2366;&#2344; &#2325;&#2367;&#2351;&#2366; &#2361;&#2376; &#2309;&#2341;&#2357;&#2366; &#2325;&#2352;&#2344;&#2366; &#2361;&#2376;.<br />
+		</div>
+	      </li>
+	      <li><span class="arrow"></span>
+	        <div>&#2325;&#2377;&#2352;&#2381;&#2346;&#2379;&#2352;&#2375;&#2335; &#2327;&#2381;&#2352;&#2366;&#2361;&#2325; &#2342;&#2381;&#2357;&#2366;&#2352;&#2366; &#2342;&#2367;&#2319; &#2332;&#2366;&#2344;&#2375; &#2357;&#2366;&#2354;&#2375; &#2313;&#2340;&#2381;&#2346;&#2366;&#2342; / &#2350;&#2366;&#2354; &#2351;&#2366;  &#2313;&#2360;&#2360;&#2375; &#2360;&#2306;&#2348;&#2306;&#2343;&#2367;&#2340; &#2360;&#2375;&#2357;&#2366;&#2323;&#2306; &#2325;&#2368; &#2327;&#2369;&#2339;&#2357;&#2340;&#2381;&#2340;&#2366; &#2351;&#2366; &#2357;&#2367;&#2325;&#2381;&#2352;&#2351; &#2325;&#2375; &#2354;&#2367;&#2319; &#2360;&#2381;&#2335;&#2375;&#2335; &#2348;&#2376;&#2306;&#2325; &#2332;&#2367;&#2350;&#2381;&#2350;&#2375;&#2342;&#2366;&#2352; &#2344;&#2361;&#2368;&#2306; &#2361;&#2379;&#2327;&#2366;. &#2360;&#2375;&#2357;&#2366;  &#2346;&#2381;&#2352;&#2342;&#2366;&#2344; &#2325;&#2352;&#2344;&#2375; &#2309;&#2341;&#2357;&#2366; &#2313;&#2360;&#2360;&#2375; &#2360;&#2306;&#2348;&#2344;&#2381;&#2343;&#2367;&#2340; &#2325;&#2367;&#2360;&#2368; &#2349;&#2368; &#2346;&#2381;&#2352;&#2325;&#2366;&#2352; &#2325;&#2366; &#2357;&#2367;&#2357;&#2366;&#2342; &#2325;&#2377;&#2352;&#2381;&#2346;&#2379;&#2352;&#2375;&#2335; &#2327;&#2381;&#2352;&#2366;&#2361;&#2325; &#2324;&#2352;  &#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366; &#2325;&#2375; &#2348;&#2368;&#2330; &#2344;&#2367;&#2346;&#2335;&#2366;&#2351;&#2366; &#2332;&#2366;&#2319;&#2327;&#2366; &#2324;&#2352; &#2357;&#2367;&#2357;&#2366;&#2342; &#2325;&#2375; &#2325;&#2367;&#2360;&#2368; &#2350;&#2366;&#2350;&#2354;&#2375; &#2350;&#2375;&#2306; &#2348;&#2376;&#2306;&#2325; &#2344;&#2367;&#2359;&#2381;&#2346;&#2325;&#2381;&#2359; &#2361;&#2379;&#2327;&#2366;. &#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366;  &#2342;&#2381;&#2357;&#2366;&#2352;&#2366; &#2325;&#2367;&#2360;&#2368; &#2349;&#2368; &#2325;&#2366;&#2352;&#2339;&#2357;&#2358; &#2346;&#2381;&#2352;&#2340;&#2367;&#2342;&#2366;&#2351; &#2361;&#2375;&#2340;&#2369; &#2309;&#2344;&#2369;&#2352;&#2379;&#2343; &#2360;&#2368;&#2343;&#2375; &#2325;&#2366;&#2352;&#2381;&#2346;&#2379;&#2352;&#2375;&#2335; &#2327;&#2381;&#2352;&#2366;&#2361;&#2325; &#2325;&#2379; &#2325;&#2352;&#2344;&#2366; &#2361;&#2379;&#2327;&#2366;  &#2324;&#2352; &#2320;&#2360;&#2375; &#2309;&#2344;&#2369;&#2352;&#2379;&#2343; &#2360;&#2375; &#2348;&#2376;&#2306;&#2325; &#2360;&#2306;&#2348;&#2306;&#2343;&#2367;&#2340; &#2344;&#2361;&#2368;&#2306; &#2361;&#2379;&#2327;&#2366;.<br />
+		</div>
+	      </li>
+	      <li><span class="arrow"></span>
+	        <div>
+	          <p>&#2325;&#2377;&#2352;&#2381;&#2346;&#2379;&#2352;&#2375;&#2335; &#2327;&#2381;&#2352;&#2366;&#2361;&#2325; &#2342;&#2381;&#2357;&#2366;&#2352;&#2366; &#2346;&#2381;&#2352;&#2342;&#2366;&#2344; &#2325;&#2368;  &#2327;&#2312; &#2360;&#2375;&#2357;&#2366;&#2323;&#2306; &#2325;&#2375; &#2360;&#2306;&#2348;&#2306;&#2343; &#2350;&#2375;&#2306; &#2348;&#2376;&#2306;&#2325; &#2325;&#2379;&#2312; &#2332;&#2367;&#2350;&#2381;&#2350;&#2375;&#2342;&#2366;&#2352;&#2368; &#2344;&#2361;&#2368;&#2306; &#2354;&#2375;&#2340;&#2366; &#2361;&#2376; &#2319;&#2357;&#2306; &#2325;&#2377;&#2352;&#2381;&#2346;&#2379;&#2352;&#2375;&#2335; &#2327;&#2381;&#2352;&#2366;&#2361;&#2325;  &#2342;&#2381;&#2357;&#2366;&#2352;&#2366; &#2346;&#2381;&#2352;&#2342;&#2366;&#2344; &#2325;&#2368; &#2327;&#2312; &#2360;&#2375;&#2357;&#2366;&#2323;&#2306; &#2350;&#2375;&#2306; &#2325;&#2350;&#2368; &#2325;&#2375; &#2354;&#2367;&#2319; &#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366; &#2348;&#2376;&#2306;&#2325; &#2325;&#2375; &#2357;&#2367;&#2352;&#2369;&#2342;&#2381;&#2343; &#2325;&#2367;&#2360;&#2368; &#2349;&#2368;  &#2340;&#2352;&#2361; &#2325;&#2366; &#2342;&#2366;&#2357;&#2366; &#2325;&#2352;&#2344;&#2375; &#2325;&#2375; &#2361;&#2325;&#2342;&#2366;&#2352; &#2344;&#2361;&#2368;&#2306; &#2361;&#2379;&#2306;&#2327;&#2375;&#2404; </p>
+	        </div>
+	      </li>
+	      <li><span class="arrow"></span>
+	        <div>&#2360;&#2370;&#2330;&#2344;&#2366; &#2346;&#2381;&#2352;&#2380;&#2342;&#2381;&#2351;&#2379;&#2327;&#2367;&#2325;&#2368; ( &#2350;&#2343;&#2381;&#2351;&#2357;&#2352;&#2381;&#2340;&#2368;  &#2342;&#2367;&#2358;&#2366;&#2344;&#2367;&#2352;&#2381;&#2342;&#2375;&#2358; )  {(Information Technology ( Intermediaries guidelines) Rules, 2011} &#2325;&#2375;  &#2344;&#2367;&#2351;&#2350; 3  (2) &#2325;&#2375;  &#2309;&#2306;&#2340;&#2352;&#2381;&#2327;&#2340; &#2344;&#2367;&#2359;&#2367;&#2342;&#2381;&#2343; &#2325;&#2367;&#2360;&#2368; &#2349;&#2368; &#2332;&#2366;&#2344;&#2325;&#2366;&#2352;&#2368; &#2325;&#2379; &#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366; &#2346;&#2381;&#2352;&#2342;&#2352;&#2381;&#2358;&#2367;&#2340; &#2324;&#2352;/&#2351;&#2366;  &#2309;&#2346;&#2354;&#2379;&#2337; &#2324;&#2352;/&#2351;&#2366;  &#2361;&#2360;&#2381;&#2340;&#2366;&#2306;&#2340;&#2352;&#2367;&#2340; &#2344;&#2361;&#2368;&#2306; &#2325;&#2352;&#2375;&#2327;&#2366;. <br />
+		</div>
+	      </li>
+	      <li><span class="arrow"></span>
+	        <div>
+	          <p>&#2313;&#2346;&#2351;&#2379;&#2327;&#2325;&#2352;&#2381;&#2340;&#2366; &#2342;&#2381;&#2357;&#2366;&#2352;&#2366; &#2346;&#2381;&#2352;&#2351;&#2379;&#2327; &#2350;&#2375;&#2306; &#2354;&#2366;&#2319;  &#2332;&#2366;&#2344;&#2375; &#2361;&#2375;&#2340;&#2369; &#2348;&#2344;&#2366;&#2319; &#2327;&#2319; &#2344;&#2367;&#2351;&#2350; &#2324;&#2352; &#2358;&#2352;&#2381;&#2340;&#2379;&#2306; &#2325;&#2366; &#2346;&#2366;&#2354;&#2344; &#2344; &#2325;&#2352;&#2344;&#2375; &#2325;&#2375; &#2350;&#2366;&#2350;&#2354;&#2375; &#2350;&#2375;&#2306;, &#2348;&#2376;&#2306;&#2325; &#2348;&#2376;&#2306;&#2325; &#2325;&#2375; &#2325;&#2350;&#2381;&#2346;&#2381;&#2351;&#2369;&#2335;&#2352; &#2360;&#2306;&#2360;&#2366;&#2343;&#2344; &#2325;&#2379;  &#2319;&#2325;&#2381;&#2360;&#2375;&#2360; &#2325;&#2352;&#2344;&#2375; &#2309;&#2341;&#2357;&#2366; &#2313;&#2360;&#2325;&#2375; &#2313;&#2346;&#2351;&#2379;&#2327; &#2325;&#2352;&#2344;&#2375; &#2325;&#2366; &#2309;&#2343;&#2367;&#2325;&#2366;&#2352; &#2340;&#2369;&#2352;&#2306;&#2340; &#2360;&#2350;&#2366;&#2346;&#2381;&#2340; &#2325;&#2352;&#2344;&#2375; &#2325;&#2366; &#2340;&#2341;&#2366; &#2327;&#2376;&#2352;-&#2309;&#2344;&#2369;&#2352;&#2370;&#2346; &#2332;&#2366;&#2344;&#2325;&#2366;&#2352;&#2368; &#2325;&#2379; &#2361;&#2335;&#2366;&#2344;&#2375; &#2325;&#2366; &#2309;&#2343;&#2367;&#2325;&#2366;&#2352;  &#2348;&#2376;&#2306;&#2325; &#2325;&#2379; &#2361;&#2376;.</p>
+	        </div>
+	      </li>
+		 
+	    </ul>
+	   	<div class="terms-conditions">
+	      <input type="checkbox" id="checkboxhindi" name="checkbox"/>
+	      <div class="terms-conditions-text">&#2350;&#2376;&#2306;&#2344;&#2375; &#2313;&#2346;&#2352;&#2379;&#2354;&#2381;&#2354;&#2367;&#2326;&#2367;&#2340; &#2358;&#2352;&#2381;&#2340;&#2379;&#2306; &#2324;&#2352;  &#2344;&#2367;&#2351;&#2350;&#2379;&#2306; &#2325;&#2379; &#2346;&#2397;&#2344;&#2375; &#2325;&#2375; &#2346;&#2358;&#2381;&#2330;&#2366;&#2340; &#2360;&#2381;&#2357;&#2368;&#2325;&#2366;&#2352; &#2325;&#2352; &#2354;&#2367;&#2351;&#2366; &#2361;&#2376;. <br />
+	        <span class="marginT5 float_left">(&#2349;&#2369;&#2327;&#2340;&#2366;&#2344; &#2325;&#2375; &#2354;&#2367;&#2319; &#2310;&#2327;&#2375; &#2348;&#2338;&#2364;&#2344;&#2375; &#2325;&#2375;  &#2354;&#2367;&#2319; &#2330;&#2375;&#2325; &#2348;&#2377;&#2325;&#2381;&#2360; &#2346;&#2352; &#2325;&#2381;&#2354;&#2367;&#2325; &#2325;&#2352;&#2375;&#2306;.)  </span></div>
+	    </div>
+	    <div class="clear"></div>
+	    <!-- <div class="button font_13 bold"><a class="float_left" href="#">Proceed</a></div> -->
+	    <center>
+<!-- 	    <input type="button"  name="proceed" id="proceed" value="Proceed"  onClick="changeView()" ></input></center> -->
+	    <input type="button" onclick="changeViewHindi('919231','')" value="Proceed" id="proceed" name="proceed">
+	    <div class="clear"></div>
+  	</div>
+  <div id="footer">
+    <div class="footer_txt float_left">&copy; Copyright  2013 OnlineSBI</div>
+    <div class="footer_txt float_right"><a href="#">Privacy Statement</a>  |  <a href="#">Disclosure</a>   |   <a href="#">Terms of Use</a></div>
+  </div>
+</div>
+</form>
+</body>
+</html>
+<script language="javascript" type="text/javascript"> 
+
+function toggleDisclaimer(disclaimer_hide,disclamier_show)
+{
+	document.getElementById(disclaimer_hide).style.display ='none';
+	document.getElementById(disclamier_show).style.display="inline";
+}
+
+function changeView(donationcorpID,instituteID)
+{
+	var stateCount=document.welcomecollect.donationstatelistcount.value;
+	if(stateCount>1)
+	{
+		var institueID=document.welcomecollect.selectedInstID.value;
+		var state=document.welcomecollect.selectedState.value; 
+	}
+	var tcCheck	= document.getElementById("checkbox").checked;
+	if(!tcCheck ){
+		alert('Please read and accept the terms and conditions');
+		return false;
+	}
+	/* All Categories having in single state or corpid,categoryname combination */ 
+	if(stateCount==1)
+	{
+		document.welcomecollect.action="donationdisplayfeepaymentdetails.htm";
+	}
+	/* Categories having multiple states */
+	else if(stateCount>1)
+	{
+		document.welcomecollect.action="displaydonationstatedetails.htm";
+	} 
+	else if(donationcorpID!="" && donationcorpID!=null)
+	{
+		document.welcomecollect.action="donationdisplayfeepaymentdetails.htm";
+	}
+	else 
+	{
+		document.welcomecollect.action="institutiontypedisplay.htm";
+	} 
+	document.welcomecollect.submit();
+ }
+ 
+function changeViewHindi(donationcorpID,instituteID)
+{
+	var stateCount=document.welcomecollect.donationstatelistcount.value;
+	if(stateCount>1)
+	{
+		var institueID=document.welcomecollect.selectedInstID.value;
+		var state=document.welcomecollect.selectedState.value; 
+	}
+	var tcCheck = document.getElementById("checkboxhindi").checked;
+	if(!tcCheck){
+		alert('Please read and accept the terms and conditions');
+		return false;
+	}
+	/* All Categories having in single state or corpid,categoryname combination */ 
+	if(stateCount==1)
+	{
+		document.welcomecollect.action="donationdisplayfeepaymentdetails.htm";
+	}
+	/* Categories having multiple states */
+	else if(stateCount>1)
+	{
+		document.welcomecollect.action="displaydonationstatedetails.htm";
+	} 
+	else if(donationcorpID!="" && donationcorpID!=null)
+	{
+		document.welcomecollect.action="donationdisplayfeepaymentdetails.htm";
+	}
+	else 
+	{
+		document.welcomecollect.action="institutiontypedisplay.htm";
+	} 
+	document.welcomecollect.submit();
+ }
+</script>

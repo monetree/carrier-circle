@@ -1,31 +1,7 @@
-
-[<tr>
-<td style="text-align: center;"> <span style="color: #008000;"><strong>Notification </strong></span></td>
-<td colspan="2" style="text-align: center;"><strong><a href="http://www.freejobalert.com/wp-content/uploads/2017/07/Notification-APVVP-Specialist-Doctor-Staff-Nurse-Other-Posts.pdf" target="_blank" title="APVVP">Click Here</a></strong><br/>
-<strong></strong></td>
-</tr>, <tr>
-<td style="text-align: center;"> <span style="color: #008000;"><strong> Official Website</strong></span></td>
-<td colspan="2" style="text-align: center;"><strong><a href="http://apvvp.nic.in/" target="_blank" title="APVVP">Click Here</a></strong></td>
-</tr>]
-
-
-[<tr>
-<td colspan="2">
-<p style="text-align: center;"><span style="color: #ff0000;"><strong><strong>Directorate of Public Health &amp; Family Welfare, Vijayawada</strong><strong> </strong></strong></span></p>
-<p style="text-align: center;"><span style="color: #ff00ff;"><strong>Advt No. 01/2018</strong></span></p>
-<p style="text-align: center;"><span style="color: #008000;"><strong><strong><strong>Civil Assistant Surgeon </strong>Vacancies</strong> 2018</strong></span></p>
-<p style="text-align: center;"><strong><a href="http://www.freejobalert.com" target="_blank">WWW.FREEJOBALERT.COM</a></strong></p>
-</td>
-</tr>, <tr>
-<td colspan="2" style="text-align: center;"><span style="color: #ff0000;"><strong>Application Fee</strong></span></td></tr>
-]
-
-
-[<tr>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">Security Officer</td>
-<td style="text-align: center;">01</td>
-<td style="text-align: center;">Bachelor degree</td>
-</tr>, <tr>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">Technical Asst/ Jr Engineer/</td></tr>]
+{'start_date': '29/09/2018', 'requirement_board': 'Higher Education Dept, Bhubaneswar', 'qualification': 'Any Degree', 'job_id': None, 'post_name': 'Junior Assistant  – 30 Posts', 'type': 1, 'last_date': '25-10-2018', 'more_info': 'http://www.freejobalert.com/dhe-odisha/178457/', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}
+{'start_date': '19/09/2018', 'requirement_board': 'OPSC', 'qualification': 'Diploma, Degree (Mining Engg), PG', 'job_id': None, 'post_name': 'Gelogist, Geophysicist & Mining Officer  – 35 Posts', 'type': 1, 'last_date': '27-10-2018', 'more_info': 'http://www.freejobalert.com/opsc/19103/#Geologist', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}
+{'start_date': '19/09/2018', 'requirement_board': 'OPSC', 'qualification': 'Any Degree, Computer Knowledge', 'job_id': 19103, 'post_name': 'Asst Section Officer  – 500 Posts', 'type': 2, 'last_date': '09-11-2018', 'more_info': 'http://www.freejobalert.com/opsc/19103/#Asst_SectionOfficer', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}
+{'start_date': '14/09/2018', 'requirement_board': 'OPSC', 'qualification': 'M.A/ M.Sc (Psychology), M.Phil', 'job_id': None, 'post_name': 'Clinical Psychologist  – 14 Posts', 'type': 1, 'last_date': '23-10-2018', 'more_info': 'http://www.freejobalert.com/opsc/19103/#Clinical-Psychologist', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}
+{'start_date': '14/09/2018', 'requirement_board': 'OPSC', 'qualification': 'Degree (Law)', 'job_id': 19103, 'post_name': 'Odisha Judicial Service Exam 2018  – 43 Posts', 'type': 2, 'last_date': '25-10-2018', 'more_info': 'http://www.freejobalert.com/opsc/19103/#Civil-Judge', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}
+{'start_date': '05/09/2018', 'requirement_board': 'OPSC', 'qualification': 'BDS', 'job_id': None, 'post_name': 'Dental Surgeon  – 61 Posts', 'type': 1, 'last_date': '11-10-2018', 'more_info': 'http://www.freejobalert.com/opsc/19103/#Dental-Surgeon', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}
+{'start_date': '29/08/2018', 'requirement_board': 'OPSC', 'qualification': 'Any Degree', 'job_id': 19103, 'post_name': 'Odisha Civil Services Examination, 2018  – 218 Posts', 'type': 2, 'last_date': '03-10-2018', 'more_info': 'http://www.freejobalert.com/opsc/19103/', 'Link': 'http://www.freejobalert.com/odisha-government-jobs/'}

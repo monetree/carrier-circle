@@ -288,6 +288,19 @@ class StateGovtJobs:
                 link = d[6].find("strong").find("a")['href']
                 if link.split(".")[1] == "freejobalert":
                     dict["more_info"] = d[6].find("strong").find("a")['href']
+
+
+                    # url_tree=requests.get(dict["more_info"])
+                    # url_content=url_tree.content
+                    # parser=BeautifulSoup(url_content,"html.parser")
+                    #
+                    # url_row = parser.find_all('tr')
+                    # for i in url_row:
+                    #     for title in i.find_all('span', attrs={'style':'color: #008000;'}):
+                    #         dict['Title'] = title.text
+                    #     for li in i.find_all('a',title=True, href=True):
+                    #         dict['Link'] = li['href']
+
                     dict["type"] = 2
                     link_remove_slash = link.split("/")
                     link_to_string = (''.join(link_remove_slash))
