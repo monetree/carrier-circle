@@ -91,3 +91,7 @@ group concat sql query:
 
 scraping files
 	https://www.geeksforgeeks.org/downloading-files-web-using-python/
+	
+
+ssl error:
+	https://stackoverflow.com/questions/23013220/max-retries-exceeded-with-url
