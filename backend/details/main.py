@@ -5,7 +5,6 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from random import randint
-import urllib.request as urllib
 
 class Details:
     def get_important_links(scrap_model_name,details_model_name,pdf_dir_name):
