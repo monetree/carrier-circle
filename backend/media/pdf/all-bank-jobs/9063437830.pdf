@@ -1,0 +1,1082 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="viewport" content="width=device-width. initial-scale=1.0" /><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><title>
+	Canara Bank Securities Ltd
+</title>
+<link rel="shortcut icon" type="image/ico" href="https://www.canmoney.in/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://www.canmoney.in/css/style.css?v=1.5" />
+    <link rel="stylesheet" type="text/css" href="https://www.canmoney.in/css/responsive.css" />
+  
+      <link href="https://www.canmoney.in/Popup/bootstrap-dialog.css"
+        rel="stylesheet" />
+    <link href="https://www.canmoney.in/Popup/bootstrap-dialog.min.css"
+        rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="https://www.canmoney.in/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" type="text/css" href="https://www.canmoney.in/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.canmoney.in/css/owl.carousel.css" />
+    <link href="https://www.canmoney.in/CalendarTheme/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://www.canmoney.in/css/custom.css" rel="stylesheet"
+        type="text/css" />
+            <link href="https://www.canmoney.in/css/jquery.yu2fvl.css" rel="stylesheet"
+        type="text/css" />
+    <!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+<![endif]-->
+<style>
+ @media (max-width:768px){.modal {
+    position: fixed !important;
+    top: 20px !important;
+    left: 20px !important;
+    right: 20px !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .modal.fade {
+    top: -100px !important;
+  }
+  .modal.fade.in {
+    top: 20px !important;
+  }}
+</style>
+<script src="https://www.canmoney.in/js/jQuery1.10.2.js"
+        type="text/javascript"></script>
+    
+    <style>
+        #fade {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.73);
+            z-index: 9999;
+            -moz-opacity: 1;
+            opacity: 1;
+            filter: alpha(opacity=70);
+        }
+
+        .rslides {
+            position: relative;
+            list-style: none;
+            overflow: hidden;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+            .rslides li {
+                -webkit-backface-visibility: hidden;
+                position: absolute;
+                display: none;
+                width: 100%;
+                left: 0;
+                border: none;
+                top: 0;
+            }
+
+                .rslides li:first-child {
+                    position: relative;
+                    display: block;
+                    float: left;
+                }
+
+            .rslides img {
+                display: block;
+                height: auto;
+                float: left;
+                width: 100%;
+                border: 0;
+            }
+
+        #light {
+            max-width: 600px;
+            margin: 130px auto;
+            position: relative;
+            height: 419px;
+            padding: 10px;
+        }
+    </style>
+    <style type="text/css">
+        @media only screen and (min-width: 260px) and (max-width: 380px) {
+            .Investor {
+                height: 251px;
+            }
+        }
+
+        @media only screen and (min-width: 370px) and (max-width: 440px) {
+            .Investor {
+                height: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 561px) and (max-width: 900px) {
+            .Investor {
+                height: 168px;
+            }
+        }
+
+
+        @media only screen and (min-width: 1000px) {
+            .Investor {
+                height: 251px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .modal-dialog {
+                width: 450px;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="/index.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=w3Ma-zvy079rG4t37eTstTsWF5aPzm97u11k9i7IlXY_uS3lKhi2Z_KTf3wGS-h-fjRovsVkHjxFihhASS1NObSGzTunxiQozQsdvdd_QZ867HRQK3N2GJqzr70OPoSVExWWhC2iAXj9r_gqjKF2kprZEkZkVI4i4ZJQ-dhp4Mf5aTow0&amp;t=2e2045e2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=AWZM4VzVdzlBmQOj6M1mqEiIGboMeJukeoDVP-e3utlMl5Q-xhgte1NH3lidrrYt5cW-zn8McdkDKBI0ciQOstkz59CuQNaqeHzrdfa4qeVGgFYoGZOOEIBzm9Oo3igXI5wks-cYAH6Fx_-5kVayrP1c7-k1&amp;t=2c9cbbe1" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=BZrIyc7ZpTXrIXVY2GQFyPBFRgKufz1yLGyHRSwGThGj5xj3WiJ5dvQJ6a-i5IzR4T_UgtZPY_FU03EXeF3rHK5PWOcL7w0Tgs0hHMxanBZlChR4uLO-XHLxQtHmZ1PO45H0yHVL3WfWemUPpIw3cFY9dd01&amp;t=2c9cbbe1" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=n04JEJgbEnTHalRJDntY9CPc0WKQqCmrlR_nMrXSnGDkGYcwtsU5WY6vP6oVzf5Olyl9hNCmKagUTt5b31tpcLV4GB-wecC0uISVrsqBeiwMwcfO7pyxq8AbWsX3DdCQL2v4D38_SAmDPT-qFzij0JTXOFatQK1iU4Q1Cn2zfUlTemaK0&amp;t=2c9cbbe1" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ScjOYJgGYuLZgURGPkWSaxMgg2DTpUQomRyEaoPgtE1uig9HY7Yrzfl10YCxVNPxGtlINvm759ISE2ZQarwHI0eisNKiVZgNtC80IOZmp+HCmGJTvSpWvDDF55dZlx0d8SjSTSklgTYpcRVZ6GnOpowEUzPyPSkvFmKUEV1zmLcuC7u6" />
+    
+    <div>
+        
+<style>
+    .top_submenu1 {
+        display: none;
+        position: absolute;
+        width: 250px;
+        left: 50%;
+        margin-left: -370px;
+        z-index: 999;
+        text-align: left;
+        top: 0px;
+        background: #173784;
+        color: #b9d9f3;
+    }
+</style>
+<header>
+    <div id="ctl00_ctl05_upd1">
+	
+            <div class="topband">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div id="ctl00_ctl05_srchpnl">
+		
+                                <div class="searchbox">
+                                    <input name="ctl00$ctl05$Tbhead1" type="text" value="enter company name" id="ctl00_ctl05_Tbhead1" class="autocomplete1 inputbx headtbComp1" onblur="this.value=(this.value=='') ? 'enter company name' : this.value;" onfocus="this.value=(this.value=='enter company name') ? '' : this.value;" alt="Search our site" />
+
+                                    <a onclick="return getcompanyHome();" id="ctl00_ctl05_BTNLNKhead1" class="serhicon" href="javascript:__doPostBack('ctl00$ctl05$BTNLNKhead1','')"><i class="fa fa-search" style="margin-top:2px;"></i></a>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            
+	</div>
+                        </div>
+                        
+                        <div class="col-md-9">
+                            <ul>
+                                <li><a href="https://www.canmoney.in/research/1-41">
+                                    <img src="https://www.canmoney.in/images/IPO-FPO-OFS_Reports.gif"></a></li>
+                                <li><a href="https://www.canmoney.in/home">Home</a></li>
+                                <li><a href="https://www.canmoney.in/about-us/">About&nbsp;Us</a></li>
+                                <li class="topband_padding-right"><a href="#">Tenders<b style="left: 84%;"></b></a>
+                                    <ul class="top_submenu">
+                                        <li style="width: 100%;"><a href="https://www.canmoney.in/pdf/RFQ.pdf" target="_blank">RFQ</a></li>
+                                        <li style="width: 100%;"><a href="https://www.canmoney.in/pdf/Corrigendum.pdf" target="_blank">Corrigendum</a></li>
+                                        <li style="width: 100%;"><a href="https://www.canmoney.in/pdf/Details.pdf" target="_blank">Details</a></li>
+                                        <li style="width: 100%;"><a href="https://www.canmoney.in/pdf/Others.pdf" target="_blank">Others</a></li>
+                                    </ul>
+
+                                </li>
+                                <li><a href="#">Careers <b></b></a>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('#submenuul li').hover(function () {
+                                                $(this).find('.top_submenu1').slideDown(300); //you can give it a speed
+                                            });
+                                            $('#submenuul li').mouseleave(function () {
+                                                $(this).find('.top_submenu1').slideUp(100); //you can give it a speed
+                                            });
+                                        });
+                                    </script>
+                                    <ul class="top_submenu" id="submenuul">
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.canmoney.in/contact-us/">Contact&nbsp;Us</a></li>
+                                <li><a href="https://www.canmoney.in/sitemap">Site&nbsp;Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+</div>
+    <div class="mainheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="logo"><a href="https://www.canmoney.in/home" alt="Canara Bank Securities Ltd">
+                        <img src="https://www.canmoney.in/images/logo.png" alt="logo" title="logo"></a> </h1>
+                </div>
+                <div class="col-md-8">
+                    <div class="canmoney-logo">
+                        <img src="https://www.canmoney.in/images/can_money.png" alt="can_money" title="can_money">
+                    </div>
+                    <div class="CB contact_info">
+                        <div class="row">
+                            <div class="col-sm-5"><span><b class="sprite email_icon"></b><a href="mailto:customercare@canmoney.in">customercare@canmoney.in</a></span> </div>
+                            <div class="col-sm-7"><span style="padding-left: 9px;"><b class=" "></b>Toll Free: 1800 22 0369 / 1800 103 1369</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="ctl00_LoadingCan_UpdateProgress1" style="display:none;">
+	
+            <div id="progressBackgroundFilter" class="progressBackgroundFilter">
+            </div>
+            <center>
+                <div id="processMessage" class="processMessage">
+                  
+                    <img style="border:0px;" src="https://www.canmoney.in/images/CanMoney_Preloader.gif" alt="Loading..." title="Loading..."   />
+                </div>
+            </center>
+        
+</div>
+</div>
+
+
+        
+    <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="hslider">
+        <a href="https://www.canmoneyonline.com/stsb/Login.aspx" rel="nofollow" target="_blank" class="banclbtn trans">Client Login</a>
+          <ul class="rslides" id="Hbanner">
+            <li><img src="https://www.canmoney.in/images/ban1.jpg" alt="banner1" title="banner1"></li>
+            <li><img src="https://www.canmoney.in/images/ban2.jpg" alt="banner2" title="banner2"></li>
+            <li><img src="https://www.canmoney.in/images/ban3.jpg" alt="banner3" title="banner3"></li>
+            <li><img src="https://www.canmoney.in/images/ban4.jpg" alt="banner4" title="banner4"></li>
+          </ul>
+        </div>
+      </div>
+          <div class="col-md-5">
+        <div class="row">
+         <div class="col-xs-12">
+            <ul class="prodtab">
+              <li><a href="https://www.canmoney.in/product-services" class="single-prod"><i class="sprite prod_icon"></i><span>Product &
+				  Services</span></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul class="prodtab">
+              <li><a href="https://www.canmoney.in/research"><i class="sprite research_icon"></i>Research</a></li>
+              <li><a href="https://www.canmoney.in/nri-nonindivisual"><i class="sprite Nri_icon"></i>Nri / Non-
+                Indivuduals</a></li>
+              <li><a href="https://www.canmoney.in/register-here"><i class="sprite regt_icon"></i>Register
+                here</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul class="prodtab">
+              <li><a href="https://www.canmoney.in/market/gainers"><i class="sprite mrktInfo_icon"></i>Market
+                Information</a></li>
+              <li><a href="https://www.canmoneyonline.com/stsb/Login.aspx" rel="nofollow" target="_blank"><i class="sprite trade_icon"></i>Trade
+                Here</a></li>
+              <li><a href="https://www.canmoney.in/aboutus-trading"><i class="sprite aboutrade_icon"></i>About
+                Trading</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        
+<style>
+    
+    @media only screen and (min-width: 991px) and (max-width: 1200px)
+    {
+        .Inrmarcontable .markettable td, .Inrmarcontable .markettable th
+        {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .Inrmarcontable .markettable th:first-child
+        {
+            padding-left: 2px;
+        }
+        .Inmcompanyname .tsthomemarket
+        {
+            padding-left: 0px !important;
+        }
+    }
+    .homeimage1
+    {
+        padding-left: 6px;
+    }
+    .homeimage1r
+    {
+        padding-right: 0px;
+    }
+    @media only screen and (max-width: 333px)
+    {
+        .temp123ul > li
+        {
+            width: 19.6%;
+        }
+    }
+    @media only screen and (max-width: 991px)
+    {
+        .homeimage1
+        {
+            padding-left: 15px;
+        }
+        .homeimage1r
+        {
+            padding-right: 15px;
+        }
+    }
+    
+    @media only screen and (min-width: 992px)
+    {
+    	.mrktxt
+    	{
+    		padding:0px 10px;
+text-align:center;
+    		
+    	}
+    	.mrktxt h5 
+    	{
+    		font-size:16px;
+    	}
+    	.mrktxt h3 
+    	{
+    		font-size:24px;
+    	}
+    	.mrkt_btm_tab li a {
+    line-height: 30px;
+    	}
+    }
+
+</style>
+<div class="cmwhitebg" style="background-color:#ffaf33;">
+    <h3>
+        Today's Market
+        <ul class="nsenav idTabs">
+            <li><a href="#nse" onclick="return fnRefreshFrame('hCM1');">NSE</a></li>
+            <li><a href="#bse" onclick="return fnRefreshFrame('hCM2');" class="selected">BSE</a></li>
+        </ul>
+    </h3>
+   <div id="nse" class="row">
+        <div id="ctl00_ContentPlaceHolder1_ctl00_UpdatePanel1">
+	
+                <div id="ctl00_ContentPlaceHolder1_ctl00_chartnse">
+                    <div class="col-sm-12 mrktchart homeimage1">
+                        <iframe id="hCM1" frameborder="0" height="100px" scrolling="no" src="Amcharts/Homechart.aspx?exchange=NSE"
+                            width="100%"></iframe>
+                    </div>
+                    <br />
+                    <div class="col-sm-12 homeimage1" style="padding-bottom: 10px;">
+                        <div class="mrktxt ">
+                            <h5 style="display:inline;">
+                                Nifty</h5>
+                            <h3 id="ctl00_ContentPlaceHolder1_ctl00_nselamt" class="mrkt_red" style="display:inline;">10,316.45</h3>
+                            <p id="ctl00_ContentPlaceHolder1_ctl00_nsechange" class="mrkt_red" style="display:inline;">-282.80 ( -2.67 )</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ctl00_ContentPlaceHolder1_ctl00_marketnse" class="col-sm-12" style="display: none;">
+                    <div id="ctl00_ContentPlaceHolder1_ctl00_markettablense" class="Inrmarcontable"><table class='markettable'><thead> <tr> <th class='thborri'>Company Name</th><th class='thborri'>LTP( <span class='rupee'><i class='fa fa-inr'></i></span> )</th><th class='thborri'>Change( <span class='rupee'><i class='fa fa-inr'></i></span> )</th><th class=''>Change(%)</th> </tr></thead>   <tbody><tr> <td class='Inmcompanyname bgsha' data-title='Company Name'><a company-name='Infosys Ltd.' company-code='13020007' class='Mrkt_det tsthomemarket'></a><a title='Infosys Ltd.' href='https://www.canmoney.in/fundamental/livequotes/infosys-ltd'>Infosys Ltd.</a></td> <td class='Inmprice' data-title='LTP'>724.60 </td><td class='Inmprice' data-title='Change'><span class='mgreen'>17.40 </span></td><td class='Inmprice mgreen' data-title='Change(%)'><span class='mgreen'>2.46 </span></td> </tr><tr> <td class='Inmcompanyname bgsha' data-title='Company Name'><a company-name='Titan Company Ltd.' company-code='12600001' class='Mrkt_det tsthomemarket'></a><a title='Titan Company Ltd.' href='https://www.canmoney.in/fundamental/livequotes/titan-company-ltd'>Titan Comp..</a></td> <td class='Inmprice' data-title='LTP'>792.10 </td><td class='Inmprice' data-title='Change'><span class='mgreen'>15.40 </span></td><td class='Inmprice mgreen' data-title='Change(%)'><span class='mgreen'>1.98 </span></td> </tr> </tbody></table><a href='https://www.canmoney.in/market/gainers/nse' class='Mrkt_det FR'>more</a></div>
+                </div>
+            
+</div>
+    </div>
+    <div id="bse" class="row">
+        <div id="ctl00_ContentPlaceHolder1_ctl00_UpdatePanel2">
+	
+                <div id="ctl00_ContentPlaceHolder1_ctl00_chartbse">
+                    <div class="col-sm-12 mrktchart homeimage1">
+                        <iframe id="hCM2" frameborder="0" width="100%" height="100px" scrolling="no" src="Amcharts/Homechart.aspx?exchange=BSE">
+                        </iframe>
+                    </div>
+                    <br />
+                    <div class="col-sm-12 homeimage1" style="padding-bottom: 10px;">
+                        <div class="mrktxt">
+                            <h5 style="display:inline;">
+                                Sensex</h5>
+                            <h3 id="ctl00_ContentPlaceHolder1_ctl00_bselamt" class="mrkt_red" style="display:inline;">34,376.99</h3>
+                            <p id="ctl00_ContentPlaceHolder1_ctl00_bsechange" class="mrkt_red" style="display:inline;">-792.17 ( -2.25 )</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ctl00_ContentPlaceHolder1_ctl00_marketbse" class="col-sm-12" style="display: none;">
+                    <div id="ctl00_ContentPlaceHolder1_ctl00_markettablebse" class="Inrmarcontable"><table class='markettable'><thead> <tr> <th class='thborri'>Company Name</th><th class='thborri'>LTP( <span class='rupee'><i class='fa fa-inr'></i></span> )</th><th class='thborri'>Change( <span class='rupee'><i class='fa fa-inr'></i></span> )</th><th class=''>Change(%)</th> </tr></thead>   <tbody><tr> <td class='Inmcompanyname bgsha' data-title='Company Name'><a company-name='PC Jeweller Ltd.' company-code='15070224' class='Mrkt_det tsthomemarket'></a><a title='PC Jeweller Ltd.' href='https://www.canmoney.in/fundamental/livequotes/pc-jeweller-ltd'>PC Jewelle..</a></td> <td class='Inmprice' data-title='LTP'>59.65 </td><td class='Inmprice' data-title='Change'><span class='mgreen'>3.35 </span></td><td class='Inmprice mgreen' data-title='Change(%)'><span class='mgreen'>5.95 </span></td> </tr><tr> <td class='Inmcompanyname bgsha' data-title='Company Name'><a company-name='Kwality Ltd.' company-code='11050093' class='Mrkt_det tsthomemarket'></a><a title='Kwality Ltd.' href='https://www.canmoney.in/fundamental/livequotes/kwality-ltd'>Kwality Ltd.</a></td> <td class='Inmprice' data-title='LTP'>11.98 </td><td class='Inmprice' data-title='Change'><span class='mgreen'>0.57 </span></td><td class='Inmprice mgreen' data-title='Change(%)'><span class='mgreen'>5.00 </span></td> </tr> </tbody></table><a href='https://www.canmoney.in/market/gainers/bse' class='Mrkt_det FR'>more</a></div>
+                </div>
+            
+</div>
+    </div>
+    <div id="ctl00_ContentPlaceHolder1_ctl00_UpdatePanel3">
+	
+            <ul class="mrkt_btm_tab temp123ul" style="margin-top: 0px;">
+                <li>
+                    <a id="ctl00_ContentPlaceHolder1_ctl00_lnkChart" class="selt" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$lnkChart','')">Chart</a>
+                </li>
+                <li>
+                    <a id="ctl00_ContentPlaceHolder1_ctl00_lnkGainers" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$lnkGainers','')">Gainers</a>
+                </li>
+                <li>
+                    <a id="ctl00_ContentPlaceHolder1_ctl00_lnkLosers" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$lnkLosers','')">Losers</a>
+                </li>
+                <li>
+                    <a id="ctl00_ContentPlaceHolder1_ctl00_lnkVolume" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$lnkVolume','')">Volume</a>
+                </li>
+                <li>
+                    <a id="ctl00_ContentPlaceHolder1_ctl00_lnkValue" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$lnkValue','')">Value</a>
+                </li>
+            </ul>
+        
+</div>
+</div>
+
+      </div>
+
+     <div class="col-md-3" style="position:relative">
+      <div style="position:absolute; right:15px; top:0px; z-index:+999"><img src="https://www.canmoney.in/images/new.gif" width="39" height="39" alt="new" title="new"></div>
+        <div id="smallslider" class="owl-carousel">
+              <div class="item img1" data-toggle="modal" data-target=".bs-example-modal" style="cursor:pointer;">
+    
+          
+          </div>
+<div class="item"  style="cursor:pointer;">
+   
+          <div class='descrp' style='text-align: center !important;font-size: 13px;color: #cc8b00;width: auto;padding:10px 15px;position: relative;'><span>Due to migration activity, Mutual Fund platform will not be available from 05/10/2018 14:00 to 06/10/2018 20:00.</span></div>
+          </div>
+        
+        
+          </div>
+        
+        
+        <div class="modal fade bs-example-modal1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display:none;">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body" style="padding: 15px 0 0 23px;">
+      <div>
+      <div class='row descrp' style='margin: 20% auto;'><span>Due to migration activity, Mutual Fund platform will not be available from 05/10/2018 14:00 to 06/10/2018 20:00.</span></div>
+    
+      </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="modal fade bs-example-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display:none;">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      <div class="img1" style="height: 380px;">
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+      
+      
+  
+        </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+
+
+
+
+
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-md-5">
+        <div id="ctl00_ContentPlaceHolder1_ctl01_news" class="newscont"><h3>News</h3><h5>Sensex tanks nearly 400 pts ahead of RBI verdict; N...<i>(14:37)</i></h5><p>Benchmark indices BSE Sensex and NSE&rsquo;s Nifty 50 fell today dragged mainly by oil stoc...</p><a href='https://www.canmoney.in/news-details/live-457879' class='readmore_btn'>Read More</a><div class='CB'></div><ul class='newslist'><li><a href='https://www.canmoney.in/news-details/live-457879'>Sensex tanks nearly 400 pts ahead of RBI verdict; N...</a></li><input type='hidden' id='hdval0' class='htext' value='Sensex tanks nearly 400 pts ahead of RBI verdict; Nifty holds 10,400~05-Oct-2018  2:37PM~Benchmark indices BSE Sensex and NSE&rsquo;s Nifty 50 fell today dragged mainly by oil stocks such as HPCL, BPCL and IOC. Shares of oil marketing companies slumped after the government asked the companies to absorb Rs 1 cut in fuel prices. Investors also await the Reserve Bank of India&rsquo;s policy decision due today.<br><br>
+Globally, European markets are lower today with shares in Germany off the most. The DAX is down 0.84% while London&#39;s FTSE 100 is off 0.74% and France&#39;s CAC 40 is lower by 0.44%. <br><br>
+Back home, at 14:25 hours, BSE SENSEX was at 34776.36 down by -392.8 points or by -1.12 % and NSE Nifty was at 10442.35 down by -156.9 points or by -1.48 %.<br><br>
+The BSE Sensex touched intraday high of 35118.54 and intraday low of 34651.89. The NSE Nifty touched intraday high of 10540.65 and intraday low of 10405.6.<br><br>
+The top gainers of the BSE Sensex pack were IndusInd Bank Ltd. (Rs. 1627.00,+2.44%), Sun Pharmaceutical Industries Ltd. (Rs. 609.00,+1.69%), Infosys Ltd. (Rs. 715.75,+1.33%), HDFC Bank Ltd. (Rs. 1983.00,+1.13%), Tata Consultancy Services Ltd. (Rs. 2080.00,+0.76%), among others.<br><br>
+The top losers of the BSE Sensex pack were Oil And Natural Gas Corporation Ltd. (Rs. 149.10,-14.70%), Reliance Industries Ltd. (Rs. 1076.00,-3.98%), Mahindra & Mahindra Ltd. (Rs. 770.20,-3.15%), Bajaj Auto Ltd. (Rs. 2566.60,-3.15%), ITC Ltd. (Rs. 280.65,-2.30%), among others.<br><br>
+Among the sectors, BSE Oil&Gas index was at 12362.25 down by -1545.02 points or by -11.11%. Hindustan Petroleum Corporation Ltd. (Rs. 170.30,-22.80%), Bharat Petroleum Corporation Ltd. (Rs. 267.45,-20.48%), Indian Oil Corporation Ltd. (Rs. 119.85,-14.91%), Oil And Natural Gas Corporation Ltd. (Rs. 149.00,-14.76%), Oil India Ltd. (Rs. 187.90,-10.12%).<br><br>
+The Market breadth, indicating the overall strength of the market, was weak. On BSE out of total shares traded 2850 , shares advanced were 933 while 1778 shares declined and 139 were unchanged.' /></li><li><a href='https://www.canmoney.in/news-details/live-457850'>Sensex sinks nearly 500 pts; Nifty nears 10400</a></li><input type='hidden' id='hdval1' class='htext' value='Sensex sinks nearly 500 pts; Nifty nears 10400~05-Oct-2018  1:35PM~Markets are trading in the red on Friday, ahead of the monetary policy review by the Reserve Bank of India due later today.<br><br>
+Given the rupee&#39;s slide and soaring crude prices, it&#39;s almost certain that the Monetary Policy Committee (MPC) of the Reserve Bank of India (RBI) is likely to raise the repo rate for the third time in a row.<br><br>
+In the last policy meet, the RBI hiked repo rate by 25 basis points to 6.50 per cent, for the second time in a row. Reverse repo -- the rate at which the Reserve Bank borrows money from commercial banks within the country -- was adjusted to 6.25 per cent. The MPC had kept its policy stance neutral.<br><br>
+Asian shares were mostly fragile on Friday after benchmark US Treasury yields surged to a seven-year high and strong economic data fanned concerns about inflation and the risk of faster-than-expected interest rate hikes.<br><br>
+At 1:18PM BSE SENSEX was at 34676.05 down by -493.11 points or by -1.4 % and NSE Nifty was at 10414.45 down by -184.8 points or by -1.74 %.<br><br>
+The BSE Sensex touched intraday high of 35118.54 and intraday low of 34651.89. The NSE Nifty touched intraday high of 10540.65 and intraday low of 10406.85.<br><br>
+The top gainers of the BSE Sensex pack were Infosys Ltd. (Rs. 716.95,+1.50%), IndusInd Bank Ltd. (Rs. 1608.80,+1.29%), HDFC Bank Ltd. (Rs. 1977.50,+0.85%), Sun Pharmaceutical Industries Ltd. (Rs. 603.00,+0.69%), Tata Consultancy Services Ltd. (Rs. 2071.05,+0.33%), among others.<br><br>
+The top losers of the BSE Sensex pack were Oil And Natural Gas Corporation Ltd. (Rs. 147.50,-15.62%), Mahindra & Mahindra Ltd. (Rs. 754.00,-5.19%), Reliance Industries Ltd. (Rs. 1080.45,-3.58%), Coal India Ltd. (Rs. 262.70,-3.45%), Bajaj Auto Ltd. (Rs. 2564.95,-3.21%), among others.<br><br>
+The Market breadth, indicating the overall strength of the market, was weak. On BSE out of total shares traded 2722, shares advanced were 860 while 1728 shares declined and 134 were unchanged.' /></li><li><a href='https://www.canmoney.in/news-details/live-457834'>Mid-Session: Sensex sinks over 400 pts ahead of MPC...</a></li><input type='hidden' id='hdval2' class='htext' value='Mid-Session: Sensex sinks over 400 pts ahead of MPC rate decision~05-Oct-2018 12:37PM~Indian benchmarks continued to extend losses during the noon trading session ahead of Monetary Policy Committee&#39;s interest rate decision due later in the day. Given the rupee&#39;s slide and soaring crude prices, it&#39;s almost certain that the Monetary Policy Committee (MPC) of the Reserve Bank of India (RBI) is likely to raise the repo rate for the third time in a row.<br><br>
+In the last policy meet, the RBI hiked repo rate by 25 basis points to 6.50 per cent, for the second time in a row. Reverse repo -- the rate at which the Reserve Bank borrows money from commercial banks within the country -- was adjusted to 6.25 per cent. The MPC had kept its policy stance neutral.<br><br>
+At 12:25 hours, the 30-share benchmarks index was trading at 34740.53 down by 428.63 points or by 1.22 per cent, while the NSE Nifty was at 10443.5 down by 155.75 points or by 1.47 per cent.<br><br>
+In the choppy trade so-far, Sensex touched intraday high of 35118.54 and intraday low of 34732.78 The NSE Nifty touched intraday high of 10540.65 and intraday low of 10433.95.<br><br>
+The top gainers of the BSE Sensex pack were IndusInd Bank Ltd. (Rs. 1608.05,+1.24%), Power Grid Corporation of India Ltd. (Rs. 191.20,+1.22%), Kotak Mahindra Bank Ltd. (Rs. 1085.00,+1.05%), Infosys Ltd. (Rs. 713.50,+1.01%), HDFC Bank Ltd. (Rs. 1969.95,+0.46%), among others.<br><br>
+The top losers of the BSE Sensex pack were Oil And Natural Gas Corporation Ltd. (Rs. 149.00,-14.76%), Reliance Industries Ltd. (Rs. 1080.55,-3.57%), Vedanta Ltd. (Rs. 231.90,-3.40%), Coal India Ltd. (Rs. 263.00,-3.34%), Mahindra & Mahindra Ltd. (Rs. 769.50,-3.24%), among others.<br><br>
+Among the sectors, CDS index was at 18814.2 up by 268.75 points or by 1.45%. PC Jeweller Ltd. (Rs. 61.05,+8.44%), Titan Company Ltd. (Rs. 809.30,+4.27%), Blue Star Ltd. (Rs. 574.05,+1.34%), Rajesh Exports Ltd. (Rs. 678.05,+0.79%), TTK Prestige Ltd. (Rs. 5933.90,+0.44%),.<br><br>
+On the flip side, Oil&Gas index was at 12332.94 down by -1574.33 points or by -11.32%. Hindustan Petroleum Corporation Ltd. (Rs. 167.25,-24.18%), Bharat Petroleum Corporation Ltd. (Rs. 269.70,-19.82%), Indian Oil Corporation Ltd. (Rs. 119.40,-15.23%), Oil And Natural Gas Corporation Ltd. (Rs. 149.00,-14.76%), Oil India Ltd. (Rs. 186.45,-10.81%),.<br><br>
+The Market breadth, indicating the overall strength of the market, was weak. On BSE out of total shares traded 2593 , shares advanced were 846 while 1620 shares declined and 127 were unchanged.
+' /></li> </ul><a href='https://www.canmoney.in/news/marketnews' class='readmore_btn'>Read More</a></div>
+    
+
+      </div>
+    </div>
+    <div class="row">
+   
+      
+
+        <div class="col-md-3">
+        <div id="Investorsslider" class="owl-carousel">
+   
+<div class="item" style="cursor:pointer;">   
+    <div class="blubdrbg">
+          <h3>Attention Investors</h3>
+          <p class="deskp" style="text-align:justify">"Prevent unauthorized transactions in your account --> Update your mobile numbers/email IDs  with your stock brokers. Receive alerts on your Registered Mobile for <strong>all debit and other important transactions </strong>in your demat account directly from Exchange on your Mobile / Email at the end of the day"
+<strong>..Issued in the interest of Investors</strong></p>
+    <a href="https://www.canmoney.in/format.pdf" target="_blank" class="yelowbtn trans"> Click here to download the format for
+          Updation/ Modification of
+          Mobile Number / Email </a> 
+        </div>
+      </div>
+   <div class="item" style="cursor:pointer;">
+          <div class="blubdrbg Investor" >
+          <h3>Attention Investors</h3>
+          <p class="deskp" style="text-align:justify">"No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorize your bank to make payment in case of allotment. No worries for refund as the money remains in investor's account." </p>
+
+              </div>
+         
+      </div>
+            <div class="item" style="cursor:pointer;">
+                      <div class="blubdrbg Investor" >
+          <h3>Attention Investors</h3>
+          <p class="deskp" style="text-align:justify">"KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary." </p>
+
+              </div>
+      </div>
+            <div class="item" style="cursor:pointer;">
+                  <div class="blubdrbg Investor" >
+          <h3>Attention Investors</h3>
+          <p class="deskp" style="text-align:justify">Prevent Unauthorized Transactions in your demat account --> Update your Mobile Number with your Depository Participant. Receive alerts on your Registered Mobile for<strong> all debit and other important transactions </strong> in your demat account directly from NSDL on the same day...<strong>issued in the interest of investors.</strong>"</p>
+</div>
+
+      </div>
+               <div class="item" style="cursor:pointer;">
+                  <div class="blubdrbg Investor" >
+          <h3>Attention Investors</h3>
+          <p class="deskp" style="text-align:justify">
+              This is to notify that as per SEBI circular no SEBI/HO/MIRSD/DOP/CIR/P/2018/113, We will receive/made payment from/to clients strictly by account payee crossed cheques/DD or by way of direct credit into the bank account through NEFT or any other mode permitted by the RBI. No cash will be accepted directly or by way of cash deposit in our bank account
+
+          </p>
+</div>
+
+      </div>
+              <div class="item" style="cursor:pointer;">
+                  <div class="blubdrbg Investor" >
+          <h3>Revised Working Hours</h3>
+          <p class="deskp" style="text-align:justify">
+              We wish to inform that revised working hours of the Company at Mumbai and Bangalore centres will be as under:
+<br><br>
+Working Hours  : 09:00 AM to 06:00 PM<br>
+Business Hours : 09:00 AM to 05:00 PM<br>
+<br>
+Our office will remain closed on all Saturdays and Sundays besides all Exchange trading holidays.
+    </p>
+</div>
+
+      </div>
+            </div>
+                   </div>
+          
+      <div class="col-md-3">
+        <div class="imgbanAdvt" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/Dial To Trade.pdf","_blank")'> <img alt="dial2trade" title="dial2trade" src="https://www.canmoney.in/images/dial2trade.jpg"> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="imgbanAdvt" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/BasicSystemConfig.pdf","_blank")'> <img alt="General_quer" title="General_quer" src="https://www.canmoney.in/images/General_quer_ban.jpg"> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="imgbanAdvt" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/SIP RELATED NOTICE.pdf","_blank")'> <img alt="mutualfund" title="mutualfund" src="https://www.canmoney.in/images/mutualfund1.jpg"> </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-12">
+        <div id="miltslider" class="owl-carousel">
+          <div class="item" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/HCL.pdf","_blank")'> <img alt="img11" title="img11" src="https://www.canmoney.in/images/IPO_OFS_Buyback.gif"> </div>
+        <!--  <div class="item" style="cursor:pointer;" onclick='window.open("http://www.canararobeco.com/Pages/default.aspx","_blank")'> <img alt="img0" title="img0" src="https://www.canmoney.in/images/b1.jpg"> </div>-->
+          <div class="item" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/TAX FREE BONDS AVAILABLE WITH US FOR SALE.docx","_blank")' > <img alt="img1" title="img1" src="https://www.canmoney.in/images/TaxFree.jpg"> </div>
+          <div class="item" style="cursor:pointer;" onclick='window.open("https://netbanking.canarabank.in/entry/ENULogin.jsp","_blank")'> <img alt="img2" title="img2" src="https://www.canmoney.in/images/ASBA.jpg"> </div>
+          
+          
+           
+
+        
+       
+          
+
+          
+          <div class="item" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/MRV_MSG.PDF","_blank")'> <img alt="img7" title="img7" src="https://www.canmoney.in/images/Trading Limits.jpg"> </div>
+          
+          
+          
+          <div class="item" style="cursor:pointer;" onclick='window.open("online-trading.aspx","_self")'> <img alt="img9" title="img9" src="https://www.canmoney.in/images/b41.jpg"> </div>
+
+         <!-- <div  class="item" > <img alt="img10" title="img10" src="https://www.canmoney.in/images/whatsnew.jpg"> </div>-->
+          <div class="item" style="cursor:pointer;" onclick='window.open("https://www.canmoney.in/car_sale.pdf","_blank")'> <img alt="img11" title="img11" src="https://www.canmoney.in/images/announcement.jpg"> </div>
+          
+       
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bs-example-modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display:none;">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content rgess">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body text-center" style="max-height: 100% !important; overflow-y: visible !important;padding:15px !important;margin-top:10px;"><h1>RGESS</h1>
+              <h2>Rajiv Gandhi Equity Savings Scheme</h2>
+              <p>An Opportunity For 1st Time Investors To Save Tax And 
+Get Richer In The Same Breath</p>
+<p><button class="btn viewsch" onclick='window.open("https://www.canmoney.in/Rgess latest notification 18 Dec 2013.pdf","_blank");return false;'>To View The Scheme Details</button> <button class="btn faqbtn" onclick='window.open("https://www.canmoney.in/FAQ_RGESS.pdf","_blank");return false;'>FAQs</button></p>
+              </div>
+              <div class="modal-footer" style="box-shadow: none;background: none;"> </div>
+            </div>
+          </div>
+        </div>
+
+
+           
+  </div>
+    <a id="f_news" href="https://www.canmoney.in/Browser-Non-Compatibilty.aspx"></a>
+
+          
+
+
+
+
+<div id="fade" onclick="lightbox_close();">
+                    
+          <div id="light">
+                     <a title="Close"  href="javascript:HideContent_homePop_Up('light');" class="close"  ><img style="margin-top: -5px;margin-left: 8px;"  alt="" src="images/close.png" /></a>
+
+            <ul class="rslides">
+                <li>
+                    <img src="images/PopupPh.jpg"  alt="Banner member website"  />
+
+                </li>
+            </ul>
+        </div>
+     </div>
+</section>
+
+        
+<footer>
+<div class="container">
+    <div class="ftmainnav">
+      <ul>
+        <li class="selected"><a href="https://www.canmoney.in/home">Home</a></li>
+         <li><a href="https://www.canmoney.in/research-main/indian-markets">Research</a></li>
+        <li><a href="https://www.canmoneyonline.com/stsb/pages/login.aspx" rel="nofollow" target="_blank">Trade Here</a></li>
+        <li><a href="https://www.canmoney.in/pdf/BasicSystemConfig.pdf" target="_blank" rel="nofollow" >System Config</a></li>
+        <li><a href="https://www.canmoney.in/online-trading.aspx">Trading Demo</a></li>
+        <li><a href="https://www.canmoney.in/faqs">FAQs</a></li>
+        <li><a href="https://www.canmoney.in/aboutus-trading">About Trading</a></li>
+        <li><a href="https://www.canmoney.in/contact-us">Reach Us</a></li>
+        <li><a href="https://www.canmoney.in/register-here">Register Here</a></li>
+          <li><a href="https://www.canmoney.in/Rights-obligations">Rights & Obligations</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ftbg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftleftnav">
+            <ul>
+              
+              <li><a href="https://www.canmoney.in/sitemap">Sitemap</a></li>
+              <li><a href="https://www.canmoney.in/disclaimer">Disclaimer</a></li>
+              <li><a href="https://www.canmoney.in/pdf/D2T.pdf" target="_blank" rel="nofollow">Dail 2 Trade - Terms</a></li>
+              <li><a href="https://www.canmoney.in/password-policy">Password Policy</a></li>
+              <li><a href="https://www.canmoney.in/privacy-policy">Privacy Policy</a></li>
+              <li><a href="https://www.canmoney.in/pdf/POLICY ON INACTIVE ACCOUNTS.pdf" target="_blank" rel="nofollow">Inactive Accounts Policy</a></li>
+              <li><a href="https://www.canmoney.in/pdf/CSR POLICY.PDF" target="_blank" rel="nofollow">CSR Policy</a></li>
+              <li><a href="https://www.canmoney.in/pdf/OPP.pdf" target="_blank" rel="nofollow">Other Policies & procedures</a></li>
+              <li><a href="https://www.canmoney.in/pdf/PMLA POLICY.pdf" target="_blank" rel="nofollow">PMLA Policy</a></li>
+              <li><a href="https://www.canmoney.in/pdf/RM POLICY.pdf" target="_blank" rel="nofollow">Risk Management Policy </a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="ftbg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-6">
+              <ul class="ftnav">
+                <h5>Market</h5>
+                <li><a href="https://www.canmoney.in/market/gainers">Top Gainers</a> </li>
+                <li><a href="https://www.canmoney.in/market/losers">Top Losers</a> </li>
+                <li><a href="https://www.canmoney.in/market/volume">Top Quantity</a> </li>
+                <li><a href="https://www.canmoney.in/market/value">Top Value</a> </li>
+              </ul>
+            </div>
+            <div class="col-xs-6">
+              <ul class="ftnav">
+                <h5>Derivatives</h5>
+                <li></i><a href="https://www.canmoney.in/derivative/overview">Overview</a> </li>
+                <li><a href="https://www.canmoney.in/derivative/openinterest">Open Interest</a> </li>
+                <li><a href="https://www.canmoney.in/derivative/mostactivecalls">Most Active Calls</a> </li>
+                <li><a href="https://www.canmoney.in/derivative/mostactiveputs">Most Active Puts</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-6">
+              <ul class="ftnav">
+                <h5>Announcements</h5>
+                <li><a href="https://www.canmoney.in/announcements/bse-announcements">BSE Announcements</a> </li>
+                <li><a href="https://www.canmoney.in/announcements/nse-announcements">NSE Announcements</a> </li>
+                <li><a href="https://www.canmoney.in/announcements/board-meeting">Board Meetings</a> </li>
+                <li><a href="https://www.canmoney.in/announcements/agm">AGM Details</a> </li>
+              </ul>
+            </div>
+            <div class="col-xs-6">
+              <ul class="ftnav">
+                <h5>IPO</h5>
+                <li><a href="https://www.canmoney.in/ipo/overview">Overview</a> </li>
+                <li><a href="https://www.canmoney.in/ipo/issueprofile">Issue Profiles</a> </li>
+                <li><a href="https://www.canmoney.in/ipo/basisofallotment">Basis of Allotment</a> </li>
+                <li><a href="https://www.canmoney.in/ipo/forthcomingissues">Forthcoming Issues</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            
+            <div class="col-xs-12">
+              <h5 class="fthdtxt">Other Links</h5>
+              <div class="row">
+                <div class="col-xs-4">
+                  <ul class="ftnav">
+                    <li><a target="_blank" rel="nofollow" href="http://www.nseindia.com/">NSE</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.bseindia.com/">BSE</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.sebi.gov.in/sebiweb/" >SEBI</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.mcxindia.com/">MCX</a> </li>
+                    
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="ftnav">
+                    <li><a target="_blank" rel="nofollow" href="https://www.rbi.org.in/">RBI</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="https://www.cdslindia.com/index.html">CDSL</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="https://nsdl.co.in/">NSDL</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.ncdex.com/index.aspx">NCDEX</a> </li>
+                    
+                  </ul>
+                </div>
+                <div class="col-xs-5">
+                  <ul class="ftnav">
+                    <li><a target="_blank" rel="nofollow" href="https://www.irda.gov.in/Defaulthome.aspx?page=H1">IRDA</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.amfiindia.com/">AMFI</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.canarabank.com/English/Home.aspx">CANARA BANK</a> </li>
+                    <li><a target="_blank" rel="nofollow" href="http://www.nseindia.com/marketinfo/fxTracker/fxTracker.jsp">NSE FX TRACKER</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ftbg3">
+    <div class="container">
+      <div class="row ft_cont">
+        <div class="col-md-9">
+            <p>CBSL CIN No : U67120MH1996GOI097783 </p>
+          <p>BSE: INB 011280238, BSE F&O: INF 011280238, NSE :INB231280232, F&O: INF 231280232, CDS: INE 231280232
+            </p>
+          <p>Regd. & Correspondence Office Address: <i>VII Floor, Maker Chambers III, Nariman Point, Mumbai 400 021</i></p>
+          <p>For any grievance / dispute please contact stock broker Canara Bank Securities Ltd at the above<br>
+            address or email id : <a href="mailto:cbslserve@canmoney.in">cbslserve@canmoney.in</a> and phone No : <i>022-22802400</i> <br>
+            In case not satisfied with the response, please contact the concerned exchange(s)/SEBI<br>
+            (BSE) Email: <a href="mailto:is@bseindia.com">is@bseindia.com</a>, Phone No: <i>022-22728097</i> or (NSE) Email: <a href="mailto:ignse@nse.co.in">ignse@nse.co.in</a> , phone No: <i>022-26598190 </i> or (SEBI)</p>
+          <p>Compliance Officer Name: <i>Shri. S T Vinay Kumar</i> | Telephone No: <i>022-22802422</i> | Email ID: <a href="mailto:compliance@canmoney.in">compliance@canmoney.in</a></p>
+        </div>
+        <div class="col-md-3"> <img src="https://www.canmoney.in/images/footer_logo.gif" class="ftcanlogo"> </div>
+      </div>
+      <div class="row ft_cont">
+        <div class="col-md-6">
+          <p class="pull-left">Copyrights @ 2015 &copy; Canara Bank Securities Ltd.  All Right Reserved</p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right">Designed, developed and content provided by <a href="http://dionglobal.com/" target="_blank" rel="nofollow"><img src="https://www.canmoney.in/images/dionLogo.png"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+<div id="ctl00_ctl06_Tkr_Upd1">
+	
+<div class="ticker" style="z-index:100;">
+  <table width="100%" border="0">
+      <tr>
+        <td class="sele">
+        <select name="ctl00$ctl06$Tkr$DdlExchange" id="ctl00_ctl06_Tkr_DdlExchange">
+		<option selected="selected" value="NSE">NSE</option>
+		<option value="BSE">BSE</option>
+
+	</select>
+        </td>
+        <td class="compan"><div class="tickmar">
+            <marquee id="mrq1" behavior="scroll" direction="left" width="100%" >
+           NSE Prices delayed by 15 minutes... << Prices as on Oct 05, 2018 >>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/abb-india-ltd' title='ABB India Ltd.'>ABB India </a>  1374.75 <b>[ -0.59% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/acc-ltd' title='ACC Ltd.'>ACC </a>  1478.6 <b>[ -3.23% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/ambuja-cements-ltd' title='Ambuja Cements Ltd.'>Ambuja Cements Ltd. </a>  208.45 <b>[ -2.46% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/asian-paints-ltd' title='Asian Paints Ltd.'>Asian Paints Ltd. </a>  1209.5 <b>[ -1.24% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/axis-bank-ltd' title='Axis Bank Ltd.'>Axis Bank Ltd. </a>  568.5 <b>[ -3.03% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/bajaj-auto-ltd' title='Bajaj Auto Ltd.'>Bajaj Auto Ltd. </a>  2543.05 <b>[ -4.29% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/bank-of-baroda' title='Bank of Baroda'>Bank of Baroda </a>  99.1 <b>[ -4.11% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/bharti-airtel-ltd' title='Bharti Airtel Ltd.'>Bharti Airtel </a>  298.6 <b>[ -3.72% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/bharat-heavy-electricals-ltd' title='Bharat Heavy Electricals Ltd.'>Bharat Heavy Ele </a>  70.4 <b>[ -4.22% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/bharat-petroleum-corporation-ltd' title='Bharat Petroleum Corporation Ltd.'>Bharat Petroleum </a>  265.3 <b>[ -19.89% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/britannia-industries-ltd' title='Britannia Industries Ltd.'>Britannia Ind. </a>  5447.7 <b>[ -3.16% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/cairn-india-ltd' title='Cairn India Ltd.'>Cairn India Ltd. </a>  285.35 <b>[ 0.81% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/cipla-ltd' title='Cipla Ltd.'>Cipla </a>  636.65 <b>[ -0.27% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/coal-india-ltd' title='Coal India Ltd.'>Coal India </a>  263 <b>[ -3.77% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/colgate-palmolive-(india)-ltd' title='Colgate-Palmolive (India) Ltd.'>Colgate Palm. </a>  1069.55 <b>[ 0.06% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/dabur-india-ltd' title='Dabur India Ltd.'>Dabur India </a>  420.05 <b>[ 1.11% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/dlf-ltd' title='DLF Ltd.'>DLF Ltd. </a>  149.25 <b>[ -5.78% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/dr-reddy_s-laboratories-ltd' title='Dr. Reddy's Laboratories Ltd.'>Dr. Reddy's Labs </a>  2394.55 <b>[ 0.93% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/gail-(india)-ltd' title='GAIL (India) Ltd.'>GAIL (India) Ltd. </a>  332.05 <b>[ -9.76% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/grasim-industries-ltd' title='Grasim Industries Ltd.'>Grasim Inds. </a>  922.75 <b>[ -3.81% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/hcl-technologies-ltd' title='HCL Technologies Ltd.'>HCL Technologies </a>  1084 <b>[ 0.64% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/housing-development-finance-corporation-ltd' title='Housing Development Finance Corporation Ltd.'>HDFC </a>  1708.65 <b>[ -3.92% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/hdfc-bank-ltd' title='HDFC Bank Ltd.'>HDFC Bank </a>  1965.3 <b>[ 0.39% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/hero-motocorp-ltd' title='Hero MotoCorp Ltd.'>Hero MotoCorp </a>  2740.75 <b>[ -0.82% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/hindustan-unilever-ltd' title='Hindustan Unilever Ltd.'>Hindustan Unilever L </a>  1558.55 <b>[ -0.98% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/hindalco-industries-ltd' title='Hindalco Industries Ltd.'>Hindalco Indus. </a>  241.05 <b>[ -4.29% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/icici-bank-ltd' title='ICICI Bank Ltd.'>ICICI Bank </a>  307.3 <b>[ -2.91% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/idfc-ltd' title='IDFC Ltd.'>IDFC L </a>  38.45 <b>[ -3.75% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/indian-hotels-company-ltd' title='Indian Hotels Company Ltd.'>Indian Hotels Co </a>  124.6 <b>[ 0.89% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/indusind-bank-ltd' title='IndusInd Bank Ltd.'>IndusInd Bank </a>  1607.35 <b>[ 1.12% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/infosys-ltd' title='Infosys Ltd.'>Infosys </a>  724.6 <b>[ 2.46% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/itc-ltd' title='ITC Ltd.'>ITC Ltd. </a>  276.5 <b>[ -3.69% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/jindal-steel-and-power-ltd' title='Jindal Steel & Power Ltd.'>Jindal St & Pwr </a>  175.9 <b>[ -8.00% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/kotak-mahindra-bank-ltd' title='Kotak Mahindra Bank Ltd.'>Kotak Mahindra Bank </a>  1052.2 <b>[ -2.08% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/larsen-and-toubro-ltd' title='Larsen & Toubro Ltd.'>L&T </a>  1227.4 <b>[ -2.42% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/lupin-ltd' title='Lupin Ltd.'>Lupin Ltd. </a>  838.75 <b>[ -1.87% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/mahindra-and-mahindra-ltd' title='Mahindra & Mahindra Ltd.'>Mahi. & Mahi </a>  769.55 <b>[ -3.16% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/maruti-suzuki-india-ltd' title='Maruti Suzuki India Ltd.'>Maruti Suzuki India </a>  6904.35 <b>[ -4.09% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/mahanagar-telephone-nigam-ltd' title='Mahanagar Telephone Nigam Ltd.'>MTNL </a>  13.25 <b>[ -1.85% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/nestle-india-ltd' title='Nestle India Ltd.'>Nestle India </a>  9418.9 <b>[ 0.76% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/niit-ltd' title='NIIT Ltd.'>NIIT Ltd. </a>  66.75 <b>[ -3.54% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/nmdc-ltd' title='NMDC Ltd.'>NMDC Ltd. </a>  109.35 <b>[ -5.00% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/ntpc-ltd' title='NTPC Ltd.'>NTPC </a>  162.9 <b>[ -2.34% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/oil-and-natural-gas-corporation-ltd' title='Oil And Natural Gas Corporation Ltd.'>ONGC </a>  147.05 <b>[ -14.70% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/punjab-national-bank' title='Punjab National Bank'>Punj. NationlBak </a>  63.85 <b>[ -1.47% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/power-grid-corporation-of-india-ltd' title='Power Grid Corporation of India Ltd.'>Power Grid Corpo </a>  187.3 <b>[ -1.03% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/reliance-industries-ltd' title='Reliance Industries Ltd.'>Reliance Inds. </a>  1048.85 <b>[ -6.54% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/state-bank-of-india' title='State Bank of India'>SBI </a>  258.35 <b>[ -4.79% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/vedanta-ltd' title='Vedanta Ltd.'>Vedanta </a>  231.65 <b>[ -3.24% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/shipping-corporation-of-india-ltd' title='Shipping Corporation of India Ltd.'>Shipping Corpn. </a>  41.7 <b>[ -3.81% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/sun-pharmaceutical-industries-ltd' title='Sun Pharmaceutical Industries Ltd.'>Sun Pharma. </a>  597.95 <b>[ -0.18% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tata-chemicals-ltd' title='Tata Chemicals Ltd.'>Tata Chemicals </a>  655.55 <b>[ -0.71% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tata-global-beverages-ltd' title='Tata Global Beverages Ltd.'>Tata Global Beverage </a>  209.2 <b>[ -4.12% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tata-motors-ltd' title='Tata Motors Ltd.'>Tata Motors Ltd. </a>  216.25 <b>[ -3.14% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tata-steel-ltd' title='Tata Steel Ltd.'>Tata Steel </a>  568 <b>[ -2.46% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tata-power-company-ltd' title='Tata Power Company Ltd.'>Tata Power Co. </a>  62.85 <b>[ -5.98% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickg'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tata-consultancy-services-ltd' title='Tata Consultancy Services Ltd.'>Tata Consultancy </a>  2102.65 <b>[ 1.83% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/tech-mahindra-ltd' title='Tech Mahindra Ltd.'>Tech Mahindra Ltd. </a>  714.5 <b>[ -0.74% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/ultratech-cement-ltd' title='UltraTech Cement Ltd.'>UltraTech Cement </a>  3793.8 <b>[ -3.80% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/united-spirits-ltd' title='United Spirits Ltd.'>United Spirits </a>  471.4 <b>[ -3.83% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/wipro-ltd' title='Wipro Ltd.'>Wipro Ltd </a>  325.3 <b>[ -0.11% ]</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class='tickr'><i></i><a style='display:inline;'  target='_parent' href='https://www.canmoney.in/fundamental/livequotes/zee-entertainment-enterprises-ltd' title='Zee Entertainment Enterprises Ltd.'>Zee Entertainment En </a>  422.3 <b>[ -3.88% ]</b></span>
+            </marquee>
+          </div></td>          
+      </tr>
+    </table>
+    <ul class="tickcontrol">
+          <li><a id="btnPP" href="#" class="tick_stop sprite"  ></a></li>
+          </ul>
+  </div>
+  <script type="text/javascript">
+  $('.tickcontrol #btnPP').on('click', function(e){
+     e.preventDefault();
+     if($('#btnPP').hasClass("tick_playbtn"))
+     {
+       $('#btnPP').removeClass("tick_playbtn");$('#btnPP').addClass("tick_stop");
+       document.getElementById('mrq1').setAttribute('scrollamount', 6, 0);document.getElementById('mrq1').start();
+     }
+     else
+     {
+     $('#btnPP').removeClass("tick_stop");$('#btnPP').addClass("tick_playbtn");
+     document.getElementById('mrq1').setAttribute('scrollamount', 0, 0);document.getElementById('mrq1').stop();
+     }
+ });
+ 
+ $('#mrq1').on('mouseover', function(e){
+     e.preventDefault();
+     $('#btnPP').removeClass("tick_stop");$('#btnPP').addClass("tick_playbtn");
+       document.getElementById('mrq1').setAttribute('scrollamount', 0, 0);document.getElementById('mrq1').stop();
+ });
+ $('#mrq1').on('mouseout', function(e){
+     e.preventDefault();
+     $('#btnPP').removeClass("tick_playbtn");$('#btnPP').addClass("tick_stop");
+       document.getElementById('mrq1').setAttribute('scrollamount', 6, 0);document.getElementById('mrq1').start();
+ });
+ 
+  </script>
+ 
+</div>
+
+        <input type="hidden" name="ctl00$hdnURL" id="ctl00_hdnURL" value="https://www.canmoney.in" />
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"FilterType":15,"ValidChars":" ","id":"ctl00_ctl05_FilteredTextBoxExtenderdfdf1"}, null, null, $get("ctl00_ctl05_Tbhead1"));
+});
+//]]>
+</script>
+</form>
+
+    
+
+    <script src="https://www.canmoney.in/Popup/bootstrap.min.js"></script>
+
+    <script src="https://www.canmoney.in/Popup/bootstrap-dialog.min.js"></script>
+
+    
+
+    <script src="https://www.canmoney.in/js/responsiveslides.min.js"
+        type="text/javascript"></script>
+
+    <script src="https://www.canmoney.in/js/jquery.idTabs.min.js"
+        type="text/javascript"></script>
+
+    <script src="https://www.canmoney.in/CalendarTheme/jquery-ui.js"
+        type="text/javascript"></script>
+        <script src="https://www.canmoney.in/js/jquery.cycle.js" type="text/javascript"></script>
+<script src="https://www.canmoney.in/js/AutoCompleteErrorFix.js" type="text/javascript"></script>
+    <script src="https://www.canmoney.in/js/jquery.autocomplete.js" type="text/javascript"></script>
+  <script src="https://www.canmoney.in/js/tinynav.min.js" type="text/javascript"></script>
+   <script src="https://www.canmoney.in/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="https://www.canmoney.in/js/script.js" type="text/javascript"></script>
+    <script src="https://www.canmoney.in/js/jquery.yu2fvl.js?v=1.0" type="text/javascript"></script>
+     <script>$(".play-youtube").yu2fvl();</script>
+
+    
+    
+
+    <script>
+        // multi slide
+        $(document).ready(function () {
+            function random(owlSelector) {
+                owlSelector.children().sort(function () {
+                    return Math.round(Math.random()) - 0.5;
+                }).each(function () {
+                    $(this).appendTo(owlSelector);
+                });
+            }
+            $("#miltslider").owlCarousel({
+                navigation: true,
+                pagination: false,
+                items: 4,
+                autoPlay: 5000,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                navigationText: [
+                "<i class='icon-chevron-left icon-white'></i>",
+                "<i class='icon-chevron-right icon-white'></i>"
+                ],
+            });
+
+
+            $("#Investorsslider").owlCarousel({
+                navigation: true,
+                navigationText: [
+                  "<i class='icon-chevron-left icon-white'></i>",
+                  "<i class='icon-chevron-right icon-white'></i>"
+                ],
+                pagination: false,
+                items: 1,
+                autoPlay: 5000,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true
+            });
+        });
+        //$(document).ready(function(){
+        //   $("#poup").modal('show');
+        //});
+
+        $(document).ready(function () {
+          //lightbox_open();
+        });
+        function lightbox_open() {
+            window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block';
+        }
+
+        function lightbox_close() {
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none';
+        }
+
+        function HideContent_homePop_Up(value1) {
+            document.getElementById(value1).style.display = "none";
+            document.getElementById('fade').style.display = 'none';
+
+        }
+    </script>
+
+
+
+    <!--[if lt IE 9]>
+	<link href="https://www.canmoney.in/css/jquery.fancybox.css" rel="stylesheet" type="text/css"></link>
+<script src="https://www.canmoney.in/js/jquery.fancybox.js" type="text/javascript"></script>
+<![endif]-->
+
+    <script type="text/javascript">
+        // multi slide
+        $('#f_news').fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic',
+            prevEffect: 'fade',
+            nextEffect: 'fade',
+            height: "488",
+            fitToView: false, // images won't be scaled to fit to browser's height
+            maxWidth: "90%", // images won't exceed the browser's width
+            type: 'iframe',
+            scrolling: 'no',
+            iframe: {
+                preload: false
+            }
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>

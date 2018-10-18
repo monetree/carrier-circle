@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Welcome to Online Registration 
+</title><link rel="STYLESHEET" type="text/css" href="include/bel.css" /></head>
+<body>
+<div align=center>
+<img src=images/1.gif />
+
+    <form method="post" action="./" id="frm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTcyNTU0NTIyMWRkCj2UT9O1AaDzRWgkzxpWv/gJbwrBDguxylGLUwAGBhs=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CBF2503F" />
+    <div align="center">
+    <table width=90%  >
+    <tr class=tdheader><td><div align=center><font size=+1>Welcome to Online Application for BEL-Bangalore Recruitment 
+    </font></div></td></tr>
+    </table>
+    <br />
+    <br />
+    
+
+    <!--<font face=verdana size=+1><div align=center><A href=BEL2017BangaloreAdmitCard.aspx>Click here to download Admit Card</A><img src=star.gif /></div></font>-->
+    
+<br /><br />
+    <table width="75%" class=bkCTable2>
+    <tr class="td2">
+    <td width=33%><img src="images/black_dot.jpg" /><b>View Detailed Advertisement
+    <ul>
+    <li><a href=Adv-Eng.pdf><b>in English</li>
+    <li><a href=Adv-Hindi.pdf><b>in Hindi</li>
+    </ul>
+    
+    
+    </div></td>    
+    
+    
+    
+    <td width=33%><img src="images/black_dot.jpg" /><a href="Schedule.htm" class="hcatlist" > Schedule of Selection Process</a></div></td>
+        
+
+    </tr>
+<tr class="td2">
+    <!--<td width=33%><img src="images/black_dot.jpg" /><a href="BELChallan.pdf" target=_blank class="hcatlist" > Click here to Download BEL Challan</a></div></td>    -->
+
+       <td width=33%><img src="images/black_dot.jpg" /><a href="DownloadCertificate.htm"  class="hcatlist" > Click here to Download Prescribed Formats for SC/ST/OBC/PH Candidates</a></div></td>    
+    </tr>
+    
+<!--    <tr class="td2">
+    
+   
+<td><img src="images/black_dot.jpg" /> <a href=ReceiptStatusOnline.aspx class=hcatlist ><strong>Application Receipt Status </strong></a>
+    </tr>
+    -->
+    
+    
+<tr class=td2>
+<td colspan=3>
+
+<table width=100%>
+<tr class=td2>
+<td width=20%>
+
+</td>
+            <td>
+            <div align=left>
+          <font class=c2font>LAST DATE OF ONLINE SUBMISSION IS : 15.10.2018 (23.59 Hrs.)<br /> </font><br />
+            <a href=HowToApply.pdf target=_blank><strong>Click here to view Guidelines to Apply Online</strong></a>
+            <br /><a href=Payment_through_SBI_Collect.pdf target=_blank><strong>Click here to view Guidelines for Payment through SBI Collect</strong></a>
+            <br />
+            <br />
+                <table width="90%" class=bkCTable2 >
+                <tr class=tdheader>
+                <td colspan=2>Login to Apply Online</td>
+                </tr>
+                <tr class=td2>
+                <td><img src="images/arrow.gif" ><b><a href=Registration.aspx>Fresh Candidate (CLICK HERE) to Create Log In </a></b></td>
+                </td></tr>
+
+                <tr class=td1><td><img src="images/arrow.gif" ><b><a href="login.aspx" >Already Logged In Candidate(CLICK HERE) to Complete Process</a></b>
+                </td></tr>
+
+                </table>
+    <p>&nbsp;</p>
+        </div>
+        </td></tr>
+        </table>
+  </td>
+
+</tr>
+</table>
+<font class=cfont>
+  <br /><i><font color=blue size=-1>For any clarification e-mail to <a href=mailto: belbng@applycareer.co.in>belbng@applycareer.co.in</a>. Please note that no other form of communication will be entertained including telephone calls, conventional mail, fax etc.</font></i>
+<p>&nbsp;</p>
+
+<i>Keep visiting the website regularly for any updates/announcements.</i>
+<br />
+<i>Website Application is compatible with Internet Explorer 7.1 & above/Google Chrome & Mozilla Firefox with latest version</i>
+<br /><font color=blue>
+<br />Disclaimer: This electronically generated information does not have any legal validity</font></font>
+    </div>
+    </form>
+</div>
+</body>
+</html>

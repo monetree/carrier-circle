@@ -63,6 +63,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from random import randint
+import pathlib
+from .main import create_delete_pdf_dir,download_pdf
 """
 ++++++++++++++++
 """
@@ -76,6 +78,8 @@ class AllIndiaGovtJobs:
     def get_upsc(request):
         #empty model
         UpscJobs.objects.all().delete()
+        pdf_dir = "media/pdf/scrap/upsc_jobs/"
+        create_delete_pdf_dir(pdf_dir)
         lst=[]
         lst2=[]
         dict={}
@@ -106,7 +110,6 @@ class AllIndiaGovtJobs:
                         dict["job_id"] = int(job_id[2::])
                     else:
                         dict["job_id"] = None
-
                 else:
                     dict["more_info"] = d[5].find("strong").find("a")['href']
                     dict["type"] = 1
@@ -121,6 +124,10 @@ class AllIndiaGovtJobs:
                     pdf_link_lst=link.split(".")
                     if "freejobalert" in pdf_link_lst:
                         dict["type"] = 3
+                        pdf_url = link
+                        pdf_file_name = pdf_dir + str(randint(99999, 9999999999))+".pdf"
+                        download_pdf(pdf_url,pdf_file_name)
+                        dict["more_info"] = pdf_file_name
                 #insert into mysql database
                 obj=UpscJobs.objects.create(
                     start_date=dict["start_date"],last_date=dict["last_date"],
@@ -139,6 +146,8 @@ class AllIndiaGovtJobs:
     def get_ssc(request):
         #empty model
         SscJobs.objects.all().delete()
+        pdf_dir = "media/pdf/scrap/ssc_jobs/"
+        create_delete_pdf_dir(pdf_dir)
         lst=[]
         lst2=[]
         dict={}
@@ -183,6 +192,12 @@ class AllIndiaGovtJobs:
                     pdf_link_lst=link.split(".")
                     if "freejobalert" in pdf_link_lst:
                         dict["type"] = 3
+                        pdf_url = link
+                        pdf_file_name = pdf_dir + str(randint(99999, 9999999999))+".pdf"
+                        get_url = requests.get(pdf_url)
+                        with open(pdf_file_name,'wb') as pdf:
+                            pdf.write(get_url.content)
+                        dict["more_info"] = pdf_file_name
                 #insert into mysql database
                 obj=SscJobs.objects.create(
                     start_date=dict["start_date"],last_date=dict["last_date"],
@@ -201,6 +216,9 @@ class AllIndiaGovtJobs:
     def get_other_all_india(request):
         #empty model
         OtherAllIndiaJobs.objects.all().delete()
+
+        pdf_dir = "media/pdf/scrap/all_india_govt_jobs/"
+        create_delete_pdf_dir(pdf_dir)
         lst=[]
         lst2=[]
         dict={}
@@ -246,6 +264,12 @@ class AllIndiaGovtJobs:
                     pdf_link_lst=link.split(".")
                     if "freejobalert" in pdf_link_lst:
                         dict["type"] = 3
+                        pdf_url = link
+                        pdf_file_name = pdf_dir + str(randint(99999, 9999999999))+".pdf"
+                        get_url = requests.get(pdf_url)
+                        with open(pdf_file_name,'wb') as pdf:
+                            pdf.write(get_url.content)
+                        dict["more_info"] = pdf_file_name
                 # insert into mysql database
                 obj=OtherAllIndiaJobs.objects.create(
                     start_date=dict["start_date"],last_date=dict["last_date"],
@@ -288,19 +312,6 @@ class StateGovtJobs:
                 link = d[6].find("strong").find("a")['href']
                 if link.split(".")[1] == "freejobalert":
                     dict["more_info"] = d[6].find("strong").find("a")['href']
-
-
-                    # url_tree=requests.get(dict["more_info"])
-                    # url_content=url_tree.content
-                    # parser=BeautifulSoup(url_content,"html.parser")
-                    #
-                    # url_row = parser.find_all('tr')
-                    # for i in url_row:
-                    #     for title in i.find_all('span', attrs={'style':'color: #008000;'}):
-                    #         dict['Title'] = title.text
-                    #     for li in i.find_all('a',title=True, href=True):
-                    #         dict['Link'] = li['href']
-
                     dict["type"] = 2
                     link_remove_slash = link.split("/")
                     link_to_string = (''.join(link_remove_slash))

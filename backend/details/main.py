@@ -35,6 +35,7 @@ class Details:
                 c = page.content
                 soup = BeautifulSoup(c,"html5lib")
                 ########################
+                print(url)
                 row = soup.find_all("table",{"style":"width: 500px;"})[0].find_all('tr')
                 dict = {}
                 for i in row:
@@ -42,11 +43,14 @@ class Details:
                         dict['Title'] = title.text
                     for link in i.find_all('a',title=True, href=True):
                         pdf_url = link['href']
-                        pdf_file_name = pdf_dir+"/"+str(randint(99999, 9999999999))+".pdf"
-                        get_url = requests.get(pdf_url)
-                        with open(pdf_file_name,'wb') as pdf:
-                            pdf.write(get_url.content)
-                        dict['Link'] = pdf_file_name
+                        if pdf_url.split(".")[1] == "freejobalert":
+                            pdf_file_name = pdf_dir+"/"+str(randint(99999, 9999999999))+".pdf"
+                            get_url = requests.get(pdf_url)
+                            with open(pdf_file_name,'wb') as pdf:
+                                pdf.write(get_url.content)
+                            dict['Link'] = pdf_file_name
+                        else:
+                            dict['Link'] = pdf_url
                         obj = details_model.objects.create(more_info=dict,join_id=join_id)
                         lst.append(dict.copy())
 
