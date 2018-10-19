@@ -16,8 +16,8 @@ urlpatterns = [
     path('other_all_india_details/', AllIndiaGovtJobDetails.other_all_india_details),
     # State Wise Govt Jobs
     path('odisha_govt_job_details/', StateGovtJobDetails.odisha_govt_job_details),
-    path('andaman_nicobor_govt_job_details/', StateGovtJobDetails.andaman_nicobar_govt_job_details),
-    path('andhra_prtadesh_govt_job_details/', StateGovtJobDetails.andhra_pradesh_govt_job_details),
+    path('andaman_nicobar_govt_job_details/', StateGovtJobDetails.andaman_nicobar_govt_job_details),
+    path('andhra_pradesh_govt_job_details/', StateGovtJobDetails.andhra_pradesh_govt_job_details),
     path('arunachal_pradesh_govt_job_details/', StateGovtJobDetails.arunachal_pradesh_govt_job_details),
     path('assam_govt_job_details/', StateGovtJobDetails.assam_govt_job_details),
     path('bihar_govt_job_details/', StateGovtJobDetails.bihar_govt_job_details),

@@ -5,21 +5,22 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from random import randint
+import shutil
 
 class Details:
     def get_important_links(scrap_model_name,details_model_name,pdf_dir_name):
         scrap_model   = eval(scrap_model_name)
         details_model = eval(details_model_name)
-        pdf_dir       = "media/pdf/" + pdf_dir_name
+        pdf_dir       = "media/pdf/details/" + pdf_dir_name
         details_model.objects.all().delete()
         try:
             shutil.rmtree(pdf_dir)
-        except:
-            pathlib.Path(pdf_dir).mkdir(parents=True, exist_ok=True)
+        except FileNotFoundError:
+            pass
         try:
             pathlib.Path(pdf_dir).mkdir(parents=True, exist_ok=True)
-        except:
-            shutil.rmtree(pdf_dir)
+        except FileNotFoundError:
+            pass
         lst=[]
         lst2=[]
         dict={}

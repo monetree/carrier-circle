@@ -27,11 +27,6 @@ class AllIndiaGovtJobDetails:
     """
     @ Api for UPSC data...
     """
-
-    def cleanhtml(raw_html):
-      cleantext = re.sub(r'<.*?>', '', raw_html)
-      return cleantext
-
     def upsc_details(request):
         upsc = list(UpscJobs.objects.values("upsc_id","join_id","more_info"))
         lst=[]
@@ -57,31 +52,7 @@ class AllIndiaGovtJobDetails:
                 lst.append(dict.copy())
             dict2["payment_details"] = lst
             lst2.append(dict2)
-        # important_dates = trs[2].find_all("ul")
-        # if len(important_dates) != 0:
-        #     li = important_dates[0].find_all("li")
-        #     for l in li:
-        #         dict["dates"] = l.text
-        #         lst.append(dict.copy())
-        #     dict2["important_dates"] = lst
-        #     lst2.append(dict2)
-
-
-
-
         return JsonResponse(lst2,safe=False)
-
-
-            # from lxml import html
-            # from lxml import etree
-            # import requests
-            # page = requests.get('http://www.freejobalert.com/upsc-recruitment/16960/#Engg-Services2019')
-            # tree = html.fromstring(page.content)
-            # tables = tree.xpath('//table[@style="width: 500px;"]')
-            # for t in tables:
-            #     ts = etree.tostring(t)
-            #     lst.append(ts)
-
 
 
     """
@@ -99,7 +70,6 @@ class AllIndiaGovtJobDetails:
                 r=requests.get("http://www.freejobalert.com/government-JobDetails/")
                 c=r.content
                 soup=BeautifulSoup(c,"html.parser")
-
         return JsonResponse(lst2,safe=False)
 
         """
