@@ -3,8 +3,6 @@ from details.views import *
 from scrap.views import *
 from django.http import HttpResponse
 
-#jjjd
-
 def call_all(job,job_details):
     try:
         if job.status_code and job_details.status_code == 200:
