@@ -65,6 +65,9 @@ from bs4 import BeautifulSoup
 from random import randint
 import pathlib
 from .main import create_delete_pdf_dir, download_pdf
+import sys, os
+import traceback
+from finalize.utils import HandleError
 """
 ++++++++++++++++
 """
@@ -212,72 +215,78 @@ class AllIndiaGovtJobs:
         @ Api for other All india jobs...
         """
     def get_other_all_india(request):
-        #empty model
-        OtherAllIndiaJobs.objects.all().delete()
-
-        pdf_dir = "media/pdf/scrap/all_india_govt_jobs/"
-        create_delete_pdf_dir(pdf_dir)
-        lst=[]
-        lst2=[]
-        dict={}
-        dict2={}
-        r=requests.get("http://www.freejobalert.com/government-jobs/")
-        c=r.content
-        soup=BeautifulSoup(c,"html.parser")
-        all=soup.find_all("table",{"style":"color:#000000; border: 2px solid #006699;border-collapse: collapse; max-width:790px;"})
-        data=all[2].find_all("tr",{"style":"border: 1px solid #000000;"})
-        for i in data:
-            d = i.find_all("td")
-            dict["start_date"] = d[0].text
-            dict["requirement_board"] = d[1].text
-            dict["post_name"] = d[2].text
-            dict["qualification"] = d[3].text
-            dict["last_date"] = d[5].text
-            l=d[6].text
-            if l != "":
-                link = d[6].find("strong").find("a")['href']
-                if link.split(".")[1] == "freejobalert":
-                    dict["more_info"] = d[6].find("strong").find("a")['href']
-                    dict["type"] = 2
-                    link_remove_slash = link.split("/")
-                    link_to_string = (''.join(link_remove_slash))
-                    job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
-                    if len(job_id) == 5:
-                        dict["job_id"] = int(job_id)
-                    elif len(job_id) == 7:
-                        dict["job_id"] = int(job_id[2::])
+        try:
+            #empty model
+            OtherAllIndiaJobs.objects.all().delete()
+            pdf_dir = "media/pdf/scrap/all_india_govt_jobs/"
+            create_delete_pdf_dir(pdf_dir)
+            lst=[]
+            lst2=[]
+            dict={}
+            dict2={}
+            r=requests.get("http://www.freejobalert.com/government-jobs/")
+            c=r.content
+            soup=BeautifulSoup(c,"html.parser")
+            all=soup.find_all("table",{"style":"color:#000000; border: 2px solid #006699;border-collapse: collapse; max-width:790px;"})
+            data=all[2].find_all("tr",{"style":"border: 1px solid #000000;"})
+            for i in data:
+                d = i.find_all("td")
+                dict["start_date"] = d[0].text
+                dict["requirement_board"] = d[1].text
+                dict["post_name"] = d[2].text
+                dict["qualification"] = d[3].text
+                dict["last_date"] = d[5].text
+                l=d[6].text
+                if l != "":
+                    link = d[6].find("strong").find("a")['href']
+                    if link.split(".")[1] == "freejobalert":
+                        dict["more_info"] = d[6].find("strong").find("a")['href']
+                        dict["type"] = 2
+                        link_remove_slash = link.split("/")
+                        link_to_string = (''.join(link_remove_slash))
+                        job_id = (''.join(re.findall(r'\d{7}|\d{5}',link_to_string)))
+                        if len(job_id) == 5:
+                            dict["job_id"] = int(job_id)
+                        elif len(job_id) == 7:
+                            dict["job_id"] = int(job_id[2::])
+                        else:
+                            dict["job_id"] = None
                     else:
+                        dict["more_info"] = d[6].find("strong").find("a")['href']
+                        dict["type"] = 1
                         dict["job_id"] = None
-                else:
-                    dict["more_info"] = d[6].find("strong").find("a")['href']
-                    dict["type"] = 1
-                    dict["job_id"] = None
-                join_id = randint(99999, 999999)
-                # check the existing of join_id
-                count_join_id = OtherAllIndiaJobs.objects.filter(join_id=join_id).count()
-                if count_join_id is not 0:
-                    join_id = join_id + 1
-                pdf_link = re.search(r'.pdf$',link)
-                if pdf_link:
-                    pdf_link_lst=link.split(".")
-                    if "freejobalert" in pdf_link_lst:
-                        dict["type"] = 3
-                        pdf_url = link
-                        pdf_file_name = pdf_dir + str(randint(99999, 9999999999))+".pdf"
-                        download_pdf(pdf_url,pdf_file_name)
-                        dict["more_info"] = pdf_file_name
-                # insert into mysql database
-                obj=OtherAllIndiaJobs.objects.create(
-                    start_date=dict["start_date"],last_date=dict["last_date"],
-                    post_name=dict["post_name"],education=dict["qualification"],
-                    more_info=dict["more_info"],type=dict["type"],
-                    requirement_board=dict["requirement_board"],
-                    job_id=dict["job_id"],join_id=join_id
-                )
-            lst.append(dict.copy())
-        dict2["other_all_india"] = lst
-        lst2.append(dict2)
-        return JsonResponse(lst2,safe=False)
+                    join_id = randint(99999, 999999)
+                    # check the existing of join_id
+                    count_join_id = OtherAllIndiaJobs.objects.filter(join_id=join_id).count()
+                    if count_join_id is not 0:
+                        join_id = join_id + 1
+                    pdf_link = re.search(r'.pdf$',link)
+                    if pdf_link:
+                        pdf_link_lst=link.split(".")
+                        if "freejobalert" in pdf_link_lst:
+                            dict["type"] = 3
+                            pdf_url = link
+                            pdf_file_name = pdf_dir + str(randint(99999, 9999999999))+".pdf"
+                            download_pdf(pdf_url,pdf_file_name)
+                            dict["more_info"] = pdf_file_name
+                    # insert into mysql database
+                    obj=OtherAllIndiaJobs.objects.create(
+                        start_date=dict["start_date"],last_date=dict["last_date"],
+                        post_name=dict["post_name"],education=dict["qualification"],
+                        more_info=dict["more_info"],type=dict["type"],
+                        requirement_board=dict["requirement_board"],
+                        job_id=dict["job_id"],join_id=join_id
+                    )
+                lst.append(dict.copy())
+            dict2["other_all_india"] = lst
+            lst2.append(dict2)
+            return JsonResponse(lst2,safe=False)
+        except Exception  as e :
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            errors = HandleError.make_error(traceback.format_exc(),e,fname,exc_type,exc_obj,exc_tb.tb_lineno)
+            return errors
+
 
     """
     @ Api for STATE GOVT. data...
@@ -353,23 +362,34 @@ class StateGovtJobs:
         return lst2
 
     def odisha_govt_jobs(request):
-        api = StateGovtJobs.get_all_state(
-            "http://www.freejobalert.com/odisha-government-jobs/",
-            "odisha_govt_jobs",
-            "OdishaGovtJobs",
-            "odisha_govt_jobs/"
-        )
-        request.session["job_id"] = 5
-        return JsonResponse(api,safe=False)
+        try:
+            api = StateGovtJobs.get_all_state(
+                "http://www.freejobalert.com/odisha-government-jobs/",
+                "odisha_govt_jobs",
+                "OdishaGovtJobs",
+                "odisha_govt_jobs/"
+            )
+            return JsonResponse(api,safe=False)
+        except Exception  as e :
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            errors = HandleError.make_error(traceback.format_exc(),e,fname,exc_type,exc_obj,exc_tb.tb_lineno)
+            return errors
 
     def andaman_nicobor_govt_jobs(request):
-        api = StateGovtJobs.get_all_state(
-            "http://www.freejobalert.com/an-government-jobs/",
-            "andaman_nicobor_govt_jobs",
-            "AndamanNicoborGovtJobs",
-            "andaman_govt_jobs/"
-        )
-        return JsonResponse(api,safe=False)
+        try:
+            api = StateGovtJobs.get_all_state(
+                "http://www.freejobalert.com/an-government-jobs/",
+                "andaman_nicobor_govt_jobs",
+                "AndamanNicoborGovtJobs",
+                "andaman_govt_jobs/"
+            )
+            return JsonResponse(api,safe=False)
+        except Exception  as e :
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            errors = HandleError.make_error(traceback.format_exc(),e,fname,exc_type,exc_obj,exc_tb.tb_lineno)
+            return errors
 
     def andhra_prtadesh_govt_jobs(request):
         api = StateGovtJobs.get_all_state(

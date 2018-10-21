@@ -17,7 +17,9 @@ from lxml import etree
 import shutil # to remove directory
 import pathlib # to create directory
 from .main import Details
-
+import sys, os
+import traceback
+from finalize.utils import HandleError
 """
 ++++++++++++++++
 """
@@ -76,24 +78,36 @@ class AllIndiaGovtJobDetails:
         @ Api for other All india JobDetails...
         """
     def other_all_india_details(request):
-        api = Details.get_important_links(
-         "OtherAllIndiaJobs",
-         "OtherAllIndiaJobDetails",
-         "all-india-govt-jobs/other-all-india-govt-jobs"
-         )
-        return JsonResponse(api,safe=False)
+        try:
+            api = Details.get_important_links(
+             "OtherAllIndiaJobs",
+             "OtherAllIndiaJobDetails",
+             "all-india-govt-jobs/other-all-india-govt-jobs"
+             )
+            return JsonResponse(api,safe=False)
+        except Exception  as e :
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            errors = HandleError.make_error(traceback.format_exc(),e,fname,exc_type,exc_obj,exc_tb.tb_lineno)
+            return errors
 
     """
     @ Api for STATE GOVT. data...
     """
 class StateGovtJobDetails:
     def andaman_nicobar_govt_job_details(request):
-        api = Details.get_important_links(
-         "AndamanNicoborGovtJobs",
-         "AndamanNicoborGovtJobDetails",
-         "state-govt-jobs/andaman-nicobar-govt-jobs"
-         )
-        return JsonResponse(api,safe=False)
+        try:
+            api = Details.get_important_links(
+             "AndamanNicoborGovtJobs",
+             "AndamanNicoborGovtJobDetails",
+             "state-govt-jobs/andaman-nicobar-govt-jobs"
+             )
+            return JsonResponse(api,safe=False)
+        except Exception  as e :
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            errors = HandleError.make_error(traceback.format_exc(),e,fname,exc_type,exc_obj,exc_tb.tb_lineno)
+            return errors
 
     def andhra_pradesh_govt_job_details(request):
         api = Details.get_important_links(
@@ -287,12 +301,18 @@ class StateGovtJobDetails:
         return JsonResponse(api,safe=False)
 
     def odisha_govt_job_details(request):
-        api = Details.get_important_links(
-         "OdishaGovtJobs",
-         "OdishaGovtJobDetails",
-         "state-govt-jobs/odisha-govt-jobs"
-         )
-        return JsonResponse(api,safe=False)
+        try:
+            api = Details.get_important_links(
+             "OdishaGovtJobs",
+             "OdishaGovtJobDetails",
+             "state-govt-jobs/odisha-govt-jobs"
+             )
+            return JsonResponse(api,safe=False)
+        except Exception  as e :
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            errors = HandleError.make_error(traceback.format_exc(),e,fname,exc_type,exc_obj,exc_tb.tb_lineno)
+            return errors
 
     def puduchhery_govt_job_details(request):
         api = Details.get_important_links(
@@ -304,8 +324,8 @@ class StateGovtJobDetails:
 
     def punjab_govt_job_details(request):
         api = Details.get_important_links(
-         "PunjabGovtJobs",
-         "PunjabGovtJobDetails",
+         "PunjabGovernmentjobs",
+         "PunjabGovernmentJobDetails",
          "state-govt-jobs/punjab-govt-jobs"
          )
         return JsonResponse(api,safe=False)
