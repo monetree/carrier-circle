@@ -23,7 +23,7 @@ class Details:
         if len(soup.find_all("table",{"style":"width: 500px;"})) != 0:
             row = soup.find_all("table",{"style":"width: 500px;"})[0].find_all('tr')
         else:
-            row = soup.find_all("table")[0].find_all('tr')
+            row = soup.find_all("table",border="2")[0].find_all('tr')
         dict = {}
         for i in row:
             for title in i.find_all('span', attrs={'style':'color: #008000;'}):

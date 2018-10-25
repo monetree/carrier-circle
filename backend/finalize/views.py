@@ -2,6 +2,9 @@ from django.shortcuts import render
 from details.views import *
 from scrap.views import *
 from django.http import HttpResponse
+from queue import Queue
+import threading
+from time import sleep
 
 def call_all(job,job_details):
     try:
@@ -24,6 +27,7 @@ class AllIndiaGovernmentJobs:
 
     def call_all_india_govt_jobs(request):
         job         = AllIndiaGovtJobs.get_other_all_india(request)
+        sleep(0.5)
         job_details = AllIndiaGovtJobDetails.other_all_india_details(request)
         message = call_all(job,job_details)
         return HttpResponse(message)
@@ -32,12 +36,14 @@ class StatewiseGovtJobs:
 
     def call_andaman_govt_jobs(request):
         job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
         job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
         message = call_all(job,job_details)
         return HttpResponse(message)
 
     def call_odisha_govt_jobs(request):
         job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
         job_details = StateGovtJobDetails.odisha_govt_job_details(request)
         message = call_all(job,job_details)
         return HttpResponse(message)
