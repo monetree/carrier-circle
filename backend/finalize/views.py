@@ -63,7 +63,20 @@ class BankingJobs:
         return HttpResponse(message)
     
 class StatewiseTeachingJobs:
+    def call_teaching_jobs(request):
+        job         = TeachingJobs.all_india_teaching_jobs(request)
+        sleep(0.5)
+        job_details = TeachingJobDetails.all_india_teaching_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+    
 class StatewiseEngineeringJobs:
+    def call_engg_jobs(request):
+        job         = EnggJobs.all_india_engg_jobs(request)
+        sleep(0.5)
+        job_details = EnggJobDetails.all_india_engg_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
     
 class RailwayJobs:
     def call_railway_jobs(request):
