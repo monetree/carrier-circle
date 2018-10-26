@@ -137,8 +137,8 @@ class StateGovtJobDetails:
     def arunachal_pradesh_govt_job_details(request):
         try:
             api = Details.get_important_links(
-             "ArunachalPradeshGovtJobs",
-             "ArunachalPradeshGovtJobDetails",
+             "ArunachalPradeshGovernmentjobs",
+             "ArunachalPradeshGovernmentJobDetails",
              "state-govt-jobs/arunachal-pradesh-govt-jobs"
              )
             return JsonResponse(api,safe=False)
@@ -151,9 +151,9 @@ class StateGovtJobDetails:
     def assam_govt_job_details(request):
         try:
             api = Details.get_important_links(
+             "AssamGovtJobs",
              "AssamGovtJobDetails",
-             "AssamGovtJobDetails",
-             "assam-govt-jobs"
+             "state-govt-jobs/assam-govt-jobs"
              )
             return JsonResponse(api,safe=False)
         except Exception  as e :
@@ -249,8 +249,8 @@ class StateGovtJobDetails:
     def goa_govt_job_details(request):
         try:
             api = Details.get_important_links(
-             "GoaGovtJobs",
-             "GoaGovtJobDetails",
+             "GoaGovernmentjobs",
+             "GoaGovernmentJobDetails",
              "state-govt-jobs/goa-govt-jobs"
              )
             return JsonResponse(api,safe=False)
@@ -361,8 +361,8 @@ class StateGovtJobDetails:
     def lakshadweep_govt_job_details(request):
         try:
             api = Details.get_important_links(
-             "LakshadweepGovtJobs",
-             "LakshadweepGovtJobDetails",
+             "LakshadweepGovernmentjobs",
+             "LakshadweepGovernmentJobDetails",
              "state-govt-jobs/lakshadweep-govt-jobs"
              )
             return JsonResponse(api,safe=False)
@@ -529,8 +529,8 @@ class StateGovtJobDetails:
     def tamil_nadu_govt_job_details(request):
         try:
             api = Details.get_important_links(
-             "TamilNaduGovtJobs",
-             "TamilNaduGovtJobDetails",
+             "TamilGovtJobs",
+             "TamilGovtJobDetails",
              "state-govt-jobs/tamilnadu-govt-jobs"
              )
             return JsonResponse(api,safe=False)
@@ -709,7 +709,7 @@ class TeachingJobDetails:
     def assam_teaching_job_details(request):
         try:
             api = Details.get_important_links(
-             "AssamTeachingJobDetails",
+             "AssamTeachingJobs",
              "AssamTeachingJobDetails",
              "assam-teaching-jobs"
              )
@@ -1247,7 +1247,7 @@ class EnggJobDetails:
     def assam_engg_job_details(request):
         try:
             api = Details.get_important_links(
-             "AssamEnggJobDetails",
+             "AssamEnggJobs",
              "AssamEnggJobDetails",
              "assam-engg-jobs"
              )
@@ -1714,7 +1714,7 @@ class RailwayJobDetails:
     def railway_job_details(request):
         try:
             api = Details.get_important_links(
-             "RailwayJobs",
+             "RailwayJob",
              "RailwayJobDetails",
              "railway-jobs"
              )

@@ -537,7 +537,7 @@ class StateGovtJobs:
             api = StateGovtJobs.get_all_state(
                 "http://www.freejobalert.com/goa-government-jobs/",
                 "goa_govt_jobs",
-                "GoaGovtJobs",
+                "GoaGovernmentjobs",
                 "goa_govt_jobs/"
             )
             return JsonResponse(api,safe=False)

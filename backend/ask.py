@@ -1,3 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import requests
 from bs4 import BeautifulSoup
 page = requests.get('http://www.freejobalert.com/odisha-govt-jobs/130634/')
