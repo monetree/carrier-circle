@@ -1714,7 +1714,7 @@ class RailwayJobDetails:
     def railway_job_details(request):
         try:
             api = Details.get_important_links(
-             "RailwayJob",
+             "RailwayJobsModel",
              "RailwayJobDetails",
              "railway-jobs"
              )

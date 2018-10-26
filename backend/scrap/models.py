@@ -1785,7 +1785,7 @@ class WestBengalEnggJobs(models.Model):
 """
 
 
-class RailwayJob(models.Model):
+class RailwayJobsModel(models.Model):
     railway_id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)

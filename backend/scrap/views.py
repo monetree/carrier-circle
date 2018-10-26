@@ -51,7 +51,7 @@ from .models import (
             TamilNaduEnggJobs,TelanganaEnggJobs,TripuraEnggJobs,
             UttarakhandEnggJobs,UttarPradeshEnggJobs,WestBengalEnggJobs,
             #railway jobs model
-            RailwayJob,
+            RailwayJobsModel,
             #police & defence jobs model,
             StatewisePoliceJobs,PoliceAndDefenceJobs,
             )
@@ -2252,10 +2252,10 @@ class EnggJobs:
 @ Api for RAILWAY jobs...
 """
 
-class RailwayJobs:
+class RailwayJob:
     def railway_jobs(request):
         try:
-            RailwayJob.objects.all().delete()
+            RailwayJobsModel.objects.all().delete()
             pdf_dir = "media/pdf/scrap/railway-jobs/"
             create_delete_pdf_dir(pdf_dir)
             lst=[]
@@ -2295,7 +2295,7 @@ class RailwayJobs:
                         dict["job_id"] = None
                     join_id = randint(99999, 999999)
                     #check the existing of join_id
-                    count_join_id = RailwayJob.objects.filter(join_id=join_id).count()
+                    count_join_id = RailwayJobsModel.objects.filter(join_id=join_id).count()
                     if count_join_id is not 0:
                         join_id = join_id + 1
                     pdf_link = re.search(r'.pdf$',link)
@@ -2308,7 +2308,7 @@ class RailwayJobs:
                             download_pdf(pdf_url,pdf_file_name)
                             dict["more_info"] = pdf_file_name
                     #insert into mysql database
-                    obj=RailwayJob.objects.create(
+                    obj=RailwayJobsModel.objects.create(
                         start_date=dict["start_date"],last_date=dict["last_date"],
                         post_name=dict["post_name"],education=dict["qualification"],
                         more_info=dict["more_info"],type=dict["type"],

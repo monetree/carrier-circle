@@ -7,4 +7,5 @@ urlpatterns = [
     path('', include("scrap.urls")),
     path('', include("details.urls")),
     path('', include("finalize.urls")),
+    path('', include("finish.urls")),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

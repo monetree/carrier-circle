@@ -5,7 +5,7 @@ from scrap.views import (
                 BankJobs,
                 TeachingJobs,
                 EnggJobs,
-                RailwayJobs,
+                RailwayJob,
                 PoliceDefenceJobs
             )
 
@@ -132,7 +132,7 @@ urlpatterns = [
     path('uttar_pradesh_engg_jobs/', EnggJobs.uttar_pradesh_engg_jobs),
     path('west_bengal_engg_jobs/', EnggJobs.west_bengal_engg_jobs),
     #Railway Jobs
-    path('railway_jobs/', RailwayJobs.railway_jobs),
+    path('railway_jobs/', RailwayJob.railway_jobs),
     #Police and Defence Jobs
     path('police_defence_jobs/', PoliceDefenceJobs.police_defence_jobs),
     path('statewise_police_jobs/', PoliceDefenceJobs.statewise_police_jobs),

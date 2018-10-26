@@ -831,7 +831,7 @@ class StatewiseEngineeringJobs:
 
 class RailwayJobs:
     def call_railway_jobs(request):
-        job         = RailwayJobs.railway_jobs(request)
+        job         = RailwayJob.railway_jobs(request)
         sleep(0.5)
         job_details = RailwayJobDetails.railway_job_details(request)
         message = call_all(job,job_details)
