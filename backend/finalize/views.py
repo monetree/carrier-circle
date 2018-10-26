@@ -24,7 +24,6 @@ def call_all(job,job_details):
             return job["traceback"]
 
 class AllIndiaGovernmentJobs:
-
     def call_all_india_govt_jobs(request):
         job         = AllIndiaGovtJobs.get_other_all_india(request)
         sleep(0.5)
@@ -49,7 +48,6 @@ class StatewiseGovtJobs:
         return HttpResponse(message)
 
 class BankingJobs:
-    
     def call_all_bank_jobs(request):
         job         = BankJobs.all_bank_jobs(request)
         sleep(0.5)
@@ -68,13 +66,12 @@ class StatewiseTeachingJobs:
 class StatewiseEngineeringJobs:
     
 class RailwayJobs:
-    
     def call_railway_jobs(request):
-    job         = RailwayJobs.railway_jobs(request)
-    sleep(0.5)
-    job_details = RailwayJobDetails.railway_job_details(request)
-    message = call_all(job,job_details)
-    return HttpResponse(message)
+        job         = RailwayJobs.railway_jobs(request)
+        sleep(0.5)
+        job_details = RailwayJobDetails.railway_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
     
 class PoliceJobs:
     def call_police_defence_jobs(request):
