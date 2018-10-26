@@ -47,3 +47,246 @@ class StatewiseGovtJobs:
         job_details = StateGovtJobDetails.odisha_govt_job_details(request)
         message = call_all(job,job_details)
         return HttpResponse(message)
+
+    def call_andhra_govt_jobs(request):
+        job         = StateGovtJobs.andhra_pradesh_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andhra_pradesh_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_arunachal_pradesh_govt_jobs(request):
+        job         = StateGovtJobs.arunachal_pradesh_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.arunachal_pradesh_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_assam_govt_jobs(request):
+        job         = StateGovtJobs.assam_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.assam_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_bihar_govt_jobs(request):
+        job         = StateGovtJobs.bihar_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.bihar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+
+    def call_chandigarh_govt_jobs(request):
+        job         = StateGovtJobs.chandigarh_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.chandigarh_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_chhattisgarh_govt_jobs(request):
+        job         = StateGovtJobs.chhattisgarh_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.chhattisgarh_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_dadra_nagar_govt_jobs(request):
+        job         = StateGovtJobs.dadra_nagar_haveli_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.dadra_nagar_haveli_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_daman_diu_govt_jobs(request):
+        job         = StateGovtJobs.daman_diu_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.daman_diu_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_delhi_govt_jobs(request):
+        job         = StateGovtJobs.delhi_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.delhi_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_andaman_govt_jobs(request):
+        job         = StateGovtJobs.andaman_nicobor_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.andaman_nicobar_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_odisha_govt_jobs(request):
+        job         = StateGovtJobs.odisha_govt_jobs(request)
+        sleep(0.5)
+        job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
