@@ -49,7 +49,44 @@ class StatewiseGovtJobs:
         return HttpResponse(message)
 
 class BankingJobs:
+    
+    def call_all_bank_jobs(request):
+        job         = BankJobs.all_bank_jobs(request)
+        sleep(0.5)
+        job_details = BankJobDetails.all_bank_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+    
+    def call_other_financial_jobs(request):
+        job         = BankJobs.other_financial_jobs(request)
+        sleep(0.5)
+        job_details = BankJobDetails.other_financial_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+    
 class StatewiseTeachingJobs:
 class StatewiseEngineeringJobs:
+    
 class RailwayJobs:
+    
+    def call_railway_jobs(request):
+    job         = RailwayJobs.railway_jobs(request)
+    sleep(0.5)
+    job_details = RailwayJobDetails.railway_job_details(request)
+    message = call_all(job,job_details)
+    return HttpResponse(message)
+    
 class PoliceJobs:
+    def call_police_defence_jobs(request):
+        job         = PoliceDefenceJobs.police_defence_jobs(request)
+        sleep(0.5)
+        job_details = PoliceDefenceJobDetails.police_defence_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+    
+    def call_statewise_police_jobs(request):
+        job         = PoliceDefenceJobs.statewise_police_jobs(request)
+        sleep(0.5)
+        job_details = PoliceDefenceJobDetails.statewise_police_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
