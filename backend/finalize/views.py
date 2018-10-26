@@ -47,3 +47,9 @@ class StatewiseGovtJobs:
         job_details = StateGovtJobDetails.odisha_govt_job_details(request)
         message = call_all(job,job_details)
         return HttpResponse(message)
+
+class BankingJobs:
+class StatewiseTeachingJobs:
+class StatewiseEngineeringJobs:
+class RailwayJobs:
+class PoliceJobs:
