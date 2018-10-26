@@ -24,7 +24,6 @@ def call_all(job,job_details):
             return job["traceback"]
 
 class AllIndiaGovernmentJobs:
-
     def call_all_india_govt_jobs(request):
         job         = AllIndiaGovtJobs.get_other_all_india(request)
         sleep(0.5)
@@ -288,5 +287,57 @@ class StatewiseGovtJobs:
         job         = StateGovtJobs.odisha_govt_jobs(request)
         sleep(0.5)
         job_details = StateGovtJobDetails.odisha_govt_job_details(request)
+
+class BankingJobs:
+    def call_all_bank_jobs(request):
+        job         = BankJobs.all_bank_jobs(request)
+        sleep(0.5)
+        job_details = BankJobDetails.all_bank_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_other_financial_jobs(request):
+        job         = BankJobs.other_financial_jobs(request)
+        sleep(0.5)
+        job_details = BankJobDetails.other_financial_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+class StatewiseTeachingJobs:
+    def call_teaching_jobs(request):
+        job         = TeachingJobs.all_india_teaching_jobs(request)
+        sleep(0.5)
+        job_details = TeachingJobDetails.all_india_teaching_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+class StatewiseEngineeringJobs:
+    def call_engg_jobs(request):
+        job         = EnggJobs.all_india_engg_jobs(request)
+        sleep(0.5)
+        job_details = EnggJobDetails.all_india_engg_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+class RailwayJobs:
+    def call_railway_jobs(request):
+        job         = RailwayJobs.railway_jobs(request)
+        sleep(0.5)
+        job_details = RailwayJobDetails.railway_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+class PoliceJobs:
+    def call_police_defence_jobs(request):
+        job         = PoliceDefenceJobs.police_defence_jobs(request)
+        sleep(0.5)
+        job_details = PoliceDefenceJobDetails.police_defence_job_details(request)
+        message = call_all(job,job_details)
+        return HttpResponse(message)
+
+    def call_statewise_police_jobs(request):
+        job         = PoliceDefenceJobs.statewise_police_jobs(request)
+        sleep(0.5)
+        job_details = PoliceDefenceJobDetails.statewise_police_job_details(request)
         message = call_all(job,job_details)
         return HttpResponse(message)
