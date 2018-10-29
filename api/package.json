@@ -11,9 +11,12 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "js-beautify": "^1.8.8",
     "knex": "^0.15.2",
     "mysql": "^2.16.0",
-    "nodemon": "^1.18.5"
+    "nodemon": "^1.18.5",
+    "path": "^0.12.7"
   }
 }
