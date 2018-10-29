@@ -22,7 +22,7 @@ var sbttback = {"sbttimg":"http:\/\/www.freejobalert.com\/wp-content\/plugins\/c
 <script type='text/javascript' src='http://www.freejobalert.com/wp-content/plugins/cstpg//js/sbtt.js?ver=3.4.2'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var samAjax = {"ajaxurl":"http:\/\/www.freejobalert.com\/wp-admin\/admin-ajax.php","_ajax_nonce":"bba4d1f360"};
+var samAjax = {"ajaxurl":"http:\/\/www.freejobalert.com\/wp-admin\/admin-ajax.php","_ajax_nonce":"c55f1aa721"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://www.freejobalert.com/wp-content/plugins/simple-ads-manager/js/sam-layout.js?ver=1.7.57'></script>
@@ -483,7 +483,7 @@ Tags:<a href="http://www.freejobalert.com/tag/banks-po-syllabus/" rel="tag">bank
 <input type='hidden' name='comment_post_ID' value='11820' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p>
-<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d656b14fe5" /></p><p style="display:none;"><input type="text" name="nxts" value="1540620793" /><input type="text" name="nxts_signed" value="5b20ea72a80ec4a65885257ca2e66cc4ea0410e1" /><input type="text" name="42c7eecd92c215b212560f5e7a" value="2e13d41d9f1ba9c997" /><input type="text" name="1ff002c7a42833" value="" /></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f1e5ad5825" /></p><p style="display:none;"><input type="text" name="nxts" value="1540671393" /><input type="text" name="nxts_signed" value="897a729f94658adc1efdb85465d085bb2a3a1e00" /><input type="text" name="1ff002c7a42833" value="" /><input type="text" name="42c7eecd92c215b212560f5e7a" value="2e13d41d9f1ba9c997" /></p>
 </form>
 
 </div>
@@ -598,7 +598,7 @@ Tags:<a href="http://www.freejobalert.com/tag/banks-po-syllabus/" rel="tag">bank
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/wp-content/uploads/2018/10/Notification-UP-Police-Constable-Posts.jpg" >UP Police Constable 51216 Vacancy</a>  </li>
                         
-            <li><a style="color:#19455D"  href="http://www.freejobalert.com/wp-content/uploads/2018/10/Notification-UPSSSC-Combined-Sub-Engineer-Posts.pdf" >UPSSSC Sub Engineer 1477 Vacancy</a>  </li>
+            <li><a style="color:#19455D"  href="http://www.freejobalert.com/upsssc/305639/" >UPSSSC Sub Engineer 1477 Vacancy</a>  </li>
                         
             <li><a style="color:#19455D"  href="http://ayushicomputers.org/"  rel="nofollow">UPSRTC Conductor 2458 Vacancy.</a>  </li>
                         
@@ -843,4 +843,4 @@ var infolinks_wsid = 0;
 Minified using disk: basic
 Page Caching using disk: enhanced
 
-Served from: www.freejobalert.com @ 2018-10-27 11:43:13 -->
+Served from: www.freejobalert.com @ 2018-10-28 01:46:33 -->

@@ -22,7 +22,7 @@ var sbttback = {"sbttimg":"http:\/\/www.freejobalert.com\/wp-content\/plugins\/c
 <script type='text/javascript' src='http://www.freejobalert.com/wp-content/plugins/cstpg//js/sbtt.js?ver=3.4.2'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var samAjax = {"ajaxurl":"http:\/\/www.freejobalert.com\/wp-admin\/admin-ajax.php","_ajax_nonce":"e47ab5b4ed"};
+var samAjax = {"ajaxurl":"http:\/\/www.freejobalert.com\/wp-admin\/admin-ajax.php","_ajax_nonce":"c55f1aa721"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://www.freejobalert.com/wp-content/plugins/simple-ads-manager/js/sam-layout.js?ver=1.7.57'></script>
@@ -390,7 +390,7 @@ Tags:<a href="http://www.freejobalert.com/tag/cgpsc-jobs/" rel="tag">CGPSC Jobs<
 <input type='hidden' name='comment_post_ID' value='220773' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p>
-<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a4e68ff5fb" /></p><p style="display:none;"><input type="text" name="nxts" value="1540578808" /><input type="text" name="nxts_signed" value="a825115519d5d79cd9325c840da9c240de536ed9" /><input type="text" name="42c7eecd92c215b212560f5e7a" value="2e13d41d9f1ba9c997" /><input type="text" name="1ff002c7a42833" value="" /></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f2c1653d2d" /></p><p style="display:none;"><input type="text" name="nxts" value="1540668356" /><input type="text" name="nxts_signed" value="705a5d7034027195077cd81935d3853384366082" /><input type="text" name="1ff002c7a42833" value="" /><input type="text" name="42c7eecd92c215b212560f5e7a" value="2e13d41d9f1ba9c997" /></p>
 </form>
 
 </div>
@@ -505,7 +505,7 @@ Tags:<a href="http://www.freejobalert.com/tag/cgpsc-jobs/" rel="tag">CGPSC Jobs<
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/wp-content/uploads/2018/10/Notification-UP-Police-Constable-Posts.jpg" >UP Police Constable 51216 Vacancy</a>  </li>
                         
-            <li><a style="color:#19455D"  href="http://www.freejobalert.com/wp-content/uploads/2018/10/Notification-UPSSSC-Combined-Sub-Engineer-Posts.pdf" >UPSSSC Sub Engineer 1477 Vacancy</a>  </li>
+            <li><a style="color:#19455D"  href="http://www.freejobalert.com/upsssc/305639/" >UPSSSC Sub Engineer 1477 Vacancy</a>  </li>
                         
             <li><a style="color:#19455D"  href="http://ayushicomputers.org/"  rel="nofollow">UPSRTC Conductor 2458 Vacancy.</a>  </li>
                         
@@ -585,7 +585,7 @@ Tags:<a href="http://www.freejobalert.com/tag/cgpsc-jobs/" rel="tag">CGPSC Jobs<
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/himachal-pradesh-hp-tet/34006/" >HP TET Exam Result Released</a>  </li>
                         
-            <li><a style="color:#19455D"  href="http://www.freejobalert.com/tspsc-notification/376580/#SGT-SA" >TSPSC School Asst Result</a>  </li>
+            <li><a style="color:#19455D"  href="http://www.freejobalert.com/rbi-recruitment/15273/#Grade-B-Officer" >RBI Officer Gr B Phase II Result</a>  </li>
             </ul></div>
             <div style="text-align: right;width:270px"><a style="color:#FF6633" href="/exam-results/22075/">View More</a></div>
 
@@ -629,6 +629,8 @@ Tags:<a href="http://www.freejobalert.com/tag/cgpsc-jobs/" rel="tag">CGPSC Jobs<
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/canara-bank-po-syllabus/11820/" >Canara Bank PO Syllabus</a>  </li>
                         
+            <li><a style="color:#19455D"  href="http://www.freejobalert.com/ib-security-assistant-syllabus/750037/" >IB Security Asst Syllabus</a>  </li>
+                        
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/ssc-stenographer-syllabus/202382/" >SSC Stenographer Syllabus</a>  </li>
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/ssc-junior-hindi-translator-syllabus/202092/" >SSC JHT Syllabus</a>  </li>
@@ -642,8 +644,6 @@ Tags:<a href="http://www.freejobalert.com/tag/cgpsc-jobs/" rel="tag">CGPSC Jobs<
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/up-police/25975/#Constable" >UP Police Constable Syllabus</a>  </li>
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/cgpsc-state-service-exam-syllabus/220773/" >CGPSC SSE (Prelims) Syllabus</a>  </li>
-                        
-            <li><a style="color:#19455D"  href="http://www.freejobalert.com/wp-content/uploads/2018/10/Syllabus-APPSC-Group-I-Prelms.pdf" >APPSC Group-I (Prelims) Revised Final</a>  </li>
                         
             <li><a style="color:#19455D"  href="http://www.freejobalert.com/wp-content/uploads/2018/10/Syllabus-APPSC-Group-II.pdf" >APPSC Group-II Revised Final Syllabus</a>  </li>
             </ul></div>
@@ -750,4 +750,4 @@ var infolinks_wsid = 0;
 Minified using disk: basic
 Page Caching using disk: enhanced
 
-Served from: www.freejobalert.com @ 2018-10-27 00:03:28 -->
+Served from: www.freejobalert.com @ 2018-10-28 00:55:56 -->

@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import FinishAll
+from .views import FinishAll,Work
+
 
 urlpatterns = [
     #finalize all india
@@ -10,5 +11,6 @@ urlpatterns = [
     path('finish_banking_jobs/', FinishAll.banking_jobs),
     path('finish_railway_jobs/', FinishAll.railway_jobs),
     path('finish_police_jobs/', FinishAll.police_jobs),
-
+    path('finish_police_jobs/', FinishAll.police_jobs),
+    path('perform/', Work.perform),
 ]

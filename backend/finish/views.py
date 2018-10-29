@@ -1,6 +1,7 @@
 from threading import Thread
 from time import sleep
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
+from django.template import RequestContext
 from django.http import HttpResponse
 from finalize.views import (
             AllIndiaGovernmentJobs,
@@ -15,11 +16,8 @@ from finalize.views import (
 
 class FinishAll:
     def all_india_govt_jobs(request):
-        try:
-            res = AllIndiaGovernmentJobs.call_all_india_govt_jobs(request)
-            return HttpResponse("success")
-        except:
-            return HttpResponse("error")
+        res = AllIndiaGovernmentJobs.call_all_india_govt_jobs(request)
+        return HttpResponse("success")
 
     def state_govt_jobs(request):
         t1 = Thread(target=StatewiseGovtJobs.call_andaman_govt_jobs,args=[request])
@@ -396,3 +394,44 @@ class FinishAll:
         t1.join()
         t2.join()
         return HttpResponse("success")
+
+class Work:
+    def perform(request):
+        password = request.GET.get("password", None)
+        if password == "Thinkonce":
+            t1 = Thread(target=FinishAll.all_india_govt_jobs,args=[request])
+            t2 = Thread(target=FinishAll.state_govt_jobs,args=[request])
+            t3 = Thread(target=FinishAll.teaching_jobs,args=[request])
+            t4 = Thread(target=FinishAll.engineering_jobs,args=[request])
+            t5 = Thread(target=FinishAll.banking_jobs,args=[request])
+            t6 = Thread(target=FinishAll.railway_jobs,args=[request])
+            t7 = Thread(target=FinishAll.police_jobs,args=[request])
+            t1.start()
+            t2.start()
+            t3.start()
+            t4.start()
+            t5.start()
+            t6.start()
+            t7.start()
+            t1.join()
+            t2.join()
+            t3.join()
+            t4.join()
+            t5.join()
+            t6.join()
+            t7.join()
+            return HttpResponse("success")
+        else:
+            return render(request, '401.html', status=401)
+
+def handler_404(request):
+    return render(request, '404.html', status=404)
+
+def handler_500(request):
+    return render(request, '500.html', status=404)
+
+def handler_403(request):
+    return render(request, '403.html', status=404)
+
+def handler_400(request):
+    return render(request, '400.html', status=404)

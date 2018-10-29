@@ -38,6 +38,7 @@ class Details:
                     dict['Link'] = pdf_file_name
                 else:
                     dict['Link'] = pdf_url
+                    lst2.append(dict)
                 obj = details_model.objects.create(more_info=dict,join_id=join_id)
                 lst.append(dict.copy())
 
