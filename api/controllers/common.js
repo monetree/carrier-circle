@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express()
 const fetch = require('node-fetch');
@@ -37,40 +38,38 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
           job_type3 = api
         })
         .then(api => {
-           if (job_type3 != undefined  && job_type3.length) {
+          if (job_type3 != undefined  && job_type3.length) {
              job_api = job_type1.concat(job_type2,job_type3)
-           } else if (job_type2 != undefined  && job_type2.length) {
+           }else if (job_type2 != undefined  && job_type2.length) {
              job_api =  job_type1.concat(job_type2)
-           } else {
+           }else{
              job_api = job_type1;
            }
         }).then(api => {
           job_api.map((ja, i) => {
               if (ja["type"] === 3){
-                ja["more_info"] = python_url + ja["more_info"]
+                ja["more_info"] = python_url + ja["more_info"];
               }
               if (ja["type"] === 2){
 
-
                 fetch('http://127.0.0.1:8000/make_json/', {
-                   method:'post',
-                   headers:{'Content-Type':'application/json'},
-                   body:JSON.stringify({
-                     api:ja["more_info"]
-                   })
-                 })
-                 .then(response => response.json())
-                 .then(user => {
-                   ja["more_info"] = user
-                   console.log(ja["more_info"])
-                 })
+                  method:'post',
+                  headers:{'Content-Type':'application/json'},
+                  body:JSON.stringify({
+                    api:ja["more_info"]
+                  })
+                })
+                .then(response => response.json())
+                .then(user => {
+                  ja["more_info"] = user
+                })
+
+
 
 
               }
             })
             res.json(job_api)
-            // res.sendFile(path.join(__dirname+'/index.html'),{name:"srk"})
-          // res.send("<pre style='background:#edfcfc;color:#055466;padding:10px;width:80%;border-radius:20px;overflow:scroll;'>" + JSON.stringify(job_api,null,4) + "</pre>")
         })
     )
   )
