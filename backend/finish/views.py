@@ -1,4 +1,6 @@
 from threading import Thread
+import json
+from django.http import JsonResponse
 from time import sleep
 from django.shortcuts import render,render_to_response
 from django.template import RequestContext
@@ -435,3 +437,13 @@ def handler_403(request):
 
 def handler_400(request):
     return render(request, '400.html', status=404)
+
+import ast
+def make_json(request):
+    lst=[]
+    data    = request.body
+    convert = data.decode("utf-8")
+    ds      = json.loads(convert)
+    s = ds["api"]
+    dict = ast.literal_eval(s)
+    return JsonResponse(dict,safe=False)

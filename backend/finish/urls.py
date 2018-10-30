@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import FinishAll,Work
+from .views import FinishAll,Work,make_json
 
 
 urlpatterns = [
@@ -13,4 +13,5 @@ urlpatterns = [
     path('finish_police_jobs/', FinishAll.police_jobs),
     path('finish_police_jobs/', FinishAll.police_jobs),
     path('perform/', Work.perform),
+    path('make_json/', make_json),
 ]

@@ -30,12 +30,14 @@ class Details:
                 dict['Title'] = title.text
             for link in i.find_all('a',title=True, href=True):
                 pdf_url = link['href']
-                if pdf_url.split(".")[1] == "freejobalert":
+                if pdf_url.split(".")[1] == "freejobalert" and re.search(r'.pdf$',pdf_url):
                     pdf_file_name = pdf_dir+"/"+str(randint(99999, 9999999999))+".pdf"
                     get_url = requests.get(pdf_url)
                     with open(pdf_file_name,'wb') as pdf:
                         pdf.write(get_url.content)
                     dict['Link'] = pdf_file_name
+                elif pdf_url.split(".")[1] == "freejobalert" and not (re.search(r'.pdf$',pdf_url)):
+                    dict["Link"] = "crash"
                 else:
                     dict['Link'] = pdf_url
                     lst2.append(dict)
