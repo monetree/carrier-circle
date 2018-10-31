@@ -11,6 +11,14 @@ axios.post('http://127.0.0.1:8000/make_json/', {
   console.log(api)
 
 
+[{'Link': 'media/pdf/details/state-govt-jobs/andhra-pradesh-govt-jobs/4454042811.pdf', 'Title': 'Information Bulletin (School Education)'}],
+[{'Link': 'media/pdf/details/state-govt-jobs/andhra-pradesh-govt-jobs/4859446433.pdf', 'Title': 'Notification '}],
+[{'Link': 'http://apvvp.nic.in/', 'Title': ' Official Website'}]
+
+
+
+
+
   // const express = require('express');
   // const app = express()
   // const fetch = require('node-fetch');

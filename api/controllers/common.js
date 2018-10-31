@@ -52,6 +52,9 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
               }
               if (ja["type"] === 2){
 
+                // ja["more_info"] = ja["more_info"]
+
+
                 fetch('http://127.0.0.1:8000/make_json/', {
                   method:'post',
                   headers:{'Content-Type':'application/json'},
@@ -62,7 +65,9 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
                 .then(response => response.json())
                 .then(user => {
                   ja["more_info"] = user
+                  console.log(ja["more_info"])
                 })
+
 
 
 
