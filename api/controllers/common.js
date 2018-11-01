@@ -24,10 +24,10 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
         job_type1 = api
     }).then(
       knex.db.select(jobType2)
-        .from(table1).
-         innerJoin(table2,join1,join2)
+        .from(table2).
+         innerJoin(table1,join1,join2)
         .where(where["where2"], where["where2_index"])
-        .groupBy(group)
+         // .groupBy(group)
       .then(api => {
           job_type2 = api
         }).then(
@@ -51,27 +51,15 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
                 ja["more_info"] = python_url + ja["more_info"];
               }
               if (ja["type"] === 2){
-
-                // ja["more_info"] = ja["more_info"]
-
-
-                fetch('http://127.0.0.1:8000/make_json/', {
-                  method:'post',
-                  headers:{'Content-Type':'application/json'},
-                  body:JSON.stringify({
-                    api:ja["more_info"]
-                  })
+                str = ja["more_info"]
+                replace_quote = str.replace(/'/gi,'"')
+                ja["more_info"] = JSON.parse(replace_quote)
+                more_info = ja["more_info"]
+                more_info.map((mi, i) => {
+                  if (mi["Link"].startsWith('media') && mi["Link"].endsWith('pdf')) {
+                    mi["Link"] = python_url + mi["Link"]
+                  }
                 })
-                .then(response => response.json())
-                .then(user => {
-                  ja["more_info"] = user
-                  console.log(ja["more_info"])
-                })
-
-
-
-
-
               }
             })
             res.json(job_api)
@@ -92,14 +80,13 @@ const data = (req,res,knex,table1,table2) => {
     knex.db.ref(table1 + '.more_info').as('more_info')
   ];
   let job_type2 = [
-    knex.db.raw('group_concat('+ table2 + '.more_info) as more_info'),
+    knex.db.ref(table2 + '.more_info').as('more_info'),
     knex.db.ref(table1 + '.start_date').as('start_date'),
     knex.db.ref(table1 + '.last_date').as('last_date'),
     knex.db.ref(table1 + '.post_name').as('post_name'),
     knex.db.ref(table1 + '.education').as('education'),
     knex.db.ref(table1 + '.requirement_board').as('requirement_board'),
     knex.db.ref(table1 + '.type').as('type'),
-    knex.db.ref(table1 + '.more_info').as('details')
 ];
   let job_type3 = [
     knex.db.ref(table1 + '.start_date').as('start_date'),

@@ -1,6 +1,7 @@
 
 class HandleError:
     def send_mail(traceback,e,fname,exc_type,exc_obj,exc_tb):
+        print(traceback,e,fname,exc_type,exc_obj,exc_tb)
         from smtplib import SMTP,SMTPAuthenticationError,SMTPException
         from email.mime.multipart import MIMEMultipart
         from email.mime.text import MIMEText
@@ -52,7 +53,7 @@ class HandleError:
             email_conn.sendmail(from_email,to_list,the_msg.as_string())
             email_conn.quit()
         except SMTPException:
-            print("some thing went wrong")
+            print("SMTPException happened")
 
     def make_error(traceback,e,fname,exc_type,exc_obj,exc_tb):
         HandleError.send_mail(traceback,e,fname,exc_type,exc_obj,exc_tb)

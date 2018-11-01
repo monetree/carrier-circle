@@ -42,6 +42,7 @@ class OtherAllIndiaJobDetails(models.Model):
 """
 
 
+
 class OdishaGovtJobDetails(models.Model):
     odisha_details_id= models.AutoField(primary_key=True)
     # odisha            = models.OneToOneField(scrap_models.OdishaGovtJobs,on_delete=models.CASCADE,related_name='odisha_details')

@@ -27,7 +27,7 @@ class Details:
         dict = {}
         for i in row:
             for title in i.find_all('span', attrs={'style':'color: #008000;'}):
-                dict['Title'] = title.text
+                dict['Title'] = title.text.strip()
             for link in i.find_all('a',title=True, href=True):
                 pdf_url = link['href']
                 if pdf_url.split(".")[1] == "freejobalert" and re.search(r'.pdf$',pdf_url):
@@ -40,10 +40,10 @@ class Details:
                     dict["Link"] = "crash"
                 else:
                     dict['Link'] = pdf_url
-                    lst2.append(dict)
-                obj = details_model.objects.create(more_info=dict,join_id=join_id)
+                # obj = details_model.objects.create(more_info=dict,join_id=join_id)
                 lst.append(dict.copy())
-
+        print(len(lst))
+        obj = details_model.objects.create(more_info=lst,join_id=join_id)
         return lst
     def get_important_links(scrap_model_name,details_model_name,pdf_dir_name):
         pool = ThreadPool(4)

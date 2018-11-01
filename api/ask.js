@@ -1,21 +1,7 @@
-const axios = require('axios');
-let api = []
-axios.post('http://127.0.0.1:8000/make_json/', {
-  api:"{'Link': 'media/pdf/details/all-india-govt-jobs/other-all-india-govt-jobs/1190896199.pdf', 'Title': 'Corrigendum'},{'Link': 'media/pdf/details/all-india-govt-jobs/other-all-india-govt-jobs/3916152215.pdf', 'Title': 'Notification '},{'Link': 'http://www.nia.nic.in/', 'Title': ' Official Website'}"
-})
-.then(response => {
-  api = response.data
-  console.log(api)
-  // other code using `api`...
-})
-  console.log(api)
 
-
-[{'Link': 'media/pdf/details/state-govt-jobs/andhra-pradesh-govt-jobs/4454042811.pdf', 'Title': 'Information Bulletin (School Education)'}],
-[{'Link': 'media/pdf/details/state-govt-jobs/andhra-pradesh-govt-jobs/4859446433.pdf', 'Title': 'Notification '}],
-[{'Link': 'http://apvvp.nic.in/', 'Title': ' Official Website'}]
-
-
+"""{'Link': 'media/pdf/details/all-india-govt-jobs/other-all-india-govt-jobs/5472540504.pdf', 'Title': 'Corrigendum'},
+{'Link': 'media/pdf/details/all-india-govt-jobs/other-all-india-govt-jobs/3901883467.pdf', 'Title': 'Notification '},
+{'Link': 'http://www.nbagr.res.in/', 'Title': ' Official Website'}"""
 
 
 

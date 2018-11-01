@@ -445,5 +445,5 @@ def make_json(request):
     convert = data.decode("utf-8")
     ds      = json.loads(convert)
     s = ds["api"]
-    dict = ast.literal_eval(s)
+    dict = ast.literal_eval("[" + s + "]")
     return JsonResponse(dict,safe=False)
