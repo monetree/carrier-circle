@@ -422,6 +422,7 @@ class Work:
             t5.join()
             t6.join()
             t7.join()
+            print("Done")
             return HttpResponse("success")
         else:
             return render(request, '401.html', status=401)

@@ -28,8 +28,10 @@ class AllIndiaGovernmentJobs:
     def call_all_india_govt_jobs(request):
         try:
             job         = AllIndiaGovtJobs.get_other_all_india(request)
+            print(AllIndiaGovtJobs)
             sleep(0.5)
             job_details = AllIndiaGovtJobDetails.other_all_india_details(request)
+            print(AllIndiaGovtJobDetails)
             message = call_all(job,job_details)
             return HttpResponse(message)
         except Exception  as e :

@@ -970,7 +970,7 @@ class BankJobs:
                     obj=AllBankJobs.objects.create(
                         start_date=dict["start_date"],last_date=dict["last_date"],
                         post_name=dict["post_name"],education=dict["education"],
-                        more_info=dict["more_info"],type=dict["type"],
+                        more_info=dict["more_info"],type=dict["type"],requirement_board =dict["bank_name"],
                         job_id=dict["job_id"],join_id=randint(99999, 999999)
                     )
                 lst.append(dict.copy())
@@ -1042,7 +1042,7 @@ class BankJobs:
                     obj=OtherFinancialJobs.objects.create(
                         start_date=dict["start_date"],last_date=dict["last_date"],
                         post_name=dict["post_name"],education=dict["education"],
-                        more_info=dict["more_info"],type=dict["type"],
+                        more_info=dict["more_info"],type=dict["type"],requirement_board =dict["requirement_board"],
                         job_id=dict["job_id"],join_id=randint(99999, 999999)
                     )
                 lst.append(dict.copy())
@@ -1118,7 +1118,7 @@ class TeachingJobs:
                 obj=model.objects.create(
                     start_date=dict["start_date"],last_date=dict["last_date"],
                     post_name=dict["post_name"],education=dict["education"],
-                    more_info=dict["more_info"],type=dict["type"],
+                    more_info=dict["more_info"],type=dict["type"],requirement_board =dict["requirement_board"],
                     job_id=dict["job_id"],join_id=randint(99999, 999999)
                 )
             lst.append(dict.copy())
@@ -1708,7 +1708,7 @@ class EnggJobs:
                 obj=model.objects.create(
                     start_date=dict["start_date"],last_date=dict["last_date"],
                     post_name=dict["post_name"],education=dict["education"],
-                    more_info=dict["more_info"],type=dict["type"],
+                    more_info=dict["more_info"],type=dict["type"],requirement_board=dict["requirement_board"],
                     job_id=dict["job_id"],join_id=randint(99999, 999999)
                 )
             lst.append(dict.copy())
@@ -2311,7 +2311,7 @@ class RailwayJob:
                     obj=RailwayJobsModel.objects.create(
                         start_date=dict["start_date"],last_date=dict["last_date"],
                         post_name=dict["post_name"],education=dict["qualification"],
-                        more_info=dict["more_info"],type=dict["type"],
+                        more_info=dict["more_info"],type=dict["type"],requirement_board =dict["requirement_board"],
                         job_id=dict["job_id"],join_id=randint(99999, 999999)
                     )
                 lst.append(dict.copy())
@@ -2383,7 +2383,7 @@ class PoliceDefenceJobs:
                     obj=PoliceAndDefenceJobs.objects.create(
                         start_date=dict["start_date"],last_date=dict["last_date"],
                         post_name=dict["post_name"],education=dict["qualification"],
-                        more_info=dict["more_info"],type=dict["type"],
+                        more_info=dict["more_info"],type=dict["type"],requirement_board =dict["requirement_board"],
                         job_id=dict["job_id"],join_id=randint(99999, 999999)
                     )
                 lst.append(dict.copy())
@@ -2454,7 +2454,7 @@ class PoliceDefenceJobs:
                     obj=StatewisePoliceJobs.objects.create(
                         start_date=dict["start_date"],last_date=dict["last_date"],
                         post_name=dict["post_name"],education=dict["qualification"],
-                        more_info=dict["more_info"],type=dict["type"],
+                        more_info=dict["more_info"],type=dict["type"],requirement_board =dict["requirement_board"],
                         job_id=dict["job_id"],join_id=randint(99999, 999999)
                     )
                 lst.append(dict.copy())

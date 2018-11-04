@@ -1,101 +1,259 @@
 
-"""{'Link': 'media/pdf/details/all-india-govt-jobs/other-all-india-govt-jobs/5472540504.pdf', 'Title': 'Corrigendum'},
-{'Link': 'media/pdf/details/all-india-govt-jobs/other-all-india-govt-jobs/3901883467.pdf', 'Title': 'Notification '},
-{'Link': 'http://www.nbagr.res.in/', 'Title': ' Official Website'}"""
+app.get('/api/statewise-engg-jobs/odisha-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_odishaenggjobs"
+  table2 = "details_odishaenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
 
+app.get('/api/statewise-engg-jobs/andaman-nicobar-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_andamannicoborenggjobs"
+  table2 = "details_andamannicoborenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
 
+app.get('/api/statewise-engg-jobs/andhra-pradesh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_andhrapradeshenggjobs"
+  table2 = "details_andhrapradeshenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
 
-  // const express = require('express');
-  // const app = express()
-  // const fetch = require('node-fetch');
-  // let path = require('path');
-  //
-  // let python_url = "http://localhost:8000/"
-  // let job_type1 = {}
-  // let job_type2 = {}
-  // let job_type3 = {}
-  // let job_api = {}
-  //
-  //
-  // const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where, groupBy) => {
-  //   let table1 = tables[0]
-  //   let table2 = tables[1]
-  //   let join1 = joins[0]
-  //   let join2 = joins[1]
-  //   let group = groupBy
-  //   knex.db.select(jobType1)
-  //   .from(table1)
-  //   .where(where["where1"], where["where1_index"])
-  //     .then(api => {
-  //         job_type1 = api
-  //     }).then(
-  //       knex.db.select(jobType2)
-  //         .from(table1).
-  //          innerJoin(table2,join1,join2)
-  //         .where(where["where2"], where["where2_index"])
-  //         .groupBy(group)
-  //       .then(api => {
-  //           job_type2 = api
-  //         }).then(
-  //           knex.db.select(jobType3)
-  //           .from(table1)
-  //           .where(where["where3"], where["where3_index"])
-  //         .then(api => {
-  //           job_type3 = api
-  //         })
-  //         .then(api => {
-  //           if (job_type3 != undefined  && job_type3.length) {
-  //              job_api = job_type1.concat(job_type2,job_type3)
-  //            }else if (job_type2 != undefined  && job_type2.length) {
-  //              job_api =  job_type1.concat(job_type2)
-  //            }else{
-  //              job_api = job_type1;
-  //            }
-  //              res.json(job_api)
-  //         })
-  //     )
-  //   )
-  //     .catch(err => res.status(400).json('error getting api'))
-  // }
-  //
-  // const data = (req,res,knex,table1,table2) => {
-  //   let job_type1 = [
-  //     knex.db.ref(table1 + '.start_date').as('start_date'),
-  //     knex.db.ref(table1 + '.last_date').as('last_date'),
-  //     knex.db.ref(table1 + '.post_name').as('post_name'),
-  //     knex.db.ref(table1 + '.education').as('education'),
-  //     knex.db.ref(table1 + '.requirement_board').as('requirement_board'),
-  //     knex.db.ref(table1 + '.type').as('type'),
-  //     knex.db.ref(table1 + '.more_info').as('more_info')
-  //   ];
-  //   let job_type2 = [
-  //     knex.db.raw('group_concat('+ table2 + '.more_info) as more_info'),
-  //     knex.db.ref(table1 + '.start_date').as('start_date'),
-  //     knex.db.ref(table1 + '.last_date').as('last_date'),
-  //     knex.db.ref(table1 + '.post_name').as('post_name'),
-  //     knex.db.ref(table1 + '.education').as('education'),
-  //     knex.db.ref(table1 + '.requirement_board').as('requirement_board'),
-  //     knex.db.ref(table1 + '.type').as('type'),
-  //     knex.db.ref(table1 + '.more_info').as('details')
-  // ];
-  //   let job_type3 = [
-  //     knex.db.ref(table1 + '.start_date').as('start_date'),
-  //     knex.db.ref(table1 + '.last_date').as('last_date'),
-  //     knex.db.ref(table1 + '.post_name').as('post_name'),
-  //     knex.db.ref(table1 + '.education').as('education'),
-  //     knex.db.ref(table1 + '.requirement_board').as('requirement_board'),
-  //     knex.db.ref(table1 + '.type').as('type'),
-  //     knex.db.ref(table1 + '.more_info').as('more_info')
-  //   ];
-  //   let tables = [table1,table2]
-  //   let joins  = [table1 + ".join_id",table2 + ".join_id"]
-  //   let where  = {"where1":table1 + '.type',"where1_index":1,
-  //                "where2":table1 + '.type',"where2_index":2,
-  //                "where3":table1 + '.type',"where3_index":3}
-  //   let group  = table1 + '.post_name'
-  //     Algo(req, res, knex, job_type1, job_type2, job_type3, tables, joins, where, group);
-  // }
-  //
-  // module.exports = {
-  //   data
-  // }
+app.get('/api/statewise-engg-jobs/arunachal-pradesh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_arunachalpradeshgovernmentjobs"
+  table2 = "details_arunachalpradeshgovernmentjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/assam-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_assamenggjobs"
+  table2 = "details_assamenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/bihar-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_biharenggjobs"
+  table2 = "details_biharenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/chandigarh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_chandigarhenggjobs"
+  table2 = "details_chandigarhenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/chhattishgarh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_chhattisgarhenggjobs"
+  table2 = "details_chhattisgarhenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/dadra-nagar-haweli-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_dadranagarhavelienggjobs"
+  table2 = "details_dadranagarhavelienggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/chhattishgarh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_chhattisgarhenggjobs"
+  table2 = "details_chhattisgarhenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/daman-diu-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_damandiuenggjobs"
+  table2 = "details_damandiuenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/delhi-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_delhienggjobs"
+  table2 = "details_goagovernmentjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/goa-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_goagovernmentjobs"
+  table2 = "details_goajobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/gujurat-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_gujuratenggjobs"
+  table2 = "details_gujuratenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/haryana-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_haryanaenggjobs"
+  table2 = "details_haryanaenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/himachal-pradesh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_himachalpradeshenggjobs"
+  table2 = "details_himachalpradeshenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/jammu-kashmir-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_jammukashmirenggjobs"
+  table2 = "details_chhattisgarhenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/jharkhand-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_jharkhandenggjobs"
+  table2 = "details_jharkhandenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/karnataka-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_karnatakaenggjobs"
+  table2 = "details_karnatakaenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/kerala-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_keralaenggjobs"
+  table2 = "details_keralaenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/lakshadweep-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_lakshadweepgovernmentjobs"
+  table2 = "details_lakshadweepgovernmentjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/madhya-pradesh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_madhyapradeshenggjobs"
+  table2 = "details_madhyapradeshenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/maharashtra-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_maharashtraenggjobs"
+  table2 = "details_maharashtraenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/manipur-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_manipurenggjobs"
+  table2 = "details_manipurenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/meghalaya-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_meghalayaenggjobs"
+  table2 = "details_meghalayaenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/mizoram-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_mizoramenggjobs"
+  table2 = "details_mizoramenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/nagaland-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_nagalandenggjobs"
+  table2 = "details_nagalandenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/puduchhery-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_puduchheryenggjobs"
+  table2 = "details_puduchheryenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/punjab-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_punjabenggjobs"
+  table2 = "details_punjabenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/rajastan-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_rajasthanenggjobs"
+  table2 = "details_rajasthanenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/sikkim-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_sikkimenggjobs"
+  table2 = "details_sikkimenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/tamilnadu-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_tamilenggjobs"
+  table2 = "details_tamilenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/telengana-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_telanganaenggjobs"
+  table2 = "details_telanganaenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/tripura-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_tripuraenggjobs"
+  table2 = "details_tripuraenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/uttarakhand-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_uttarakhandenggjobs"
+  table2 = "details_uttarakhandenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/uttar-pradesh-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_uttarpradeshenggjobs"
+  table2 = "details_uttarpradeshenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})
+
+app.get('/api/statewise-engg-jobs/west-bengal-engg-jobs/', (req, res) => {
+  access.Validate(req, res)
+  table1 = "scrap_westbengalenggjobs"
+  table2 = "details_westbengalenggjobdetails"
+  common.data(req,res,knex,table1,table2)
+})

@@ -27,7 +27,7 @@ class Details:
         dict = {}
         for i in row:
             for title in i.find_all('span', attrs={'style':'color: #008000;'}):
-                dict['Title'] = title.text.strip()
+                dict['Title'] = title.text.strip().replace("\xa0"," ")
             for link in i.find_all('a',title=True, href=True):
                 pdf_url = link['href']
                 if pdf_url.split(".")[1] == "freejobalert" and re.search(r'.pdf$',pdf_url):

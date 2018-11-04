@@ -1,8 +1,7 @@
 
 const express = require('express');
 const app = express()
-const fetch = require('node-fetch');
-let path = require('path');
+app.set('view engine','pug')
 
 let python_url = "http://localhost:8000/"
 let job_type1 = {}

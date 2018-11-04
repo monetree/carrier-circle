@@ -12,7 +12,7 @@ urlpatterns = [
     path('call_assam_govt_jobs/', StatewiseGovtJobs.call_assam_govt_jobs),
     path('call_bihar_govt_jobs/', StatewiseGovtJobs.call_bihar_govt_jobs),
     path('call_chandigarh_govt_jobs/', StatewiseGovtJobs.call_chandigarh_govt_jobs),
-    path('call_chhattisgarh_govt_jobs/', StatewiseGovtJobs.call_chhattisgarh_govt_jobs),
+    path('call_chhattishgarh_govt_jobs/', StatewiseGovtJobs.call_chhattisgarh_govt_jobs),
     path('call_dadra_nagar_govt_jobs/', StatewiseGovtJobs.call_dadra_nagar_govt_jobs),
     path('call_daman_diu_govt_jobs/', StatewiseGovtJobs.call_daman_diu_govt_jobs),
     path('call_delhi_govt_jobs/', StatewiseGovtJobs.call_delhi_govt_jobs),
