@@ -9,7 +9,7 @@ class HandleError:
         host = "smtp.gmail.com"
         port = 587
         username = "soubhagyakumar666@gmail.com"
-        password = "SOubh@gy@519"
+        password = "Thinkonce@619"
         from_email= username
         to_list=["soubhagyakumar666@gmail.com"]
 
