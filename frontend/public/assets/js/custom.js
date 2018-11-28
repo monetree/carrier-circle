@@ -58,8 +58,6 @@
 			targetFormElementSelector: '.rating-value'
 		}
 	};
-	$(".rating-stars").ratingStars(ratingOptions);
-	$(".vscroll").mCustomScrollbar();
 	if ($('.chart-circle').length) {
 		$('.chart-circle').each(function() {
 			let $this = $(this);

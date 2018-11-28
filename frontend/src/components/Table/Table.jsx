@@ -3,12 +3,12 @@ import React from 'react';
 class Table extends React.Component {
     render(){
         return (
-            <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Basic Table</h3>
+            <div className="card">
+            <div className="card-header">
+                <h3 className="card-title">Basic Table</h3>
             </div>
-            <div class="table-responsive">
-                <table class="table card-table table-vcenter text-nowrap">
+            <div className="table-responsive">
+                <table className="table card-table table-vcenter text-nowrap">
                     <thead >
                         <tr>
                             <th>ID</th>
