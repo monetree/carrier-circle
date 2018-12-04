@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  govtcareer_api:
+    container_name: govtcareer
+    build: .
+    command: "bash -c 'python manage.py migrate --no-input && python manage.py runserver 0.0.0.0:8000'"
+    working_dir: /usr/src/govtcareer_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/usr/src/govtcareer_api
+
+  db:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=Thinkonce
+      - MYSQL_USER=soubhagya
+      - MYSQL_PASSWORD=Thinkonce
+      - MYSQL_DATABASE=freejobalert
+    ports:
+      - "3306:3306"

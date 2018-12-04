@@ -12,6 +12,6 @@ urlpatterns = [
     path('finish_railway_jobs/', FinishAll.railway_jobs),
     path('finish_police_jobs/', FinishAll.police_jobs),
     path('finish_police_jobs/', FinishAll.police_jobs),
-    path('perform/', Work.perform),
+    path('', Work.perform),
     path('make_json/', make_json),
 ]
