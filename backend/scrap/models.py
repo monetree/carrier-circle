@@ -1207,7 +1207,7 @@ class WestBengalTeachingJobs(models.Model):
 
 
 class AllIndiaEnggJobs(models.Model):
-    all_india_id      = models.AutoField(primary_key=True)
+    id                = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1223,7 +1223,7 @@ class AllIndiaEnggJobs(models.Model):
 
 
 class AllIndiaFellowEnggJobs(models.Model):
-    all_india_fellow_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1238,7 +1238,7 @@ class AllIndiaFellowEnggJobs(models.Model):
         return "AllIndia Fellow Engg Jobs"
 
 class AndamanNicoborEnggJobs(models.Model):
-    andaman_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1253,7 +1253,7 @@ class AndamanNicoborEnggJobs(models.Model):
         return "AndamanNicobor Engg Jobs"
 
 class AndhraPradeshEnggJobs(models.Model):
-    andhra_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1268,7 +1268,7 @@ class AndhraPradeshEnggJobs(models.Model):
         return "AndhraPradesh Engg Jobs"
 
 class ArunachalPradeshEnggJobs(models.Model):
-    arunachal_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1283,7 +1283,7 @@ class ArunachalPradeshEnggJobs(models.Model):
         return "ArunachalPradesh Engg Jobs"
 
 class AssamEnggJobs(models.Model):
-    assam_id          = models.AutoField(primary_key=True)
+    id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1298,7 +1298,7 @@ class AssamEnggJobs(models.Model):
         return "Assam Engg Jobs"
 
 class BiharEnggJobs(models.Model):
-    bihar_id          = models.AutoField(primary_key=True)
+    id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1313,7 +1313,7 @@ class BiharEnggJobs(models.Model):
         return "Bihar Engg Jobs"
 
 class ChandigarhEnggJobs(models.Model):
-    chandigarh_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1328,7 +1328,7 @@ class ChandigarhEnggJobs(models.Model):
         return "Chandigarh Engg Jobs"
 
 class ChhattisgarhEnggJobs(models.Model):
-    chhattisgarh_id   = models.AutoField(primary_key=True)
+    id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1343,7 +1343,7 @@ class ChhattisgarhEnggJobs(models.Model):
         return "Chhattisgarh Engg Jobs"
 
 class DadraNagarHaveliEnggJobs(models.Model):
-    dadra_nagar_haveli_id = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     start_date            = models.CharField(max_length=60)
     last_date             = models.CharField(max_length=60)
     post_name             = models.CharField(max_length=255)
@@ -1358,7 +1358,7 @@ class DadraNagarHaveliEnggJobs(models.Model):
         return "DadraNagarHavelis Engg Jobs"
 
 class DamanDiuEnggJobs(models.Model):
-    DamanDiuEnggJobs      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1373,7 +1373,7 @@ class DamanDiuEnggJobs(models.Model):
         return "DamanDiu Engg Jobs"
 
 class DelhiEnggJobs(models.Model):
-    delhi_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1388,7 +1388,7 @@ class DelhiEnggJobs(models.Model):
         return "Delhi Engg Jobs"
 
 class GoaEnggJobs(models.Model):
-    goa_id            = models.AutoField(primary_key=True)
+    id            = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1403,7 +1403,7 @@ class GoaEnggJobs(models.Model):
         return "Goa Engg Jobs"
 
 class GujuratEnggJobs(models.Model):
-    gujurat_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1418,7 +1418,7 @@ class GujuratEnggJobs(models.Model):
         return "Gujurat Engg Jobs"
 
 class HaryanaEnggJobs(models.Model):
-    haryana_id          = models.AutoField(primary_key=True)
+    id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1433,7 +1433,7 @@ class HaryanaEnggJobs(models.Model):
         return "Haryana Engg Jobs"
 
 class HimachalPradeshEnggJobs(models.Model):
-    himachal_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1448,7 +1448,7 @@ class HimachalPradeshEnggJobs(models.Model):
         return "HimachalPradesh Engg Jobs"
 
 class JammuKashmirEnggJobs(models.Model):
-    jammu_kashmir_id  = models.AutoField(primary_key=True)
+    id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1463,7 +1463,7 @@ class JammuKashmirEnggJobs(models.Model):
         return "JammuKashmir Engg Jobs"
 
 class JharkhandEnggJobs(models.Model):
-    jharkhand_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1478,7 +1478,7 @@ class JharkhandEnggJobs(models.Model):
         return "Jharkhand Engg Jobs"
 
 class KarnatakaEnggJobs(models.Model):
-    karnataka_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1493,7 +1493,7 @@ class KarnatakaEnggJobs(models.Model):
         return "karnataka Engg Jobs"
 
 class KeralaEnggJobs(models.Model):
-    kerala_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1508,7 +1508,7 @@ class KeralaEnggJobs(models.Model):
         return "Kerala Engg Jobs"
 
 class LakshadweepEnggJobs(models.Model):
-    lakshadweep_id    = models.AutoField(primary_key=True)
+    id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1523,7 +1523,7 @@ class LakshadweepEnggJobs(models.Model):
         return "Lakshadweep Engg Jobs"
 
 class MadhyaPradeshEnggJobs(models.Model):
-    madhya_pradesh_id = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1538,7 +1538,7 @@ class MadhyaPradeshEnggJobs(models.Model):
         return "MadhyaPradesh Engg Jobs"
 
 class MaharashtraEnggJobs(models.Model):
-    maharashtra_id    = models.AutoField(primary_key=True)
+    id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1553,7 +1553,7 @@ class MaharashtraEnggJobs(models.Model):
         return "Maharashtra Engg Jobs"
 
 class ManipurEnggJobs(models.Model):
-    manipur_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1568,7 +1568,7 @@ class ManipurEnggJobs(models.Model):
         return "Manipur Engg Jobs"
 
 class MeghalayaEnggJobs(models.Model):
-    meghalaya_id   = models.AutoField(primary_key=True)
+    id   = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1583,7 +1583,7 @@ class MeghalayaEnggJobs(models.Model):
         return "Meghalaya Engg Jobs"
 
 class MizoramEnggJobs(models.Model):
-    mizoram_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1598,7 +1598,7 @@ class MizoramEnggJobs(models.Model):
         return "Mizoram Engg Jobs"
 
 class NagalandEnggJobs(models.Model):
-    nagaland_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1613,7 +1613,7 @@ class NagalandEnggJobs(models.Model):
         return "Nagaland Engg Jobs"
 
 class OdishaEnggJobs(models.Model):
-    odisha_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1628,7 +1628,7 @@ class OdishaEnggJobs(models.Model):
         return "Puduchhery Engg Jobs"
 
 class PuduchheryEnggJobs(models.Model):
-    puduchhery_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1643,7 +1643,7 @@ class PuduchheryEnggJobs(models.Model):
         return "Punjab Engg Jobs"
 
 class PunjabEnggJobs(models.Model):
-    punjab_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1658,7 +1658,7 @@ class PunjabEnggJobs(models.Model):
         return "Punjab Engg Jobs"
 
 class RajasthanEnggJobs(models.Model):
-    rajasthan_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1673,7 +1673,7 @@ class RajasthanEnggJobs(models.Model):
         return "Rajasthan Engg Jobs"
 
 class SikkimEnggJobs(models.Model):
-    sikkim_id          = models.AutoField(primary_key=True)
+    id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1688,7 +1688,7 @@ class SikkimEnggJobs(models.Model):
         return "Sikkim Engg Jobs"
 
 class TamilNaduEnggJobs(models.Model):
-    tamil_id          = models.AutoField(primary_key=True)
+    id          = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1703,7 +1703,7 @@ class TamilNaduEnggJobs(models.Model):
         return "Tamil Engg Jobs"
 
 class TelanganaEnggJobs(models.Model):
-    telangana_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1718,7 +1718,7 @@ class TelanganaEnggJobs(models.Model):
         return "Telangana Engg Jobs"
 
 class TripuraEnggJobs(models.Model):
-    tripura_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1733,7 +1733,7 @@ class TripuraEnggJobs(models.Model):
         return "Tripura Engg Jobs"
 
 class UttarakhandEnggJobs(models.Model):
-    uttarakhand_id    = models.AutoField(primary_key=True)
+    id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1748,7 +1748,7 @@ class UttarakhandEnggJobs(models.Model):
         return "Uttarakhand Engg Jobs"
 
 class UttarPradeshEnggJobs(models.Model):
-    uttar_pradesh_id  = models.AutoField(primary_key=True)
+    id  = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1763,7 +1763,7 @@ class UttarPradeshEnggJobs(models.Model):
         return "UttarPradesh Engg Jobs"
 
 class WestBengalEnggJobs(models.Model):
-    west_bengal_id    = models.AutoField(primary_key=True)
+    id    = models.AutoField(primary_key=True)
     start_date        = models.CharField(max_length=60)
     last_date         = models.CharField(max_length=60)
     post_name         = models.CharField(max_length=255)
@@ -1836,3 +1836,6 @@ class PoliceAndDefenceJobs(models.Model):
 
     def __str__(self):
         return "Police Defence Jobs"
+
+class EnggJobs(models.Model):
+    engg_jobs = models.TextField()

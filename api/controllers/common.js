@@ -1,7 +1,6 @@
 
 const express = require('express');
 const app = express()
-app.set('view engine','pug')
 
 let python_url = "http://localhost:8000/"
 let job_type1 = {}
@@ -10,7 +9,7 @@ let job_type3 = {}
 let job_api = {}
 
 
-const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where, groupBy) => {
+const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where, groupBy, from, to) => {
   let table1 = tables[0]
   let table2 = tables[1]
   let join1 = joins[0]
@@ -61,6 +60,8 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
                 })
               }
             })
+            job_api.unshift = job_api.length
+            // res.json(job_api.slice(from,to))
             res.json(job_api)
         })
     )
@@ -68,7 +69,7 @@ const Algo = (req, res, knex, jobType1, jobType2, jobType3, tables, joins, where
     .catch(err => res.status(400).json('error getting api'))
 }
 
-const data = (req,res,knex,table1,table2) => {
+const data = (req,res,knex,table1,table2,from, to) => {
   let job_type1 = [
     knex.db.ref(table1 + '.start_date').as('start_date'),
     knex.db.ref(table1 + '.last_date').as('last_date'),
@@ -102,7 +103,7 @@ const data = (req,res,knex,table1,table2) => {
                "where2":table1 + '.type',"where2_index":2,
                "where3":table1 + '.type',"where3_index":3}
   let group  = table1 + '.post_name'
-    Algo(req, res, knex, job_type1, job_type2, job_type3, tables, joins, where, group);
+    Algo(req, res, knex, job_type1, job_type2, job_type3, tables, joins, where, group, from, to);
 }
 
 module.exports = {

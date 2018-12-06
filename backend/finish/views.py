@@ -5,6 +5,10 @@ from time import sleep
 from django.shortcuts import render,render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse
+
+from scrap.models import *
+from details.models import *
+
 from finalize.views import (
             AllIndiaGovernmentJobs,
             StatewiseGovtJobs,
@@ -397,6 +401,99 @@ class FinishAll:
         t2.join()
         return HttpResponse("success")
 
+
+
+
+class EngineeringJobs:
+    def common(model1,model2,model3,model4):
+        import json
+        import ast
+        all_india_engg_job_type2=[]
+        dict={}
+        job_model = model1
+        job_details_model = model2
+        job_table = model3
+        job_details_table = model4
+        all_india_engg_job_type1 = list(job_model.objects.filter(type=1).values())
+        all_india_engg_job_type3 = list(job_model.objects.filter(type=3).values())
+        all_india_engg_job_type2_raw = job_details_model.objects.raw("""
+                                                            select """ + job_details_table + """.more_info as more_info,
+                                                            """ + job_details_table + """.id,""" + job_table + """.id,
+                                                            """ + job_table + """.start_date as start_date,
+                                                            """ + job_table + """.last_date as last_date,
+                                                            """ + job_table + """.post_name as post_name,
+                                                            """ + job_table + """.education as education,
+                                                            """ + job_table + """.requirement_board as requirement_board,
+                                                            """ + job_table + """.type as type from
+                                                            """ + job_table + """ inner join """ + job_details_table + """ on
+                                                            """ + job_details_table + """.join_id=""" + job_table + """.join_id
+                                                            where """ + job_table + """.type=2 order by """ + job_table + """.start_date
+                                                            """)
+
+        for i in all_india_engg_job_type2_raw:
+            dict.update({"start_date":i.start_date,"last_date":i.last_date,
+                        "post_name":i.post_name,"education":i.education,
+                        "requirement_board":i.requirement_board,"type":i.type,"more_info":ast.literal_eval("" + i.more_info + "")})
+            all_india_engg_job_type2.append(dict.copy())
+        all_india_engg_jobs = all_india_engg_job_type1 + all_india_engg_job_type2 + all_india_engg_job_type3
+        return all_india_engg_jobs
+
+    def make_engineer_bundle():
+        EnggJobs.objects.all().delete()
+        all_india_engg_jobs         = EngineeringJobs.common(AllIndiaEnggJobs, AllIndiaEnggJobDetails,"scrap_allindiaenggjobs","details_allindiaenggjobdetails")
+        all_india_fellow_engg_jobs  = EngineeringJobs.common(AllIndiaFellowEnggJobs, AllIndiaFellowEnggJobDetails,"scrap_allindiafellowenggjobs","details_allindiafellowenggjobdetails")
+        andaman_engg_jobs           = EngineeringJobs.common(AndamanNicoborEnggJobs, AndamanNicoborEnggJobDetails,"scrap_andamannicoborenggjobs","details_andamannicoborenggjobdetails")
+        andhra_engg_jobs            = EngineeringJobs.common(AndhraPradeshEnggJobs, AndhraPradeshEnggJobDetails,"scrap_andhrapradeshenggjobs","details_andhrapradeshenggjobdetails")
+        arunachal_pradesh_engg_jobs = EngineeringJobs.common(ArunachalPradeshEnggJobs, ArunachalPradeshEnggJobDetails,"scrap_arunachalpradeshenggjobs","details_arunachalpradeshenggjobdetails")
+        assam_engg_jobs             = EngineeringJobs.common(AssamEnggJobs, AssamEnggJobDetails,"scrap_assamenggjobs","details_assamenggjobdetails")
+        bihar_engg_jobs             = EngineeringJobs.common(BiharEnggJobs, BiharEnggJobDetails,"scrap_biharenggjobs","details_biharenggjobdetails")
+        chandigarh_engg_jobs        = EngineeringJobs.common(ChandigarhEnggJobs, ChandigarhEnggJobDetails,"scrap_chandigarhenggjobs","details_chandigarhenggjobdetails")
+        chattisgarh_engg_jobs       = EngineeringJobs.common(ChhattisgarhEnggJobs, ChhattisgarhEnggJobDetails,"scrap_chhattisgarhenggjobs","details_chhattisgarhenggjobdetails")
+        dadra_nagar_engg_jobs       = EngineeringJobs.common(DadraNagarHaveliEnggJobs, DadraNagarHaveliEnggJobDetails,"scrap_dadranagarhavelienggjobs","details_dadranagarhavelienggjobdetails")
+        daman_diu_engg_jobs         = EngineeringJobs.common(DamanDiuEnggJobs, DamanDiuEnggJobDetails,"scrap_damandiuenggjobs","details_damandiuenggjobdetails")
+        delhi_engg_jobs             = EngineeringJobs.common(DelhiEnggJobs, DelhiEnggJobDetails,"scrap_delhienggjobs","details_delhienggjobdetails")
+        goa_engg_jobs               = EngineeringJobs.common(GoaEnggJobs, GoaEnggJobDetails,"scrap_goaenggjobs","details_goaenggjobdetails")
+        gujurat_engg_jobs           = EngineeringJobs.common(GujuratEnggJobs, GujuratEnggJobDetails,"scrap_gujuratenggjobs","details_gujuratenggjobdetails")
+        haryana_engg_jobs           = EngineeringJobs.common(HaryanaEnggJobs, HaryanaEnggJobDetails,"scrap_haryanaenggjobs","details_haryanaenggjobdetails")
+        himachal_pradesh_engg_jobs  = EngineeringJobs.common(HimachalPradeshEnggJobs, HimachalPradeshEnggJobDetails,"scrap_himachalpradeshenggjobs","details_himachalpradeshenggjobdetails")
+        jammu_kashmir_engg_jobs     = EngineeringJobs.common(JammuKashmirEnggJobs, JammuKashmirEnggJobDetails,"scrap_jammukashmirenggjobs","details_chhattisgarhenggjobdetails")
+        jharkhand_engg_jobs         = EngineeringJobs.common(JharkhandEnggJobs, JharkhandEnggJobDetails,"scrap_jharkhandenggjobs","details_jharkhandenggjobdetails")
+        karnataka_engg_jobs         = EngineeringJobs.common(KarnatakaEnggJobs, KarnatakaEnggJobDetails,"scrap_karnatakaenggjobs","details_karnatakaenggjobdetails")
+        kerala_engg_jobs            = EngineeringJobs.common(KeralaEnggJobs, KeralaEnggJobDetails,"scrap_keralaenggjobs","details_keralaenggjobdetails")
+        lakshadweep_engg_jobs       = EngineeringJobs.common(LakshadweepEnggJobs, LakshadweepEnggJobDetails,"scrap_lakshadweepenggjobs","details_lakshadweepenggjobdetails")
+        madhya_pradesh_engg_jobs    = EngineeringJobs.common(MadhyaPradeshEnggJobs, MadhyaPradeshEnggJobDetails,"scrap_madhyapradeshenggjobs","details_madhyapradeshenggjobdetails")
+        maharastra_engg_jobs        = EngineeringJobs.common(MaharashtraEnggJobs, MaharashtraEnggJobDetails,"scrap_maharashtraenggjobs","details_maharashtraenggjobdetails")
+        manipur_engg_jobs           = EngineeringJobs.common(ManipurEnggJobs, ManipurEnggJobDetails,"scrap_manipurenggjobs","details_manipurenggjobdetails")
+        meghalaya_engg_jobs         = EngineeringJobs.common(MeghalayaEnggJobs, MeghalayaEnggJobDetails,"scrap_meghalayaenggjobs","details_meghalayaenggjobdetails")
+        mizoram_engg_jobs           = EngineeringJobs.common(MizoramEnggJobs, MizoramEnggJobDetails,"scrap_mizoramenggjobs","details_mizoramenggjobdetails")
+        nagaland_engg_jobs          = EngineeringJobs.common(NagalandEnggJobs, NagalandEnggJobDetails,"scrap_nagalandenggjobs","details_nagalandenggjobdetails")
+        odisha_engg_jobs            = EngineeringJobs.common(OdishaEnggJobs, OdishaEnggJobDetails,"scrap_odishaenggjobs","details_odishaenggjobdetails")
+        pudduchhery_engg_jobs       = EngineeringJobs.common(PuduchheryEnggJobs, PuduchheryEnggJobDetails,"scrap_puduchheryenggjobs","details_puduchheryenggjobdetails")
+        punjab_engg_jobs            = EngineeringJobs.common(PunjabEnggJobs, PunjabEnggJobDetails,"scrap_punjabenggjobs","details_punjabenggjobdetails")
+        rajastan_engg_jobs          = EngineeringJobs.common(RajasthanEnggJobs, RajasthanEnggJobDetails,"scrap_rajasthanenggjobs","details_rajasthanenggjobdetails")
+        sikkim_engg_jobs            = EngineeringJobs.common(SikkimEnggJobs, SikkimEnggJobDetails,"scrap_sikkimenggjobs","details_sikkimenggjobdetails")
+        tamilnadu_engg_jobs         = EngineeringJobs.common(TamilNaduEnggJobs, TamilNaduEnggJobDetails,"scrap_tamilnaduenggjobs","details_tamilnaduenggjobdetails")
+        telengana_engg_jobs         = EngineeringJobs.common(TelanganaEnggJobs, TelanganaEnggJobDetails,"scrap_telanganaenggjobs","details_telanganaenggjobdetails")
+        tripura_engg_jobs           = EngineeringJobs.common(TripuraEnggJobs, TripuraEnggJobDetails,"scrap_tripuraenggjobs","details_tripuraenggjobdetails")
+        uttarakhand_engg_jobs       = EngineeringJobs.common(UttarakhandEnggJobs, UttarakhandEnggJobDetails,"scrap_uttarakhandenggjobs","details_uttarakhandenggjobdetails")
+        uttarpradesh_engg_jobs      = EngineeringJobs.common(UttarPradeshEnggJobs, UttarPradeshEnggJobDetails,"scrap_uttarpradeshenggjobs","details_uttarpradeshenggjobdetails")
+        west_bengal_engg_jobs       = EngineeringJobs.common(WestBengalEnggJobs, WestBengalEnggJobDetails,"scrap_westbengalenggjobs","details_westbengalenggjobdetails")
+
+        engg_jobs = (all_india_engg_jobs + all_india_fellow_engg_jobs + andaman_engg_jobs + andhra_engg_jobs + arunachal_pradesh_engg_jobs +
+        assam_engg_jobs + bihar_engg_jobs + chandigarh_engg_jobs + chattisgarh_engg_jobs + dadra_nagar_engg_jobs + daman_diu_engg_jobs +
+        delhi_engg_jobs + goa_engg_jobs + gujurat_engg_jobs + haryana_engg_jobs + himachal_pradesh_engg_jobs + jammu_kashmir_engg_jobs +
+        jharkhand_engg_jobs + karnataka_engg_jobs + kerala_engg_jobs + lakshadweep_engg_jobs + madhya_pradesh_engg_jobs + maharastra_engg_jobs +
+        manipur_engg_jobs + meghalaya_engg_jobs + mizoram_engg_jobs + nagaland_engg_jobs + odisha_engg_jobs + pudduchhery_engg_jobs + punjab_engg_jobs +
+        rajastan_engg_jobs + sikkim_engg_jobs + tamilnadu_engg_jobs + telengana_engg_jobs + tripura_engg_jobs + uttarakhand_engg_jobs + uttarpradesh_engg_jobs +
+        west_bengal_engg_jobs)
+
+        obj = EnggJobs.objects.create(engg_jobs = engg_jobs)
+        if obj:
+            return True
+        else:
+            return False
+
+
 class Work:
     def perform(request):
         password = request.GET.get("password", None)
@@ -423,6 +520,7 @@ class Work:
             t6.join()
             t7.join()
             print("Done")
+            engg_jobs = EngineeringJobs.make_engineer_bundle()
             return HttpResponse("success")
         else:
             return render(request, '401.html', status=401)

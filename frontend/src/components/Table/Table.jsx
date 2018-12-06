@@ -1,9 +1,8 @@
 import React from 'react';
 
-class Table extends React.Component {
-    render(){
+const Table = ({ data }) => {
         return (
-            <div className="card">
+            <div className="card card-scroll">
             <div className="card-header">
                 <h3 className="card-title">Basic Table</h3>
             </div>
@@ -12,103 +11,40 @@ class Table extends React.Component {
                     <thead >
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
+                            <th>Start Date</th>
                             <th>Position</th>
-                            <th>Salary</th>
+                            <th>Education</th>
+                            <th>Board</th>
+                            <th>Last Date</th>
+                            {/* <th>More Info</th>  */}
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Joan Powell</td>
-                            <td>Associate Developer</td>
-                            <td>$450,870</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Gavin Gibson</td>
-                            <td>Account manager</td>
-                            <td>$230,540</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Julian Kerr</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>$55,300</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Cedric Kelly</td>
-                            <td>Accountant</td>
-                            <td>$234,100</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Samantha May</td>
-                            <td>Junior Technical Author</td>
-                            <td>$43,198</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Julian Kerr</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>$55,300</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Cedric Kelly</td>
-                            <td>Accountant</td>
-                            <td>$234,100</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Samantha May</td>
-                            <td>Junior Technical Author</td>
-                            <td>$43,198</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Julian Kerr</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>$55,300</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Cedric Kelly</td>
-                            <td>Accountant</td>
-                            <td>$234,100</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Samantha May</td>
-                            <td>Junior Technical Author</td>
-                            <td>$43,198</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Julian Kerr</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>$55,300</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Cedric Kelly</td>
-                            <td>Accountant</td>
-                            <td>$234,100</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Samantha May</td>
-                            <td>Junior Technical Author</td>
-                            <td>$43,198</td>
-                        </tr>
+                      {
+                        data.map((d, i) => {
+                            return (
+                                <tr> 
+                                    <th scope="row">{i}</th>
+                                    <td>{d.start_date}</td>
+                                    <td>{d.post_name}</td>
+                                    <td>{d.education}</td>
+                                    <td>{d.requirement_board}</td>
+                                    <td>{d.last_date}</td>
+                                    {/* <td>{d.more_info}</td>  */}
+                                </tr>
+                            )
+   
+                        })
+                        }
                     </tbody>
                 </table>
             </div>
+            <div class="card-body">
+                <p className="text-center"><button className='btn-primary-big'>Load More</button></p>
+		    </div>
         </div>
         );
     }
-}
 
 
 export default Table;

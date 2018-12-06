@@ -1,8 +1,8 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "nodejs api for carrier-circle",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -11,16 +11,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
+    "cors": "^2.8.5",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "js-beautify": "^1.8.8",
     "knex": "^0.15.2",
     "mysql": "^2.16.0",
-    "node-fetch": "^2.2.0",
-    "nodemon": "^1.18.5",
-    "path": "^0.12.7",
-    "pug": "^2.0.3",
-    "sync-request": "^6.0.0"
+    "nodemon": "^1.18.7",
+    "pug": "^2.0.3"
   }
 }

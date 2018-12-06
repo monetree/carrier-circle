@@ -12117,3 +12117,27 @@ a.tag-addon:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #343a40; }
+
+
+.text-center{
+	text-align:center;
+}
+.btn-primary-big{
+	background:#6b3e9e;
+	padding:10px;
+    border: none;
+    outline:none;
+	width:80%;
+	border-radius:2px;
+	box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+	color:white;
+	cursor:pointer;
+
+}
+.btn-primary-big:hover{
+	background:#4f2a79;
+}
+.btn-primary-big:active{
+	background:#4f2a79;
+}
+

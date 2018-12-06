@@ -4,7 +4,6 @@ const app = express();
 const cors = require('cors');
 app.use(bodyParser.json());
 app.use(cors());
-app.set('view engine','pug')
 
 // controllers
 const knex = require('./controllers/knex');
@@ -12,18 +11,54 @@ const common = require('./controllers/common');
 const access = require('./controllers/access');
 
 
+
 app.get('/',(req,res) => {
-  let context = {title:"api",message:"root"}
-  res.render("index", context);
+  let context = "Api root"
+  res.send(`<html>
+  <head>
+  <title>Api root</title>
+  <style>
+    *{
+      color:coral;
+      text-align:center;
+    }
+    .container{
+      display:flex;
+      box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
+    }
+    .api{
+      width:60%;
+      background:#e6eff1;
+    }
+    .api-desc{
+      width:40%;
+      background:#6e149099;
+    }
+  </style>
+  </head>
+  <body>
+  <h1>${context}</h1>
+  <div class='container'>
+    <div class='api'>
+      <h1>Api here</h1>
+    </div>
+    <div class='api-desc'>
+      <h1>Api desc here</h1>
+    </div>
+  </div>
+  </body>
+  </html>
+  `);
 })
+
 
 // all india govt jobs api
 
 app.get('/api/all_india-govt-jobs/other-all-india-govt-jobs/', (req, res) => {
-  access.Validate(req, res)
+  // access.Validate(req, res)
   table1 = "scrap_otherallindiajobs"
   table2 = "details_otherallindiajobdetails"
-  common.data(req,res,knex,table1,table2)
+  common.data(req,res,knex,table1,table2,0,30)
 })
 
 // statewise govt jobs api
@@ -645,14 +680,14 @@ app.get('/api/statewise-engg-jobs/daman-diu-engg-jobs/', (req, res) => {
 app.get('/api/statewise-engg-jobs/delhi-engg-jobs/', (req, res) => {
   access.Validate(req, res)
   table1 = "scrap_delhienggjobs"
-  table2 = "details_goagovernmentjobdetails"
+  table2 = "details_delhienggjobdetails"
   common.data(req,res,knex,table1,table2)
 })
 
 app.get('/api/statewise-engg-jobs/goa-engg-jobs/', (req, res) => {
   access.Validate(req, res)
-  table1 = "scrap_goagovernmentjobs"
-  table2 = "details_goajobdetails"
+  table1 = "scrap_goaenggjobs"
+  table2 = "details_goaenggjobdetails"
   common.data(req,res,knex,table1,table2)
 })
 
@@ -707,8 +742,8 @@ app.get('/api/statewise-engg-jobs/kerala-engg-jobs/', (req, res) => {
 
 app.get('/api/statewise-engg-jobs/lakshadweep-engg-jobs/', (req, res) => {
   access.Validate(req, res)
-  table1 = "scrap_lakshadweepgovernmentjobs"
-  table2 = "details_lakshadweepgovernmentjobdetails"
+  table1 = "scrap_lakshadweepenggjobs"
+  table2 = "details_lakshadweepenggjobdetails"
   common.data(req,res,knex,table1,table2)
 })
 

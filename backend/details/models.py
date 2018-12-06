@@ -743,7 +743,7 @@ class WestBengalTeachingJobDetails(models.Model):
 
 
 class AllIndiaEnggJobDetails(models.Model):
-    all_india_details_id     = models.AutoField(primary_key=True)
+    id             = models.AutoField(primary_key=True)
     # all_india            = models.OneToOneField(scrap_models.AllIndiaEnggJobs,on_delete=models.CASCADE,related_name='all_india_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -753,7 +753,7 @@ class AllIndiaEnggJobDetails(models.Model):
 
 
 class AllIndiaFellowEnggJobDetails(models.Model):
-    all_india_details_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     # all_india_fellow            = models.OneToOneField(scrap_models.AllIndiaFellowEnggJobs,on_delete=models.CASCADE,related_name='all_india_fellow_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -762,7 +762,7 @@ class AllIndiaFellowEnggJobDetails(models.Model):
         return "AllIndia Fellow Engg JobDetails"
 
 class AndamanNicoborEnggJobDetails(models.Model):
-    andaman_details_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     # andaman            = models.OneToOneField(scrap_models.AndamanNicoborEnggJobs,on_delete=models.CASCADE,related_name='andaman_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -771,7 +771,7 @@ class AndamanNicoborEnggJobDetails(models.Model):
         return "AndamanNicobor Engg JobDetails"
 
 class AndhraPradeshEnggJobDetails(models.Model):
-    andhra_details_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     # andhra            = models.OneToOneField(scrap_models.AndhraPradeshEnggJobs,on_delete=models.CASCADE,related_name='andhra_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -780,7 +780,7 @@ class AndhraPradeshEnggJobDetails(models.Model):
         return "AndhraPradesh Engg JobDetails"
 
 class ArunachalPradeshEnggJobDetails(models.Model):
-    arunachal_details_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     # arunachal            = models.OneToOneField(scrap_models.ArunachalPradeshEnggJobs,on_delete=models.CASCADE,related_name='arunachal_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -789,7 +789,7 @@ class ArunachalPradeshEnggJobDetails(models.Model):
         return "ArunachalPradesh Engg JobDetails"
 
 class AssamEnggJobDetails(models.Model):
-    assam_details_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     # assam            = models.OneToOneField(scrap_models.AssamEnggJobs,on_delete=models.CASCADE,related_name='assam_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -798,7 +798,7 @@ class AssamEnggJobDetails(models.Model):
         return "Assam Engg JobDetails"
 
 class BiharEnggJobDetails(models.Model):
-    bihar_details_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     # bihar            = models.OneToOneField(scrap_models.BiharEnggJobs,on_delete=models.CASCADE,related_name='bihar_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -807,7 +807,7 @@ class BiharEnggJobDetails(models.Model):
         return "Bihar Engg JobDetails"
 
 class ChandigarhEnggJobDetails(models.Model):
-    chandigarh_details_id    = models.AutoField(primary_key=True)
+    id    = models.AutoField(primary_key=True)
     # chandigarh            = models.OneToOneField(scrap_models.ChandigarhEnggJobs,on_delete=models.CASCADE,related_name='chandigarh_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -816,7 +816,7 @@ class ChandigarhEnggJobDetails(models.Model):
         return "Chandigarh Engg JobDetails"
 
 class ChhattisgarhEnggJobDetails(models.Model):
-    chhattisgarh_details_id  = models.AutoField(primary_key=True)
+    id  = models.AutoField(primary_key=True)
     # chhattisgarh            = models.OneToOneField(scrap_models.ChhattisgarhEnggJobs,on_delete=models.CASCADE,related_name='chhattisgarh_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -825,7 +825,7 @@ class ChhattisgarhEnggJobDetails(models.Model):
         return "Chhattisgarh Engg JobDetails"
 
 class DadraNagarHaveliEnggJobDetails(models.Model):
-    dadra_nagar_haveli_details_id= models.AutoField(primary_key=True)
+    id= models.AutoField(primary_key=True)
     # dadra_nagar_haveli            = models.OneToOneField(scrap_models.DadraNagarHaveliEnggJobs,on_delete=models.CASCADE,related_name='dadra_nagar_haveli_details')
     more_info             = models.TextField()
     join_id               = models.IntegerField(default=None,blank=True,null=True)
@@ -834,7 +834,7 @@ class DadraNagarHaveliEnggJobDetails(models.Model):
         return "DadraNagarHavelis Engg JobDetails"
 
 class DamanDiuEnggJobDetails(models.Model):
-    DamanDiuEnggJobDetails      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     # daman_diu            = models.OneToOneField(scrap_models.DamanDiuEnggJobs,on_delete=models.CASCADE,related_name='daman_diu_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -843,7 +843,7 @@ class DamanDiuEnggJobDetails(models.Model):
         return "DamanDiu Engg JobDetails"
 
 class DelhiEnggJobDetails(models.Model):
-    delhi_details_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     # delhi            = models.OneToOneField(scrap_models.DelhiEnggJobs,on_delete=models.CASCADE,related_name='delhi_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -852,7 +852,7 @@ class DelhiEnggJobDetails(models.Model):
         return "Delhi Engg JobDetails"
 
 class GoaEnggJobDetails(models.Model):
-    goa_details_id           = models.AutoField(primary_key=True)
+    id           = models.AutoField(primary_key=True)
     # goa            = models.OneToOneField(scrap_models.GoaEnggJobs,on_delete=models.CASCADE,related_name='goa_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -861,7 +861,7 @@ class GoaEnggJobDetails(models.Model):
         return "Goa Engg JobDetails"
 
 class GujuratEnggJobDetails(models.Model):
-    gujurat_details_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     # gujurat            = models.OneToOneField(scrap_models.GujuratEnggJobs,on_delete=models.CASCADE,related_name='gujurat_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -870,7 +870,7 @@ class GujuratEnggJobDetails(models.Model):
         return "Gujurat Engg JobDetails"
 
 class HaryanaEnggJobDetails(models.Model):
-    haryana_details_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     # haryana            = models.OneToOneField(scrap_models.HaryanaEnggJobs,on_delete=models.CASCADE,related_name='haryana_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -879,7 +879,7 @@ class HaryanaEnggJobDetails(models.Model):
         return "Haryana Engg JobDetails"
 
 class HimachalPradeshEnggJobDetails(models.Model):
-    himachal_details_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     # himachal            = models.OneToOneField(scrap_models.HimachalPradeshEnggJobs,on_delete=models.CASCADE,related_name='himachal_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -888,7 +888,7 @@ class HimachalPradeshEnggJobDetails(models.Model):
         return "HimachalPradesh Engg JobDetails"
 
 class JammuKashmirEnggJobDetails(models.Model):
-    jammu_kashmir_details_id = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     # jammu_kashmir            = models.OneToOneField(scrap_models.JammuKashmirEnggJobs,on_delete=models.CASCADE,related_name='jammu_kashmir_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -897,7 +897,7 @@ class JammuKashmirEnggJobDetails(models.Model):
         return "JammuKashmir Engg JobDetails"
 
 class JharkhandEnggJobDetails(models.Model):
-    jharkhand_details_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     # jharkhand            = models.OneToOneField(scrap_models.JharkhandEnggJobs,on_delete=models.CASCADE,related_name='jharkhand_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -906,7 +906,7 @@ class JharkhandEnggJobDetails(models.Model):
         return "Jharkhand Engg JobDetails"
 
 class KarnatakaEnggJobDetails(models.Model):
-    karnataka_details_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     # karnataka            = models.OneToOneField(scrap_models.KarnatakaEnggJobs,on_delete=models.CASCADE,related_name='karnataka_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -915,7 +915,7 @@ class KarnatakaEnggJobDetails(models.Model):
         return "karnataka Engg JobDetails"
 
 class KeralaEnggJobDetails(models.Model):
-    kerala_details_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     # kerala            = models.OneToOneField(scrap_models.KeralaEnggJobs,on_delete=models.CASCADE,related_name='kerala_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -924,7 +924,7 @@ class KeralaEnggJobDetails(models.Model):
         return "Kerala Engg JobDetails"
 
 class LakshadweepEnggJobDetails(models.Model):
-    lakshadweep_details_id   = models.AutoField(primary_key=True)
+    id   = models.AutoField(primary_key=True)
     # lakshadweep            = models.OneToOneField(scrap_models.LakshadweepEnggJobs,on_delete=models.CASCADE,related_name='lakshadweep_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -933,7 +933,7 @@ class LakshadweepEnggJobDetails(models.Model):
         return "Lakshadweep Engg JobDetails"
 
 class MadhyaPradeshEnggJobDetails(models.Model):
-    madhya_pradesh_details_id= models.AutoField(primary_key=True)
+    id= models.AutoField(primary_key=True)
     # madhya_pradesh            = models.OneToOneField(scrap_models.MadhyaPradeshEnggJobs,on_delete=models.CASCADE,related_name='madhya_pradesh_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -942,7 +942,7 @@ class MadhyaPradeshEnggJobDetails(models.Model):
         return "MadhyaPradesh Engg JobDetails"
 
 class MaharashtraEnggJobDetails(models.Model):
-    maharashtra_details_id   = models.AutoField(primary_key=True)
+    id   = models.AutoField(primary_key=True)
     # maharashtra            = models.OneToOneField(scrap_models.MaharashtraEnggJobs,on_delete=models.CASCADE,related_name='maharashtra_details')
     more_info         = models.TextField()
     join_id    = models.IntegerField(default=None,blank=True,null=True)
@@ -951,7 +951,7 @@ class MaharashtraEnggJobDetails(models.Model):
         return "Maharashtra Engg JobDetails"
 
 class ManipurEnggJobDetails(models.Model):
-    manipur_details_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     # manipur            = models.OneToOneField(scrap_models.ManipurEnggJobs,on_delete=models.CASCADE,related_name='manipur_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -960,7 +960,7 @@ class ManipurEnggJobDetails(models.Model):
         return "Manipur Engg JobDetails"
 
 class MeghalayaEnggJobDetails(models.Model):
-    meghalaya_details_id  = models.AutoField(primary_key=True)
+    id  = models.AutoField(primary_key=True)
     # meghalaya            = models.OneToOneField(scrap_models.MeghalayaEnggJobs,on_delete=models.CASCADE,related_name='meghalaya_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -969,7 +969,7 @@ class MeghalayaEnggJobDetails(models.Model):
         return "Meghalaya Engg JobDetails"
 
 class MizoramEnggJobDetails(models.Model):
-    mizoram_details_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     # mizoram            = models.OneToOneField(scrap_models.MizoramEnggJobs,on_delete=models.CASCADE,related_name='mizoram_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -978,7 +978,7 @@ class MizoramEnggJobDetails(models.Model):
         return "Mizoram Engg JobDetails"
 
 class NagalandEnggJobDetails(models.Model):
-    nagaland_details_id      = models.AutoField(primary_key=True)
+    id      = models.AutoField(primary_key=True)
     # nagaland            = models.OneToOneField(scrap_models.NagalandEnggJobs,on_delete=models.CASCADE,related_name='nagaland_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -987,7 +987,7 @@ class NagalandEnggJobDetails(models.Model):
         return "Nagaland Engg JobDetails"
 
 class OdishaEnggJobDetails(models.Model):
-    odisha_details_id    = models.AutoField(primary_key=True)
+    id    = models.AutoField(primary_key=True)
     # odisha            = models.OneToOneField(scrap_models.OdishaEnggJobs,on_delete=models.CASCADE,related_name='odisha_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -996,7 +996,7 @@ class OdishaEnggJobDetails(models.Model):
         return "Puduchhery Engg JobDetails"
 
 class PuduchheryEnggJobDetails(models.Model):
-    puduchhery_details_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     # puduchhery            = models.OneToOneField(scrap_models.PuduchheryEnggJobs,on_delete=models.CASCADE,related_name='puduchhery_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1005,7 +1005,7 @@ class PuduchheryEnggJobDetails(models.Model):
         return "Punjab Engg JobDetails"
 
 class PunjabEnggJobDetails(models.Model):
-    punjab_details_id        = models.AutoField(primary_key=True)
+    id        = models.AutoField(primary_key=True)
     # punjab            = models.OneToOneField(scrap_models.PunjabEnggJobs,on_delete=models.CASCADE,related_name='punjab_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1014,7 +1014,7 @@ class PunjabEnggJobDetails(models.Model):
         return "Punjab Engg JobDetails"
 
 class RajasthanEnggJobDetails(models.Model):
-    rajasthan_details_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     # rajasthan            = models.OneToOneField(scrap_models.RajasthanEnggJobs,on_delete=models.CASCADE,related_name='rajasthan_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1023,7 +1023,7 @@ class RajasthanEnggJobDetails(models.Model):
         return "Rajasthan Engg JobDetails"
 
 class SikkimEnggJobDetails(models.Model):
-    sikkim_details_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     # sikkim            = models.OneToOneField(scrap_models.SikkimEnggJobs,on_delete=models.CASCADE,related_name='sikkim_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1032,7 +1032,7 @@ class SikkimEnggJobDetails(models.Model):
         return "Sikkim Engg JobDetails"
 
 class TamilNaduEnggJobDetails(models.Model):
-    tamil_details_id         = models.AutoField(primary_key=True)
+    id         = models.AutoField(primary_key=True)
     # tamil            = models.OneToOneField(scrap_models.TamilNaduEnggJobs,on_delete=models.CASCADE,related_name='tamil_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1041,7 +1041,7 @@ class TamilNaduEnggJobDetails(models.Model):
         return "Tamil Engg JobDetails"
 
 class TelanganaEnggJobDetails(models.Model):
-    telangana_details_id     = models.AutoField(primary_key=True)
+    id     = models.AutoField(primary_key=True)
     # telangana            = models.OneToOneField(scrap_models.TelanganaEnggJobs,on_delete=models.CASCADE,related_name='telangana_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1050,7 +1050,7 @@ class TelanganaEnggJobDetails(models.Model):
         return "Telangana Engg JobDetails"
 
 class TripuraEnggJobDetails(models.Model):
-    tripura_details_id       = models.AutoField(primary_key=True)
+    id       = models.AutoField(primary_key=True)
     # tripura            = models.OneToOneField(scrap_models.TripuraEnggJobs,on_delete=models.CASCADE,related_name='tripura_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1059,7 +1059,7 @@ class TripuraEnggJobDetails(models.Model):
         return "Tripura Engg JobDetails"
 
 class UttarakhandEnggJobDetails(models.Model):
-    uttarakhand_details_id   = models.AutoField(primary_key=True)
+    id   = models.AutoField(primary_key=True)
     # uttarakhand            = models.OneToOneField(scrap_models.UttarakhandEnggJobs,on_delete=models.CASCADE,related_name='uttarakhand_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1068,7 +1068,7 @@ class UttarakhandEnggJobDetails(models.Model):
         return "Uttarakhand Engg JobDetails"
 
 class UttarPradeshEnggJobDetails(models.Model):
-    uttar_pradesh_details_id = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     # uttar_pradesh            = models.OneToOneField(scrap_models.UttarPradeshEnggJobs,on_delete=models.CASCADE,related_name='uttar_pradesh_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
@@ -1077,7 +1077,7 @@ class UttarPradeshEnggJobDetails(models.Model):
         return "UttarPradesh Engg JobDetails"
 
 class WestBengalEnggJobDetails(models.Model):
-    west_bengal_details_id   = models.AutoField(primary_key=True)
+    id   = models.AutoField(primary_key=True)
     # west_bengal            = models.OneToOneField(scrap_models.WestBengalEnggJobs,on_delete=models.CASCADE,related_name='west_bengal_details')
     more_info         = models.TextField()
     join_id           = models.IntegerField(default=None,blank=True,null=True)
